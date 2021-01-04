@@ -27,18 +27,17 @@ item:
   date_end: ""
   date_start: "2018-10-01"
   description: "Learned how to utilize big data by machine learning technology. "
-  organization: Matsuo Lab.
+  organization: "Matsuo Lab."
   organization_url: https://weblab.t.u-tokyo.ac.jp/en/
-  title: Chair for Global Consumer Intelligence (GCI 2018)
+  title: "Chair for Global Consumer Intelligence (GCI 2018)"
   url: "https://gci.t.u-tokyo.ac.jp/"
 
 - certificate_url: 
   date_end: "2020-09-10"
   date_start: "2020-08-20"
   description: "Learned deep generative models from basics to state-of-the-art."
-  organization: Matsuo Lab.
+  organization: "Matsuo Lab."
   organization_url:  https://weblab.t.u-tokyo.ac.jp/en/
-  title: Summer School for Deep Generative Models
+  title: "Summer School for Deep Generative Models"
   url:   title: https://deeplearning.jp/deep-generative-model-2020s-2/
-  
 ---
