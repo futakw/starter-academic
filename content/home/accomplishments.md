@@ -23,28 +23,22 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- certificate_url: 
   date_end: ""
   date_start: "2018-10-01"
-  description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
-  url: ""
-- certificate_url: https://www.edx.org
-  date_end: ""
-  date_start: "2018-03-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2017-12-21"
-  date_start: "2017-07-01"
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R: S3 and R6 Course'
-  url: ""
+  description: "Learned how to utilize big data by machine learning technology. "
+  organization: Matsuo Lab.
+  organization_url: https://weblab.t.u-tokyo.ac.jp/en/
+  title: Chair for Global Consumer Intelligence (GCI 2018)
+  url: "https://gci.t.u-tokyo.ac.jp/"
+
+- certificate_url: 
+  date_end: "2020-09-10"
+  date_start: "2020-08-20"
+  description: "Learned deep generative models from basics to state-of-the-art."
+  organization: Matsuo Lab.
+  organization_url:  https://weblab.t.u-tokyo.ac.jp/en/
+  title: Summer School for Deep Generative Models
+  url:   title: https://deeplearning.jp/deep-generative-model-2020s-2/
+  
 ---
