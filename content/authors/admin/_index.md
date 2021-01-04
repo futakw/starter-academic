@@ -24,9 +24,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: Master Course in Information Science and Technology
-    institution: The University of Tokyo
-    year: 2020~
+  # - course: Master Course in Information Science and Technology
+  #   institution: The University of Tokyo
+  #   year: 2020
   - course: BEng in Systems Innovation
     institution: The University of Tokyo
     year: 2020
