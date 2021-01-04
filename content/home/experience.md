@@ -26,11 +26,10 @@ experience:
     company: Ollo inc.
     company_url: ''
     location: Tokyo.
-    date_start: '2020-4-01'
+    date_start: '2020-04-01'
     date_end: ''
     description: |2-
         Responsibilities include:
-        
         * Analysing
         * Modelling
         * Deploying
