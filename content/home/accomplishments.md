@@ -39,5 +39,5 @@ item:
   organization: "Matsuo Lab."
   organization_url:  https://weblab.t.u-tokyo.ac.jp/en/
   title: "Summer School for Deep Generative Models"
-  url:   title: https://deeplearning.jp/deep-generative-model-2020s-2/
+  url: "https://deeplearning.jp/deep-generative-model-2020s-2/"
 ---
