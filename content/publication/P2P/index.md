@@ -38,7 +38,7 @@ abstract: It is a problem that as the spread of solar power generation expands, 
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

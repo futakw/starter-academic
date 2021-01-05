@@ -39,7 +39,7 @@ abstract: ビッグデータの分析を通じた消費者の趣味嗜好の理�
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 links:
