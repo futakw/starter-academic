@@ -27,7 +27,9 @@ item:
 - organization: SAS Institute Japan
   organization_url: "https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html"
   date_start: "2019-06-01"
-  description: "In the contest, participants were given data and asked to construct machine learning system with high accuracy. (hackathon url: https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html)(article url: https://enterprisezine.jp/article/detail/12209?p=2)"
+  description: "In the contest, participants were given data and asked to construct machine learning system with high accuracy. 
+    (hackathon url: https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html)  
+    (article url: https://enterprisezine.jp/article/detail/12209?p=2)"
   title: "Won the special prize at SAS analytics hackathon 2019.（SAS社のThe Analytics Hackathon 2019にて特別賞）"
   url: "https://deeplearning.jp/deep-generative-model-2020s-2/"
 

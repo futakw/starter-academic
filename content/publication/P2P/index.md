@@ -6,7 +6,7 @@ title: "Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading 
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - admin
-# - Robert Ford
+- Kenji Tanaka
 
 # Author notes (optional)
 
