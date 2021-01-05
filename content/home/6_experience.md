@@ -24,8 +24,8 @@ date_format: Jan 2006
 experience:
   - title: Machine learning Engineer.
     company: Ollo inc.
-    company_url: ''
-    location: Tokyo.
+    company_url: 'https://www.ollo.tech/'
+    location: Tokyo, Japan
     date_start: '2020-04-01'
     date_end: ''
     description: |2-
@@ -34,4 +34,16 @@ experience:
         * Modelling
         * Deploying
         * Researching 
+
+  - title: Research Assistant
+    company:  National Institute of Informatics
+    company_url: 'https://www.nii.ac.jp/en/'
+    location: Tokyo, Japan.
+    date_start: '2020-04-01'
+    date_end: ''
+    description: |2-
+        Research keywords:
+        * Deep Learning
+        * Computer Vision
+        * Adversarial Examples
 ---
