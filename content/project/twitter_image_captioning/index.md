@@ -30,6 +30,7 @@ url_video: ""
 
 # slides: example
 ---
+{{< icon name="download" pack="fas" >}} Download the{{< staticref "poster.pdf" "newtab" >}} poster {{< /staticref >}}.
 
 This work was done in the class activity at the university when I was a first-year master's student.
 
