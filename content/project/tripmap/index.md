@@ -37,3 +37,9 @@ The purpose of this app is to make our trip planning more easy. In this app, you
 
 I was responsible for the front-end system. Front-end is written by html, css, javascript with jquery library.
 It was deployed by free heroku service.
+
+Keywords.
+- html
+- css
+- javascript 
+- jquery
