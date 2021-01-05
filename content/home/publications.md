@@ -37,8 +37,6 @@ design:
   view: 4
 ---
 
-Futa Waseda, Kenji Tanaka "Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading Market considering uncertainty" (EEEIC 2020)
-
 {{% callout note %}}
 Quickly discover relevant content by [filtering publications](./publication/).
 {{% /callout %}}
