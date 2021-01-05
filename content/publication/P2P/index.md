@@ -48,7 +48,7 @@ featured: true
 url_pdf: 'https://ieeexplore.ieee.org/abstract/document/9160846'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: 'media/M2-TS3_105_Waseda.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
