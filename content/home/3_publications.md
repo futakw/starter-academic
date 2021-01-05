@@ -7,7 +7,7 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 90
+weight: 50
 
 title: Recent Publications
 subtitle: ''
@@ -18,7 +18,7 @@ content:
   # Choose how much pages you would like to display (0 = all pages)
   count: 5
   # Choose how many pages you would like to offset by
-  offset: 0
+  offset: 5
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
   # Filter on criteria
@@ -38,5 +38,5 @@ design:
 ---
 
 {{% callout note %}}
-Quickly discover papers by [filtering publications](./publication/).
+Quickly discover relevant content by [filtering publications](./publication/).
 {{% /callout %}}
