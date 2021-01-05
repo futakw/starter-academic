@@ -1,6 +1,6 @@
 ---
 title: Oshaberi-Bot（おしゃべりぼっと）
-summary: My first twitter bot app. He learns japanese from his followers, by fitting retrived data to Markov model.
+summary: My first twitter bot app. He learns japanese from his followers, by fitting retrieved data to Markov model.
 tags:
 - Web App
 date: "2020-04-01T00:00:00Z"
@@ -31,7 +31,7 @@ url_video: ""
 # slides: example
 ---
 
-Oshaberi-Bot(おしゃべりぼっと:Talking bot) is my first twitter bot app. He learns japanese from his followers, by fitting retrived data to Markov model.
+Oshaberi-Bot(おしゃべりぼっと:Talking bot) is my first twitter bot app. He learns japanese from his followers, by fitting retrieved data to Markov model.
 
 Keywords.
 - Twitter API

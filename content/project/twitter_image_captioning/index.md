@@ -9,7 +9,7 @@ date: "2021-01-05T00:00:00Z"
 external_link: ""
 
 image:
-  caption: Twitter
+  caption: Sample output of our model
   focal_point: Smart
 
 links:
@@ -30,7 +30,7 @@ url_video: ""
 
 # slides: example
 ---
-{{< icon name="download" pack="fas" >}} Download the{{< staticref "poster.pdf" "newtab" >}} poster {{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download the{{< staticref "media/twitter_image_captioning_poster.pdf" "newtab" >}} poster(発表ポスター) {{< /staticref >}}.
 
 This work was done in the class activity at the university when I was a first-year master's student.
 
