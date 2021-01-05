@@ -45,6 +45,8 @@ featured: true
 links:
 - name: Conference Link
   url: https://db-event.jpn.org/deim2019/
+- name: PDF
+  url: media/deim2019最終論文.pdf
 
 url_pdf: ''
 url_code: ''
