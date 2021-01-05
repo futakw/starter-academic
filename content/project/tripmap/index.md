@@ -13,9 +13,7 @@ image:
   focal_point: Smart
 
 links:
-- icon: link
-  icon_pack: fab
-  # name: Follow
+- name: url
   url: https://tripmap-psi.herokuapp.com/
 url_code: ""
 url_pdf: ""

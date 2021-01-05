@@ -13,10 +13,10 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
+- icon: github
   icon_pack: fab
-  name: Follow Him
-  url: https://twitter.com/oshaberiBot
+  name: github
+  url: https://github.com/futakw/Twitter_Image_Captioning
 url_code: ""
 url_pdf: ""
 url_slides: ""
