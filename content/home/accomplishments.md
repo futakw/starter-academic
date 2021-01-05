@@ -38,6 +38,6 @@ item:
   description: "Learned deep generative models from basics to state-of-the-art."
   organization: "Matsuo Lab."
   organization_url:  https://weblab.t.u-tokyo.ac.jp/en/
-  title: "Summer School for Deep Generative Models"
+  title: "Summer School for Deep Generative Models 2020"
   url: "https://deeplearning.jp/deep-generative-model-2020s-2/"
 ---

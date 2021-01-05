@@ -60,6 +60,6 @@ email: "fuwafuwa1118@gmail.com"
 highlight_name: false
 ---
 
-Futa Waseda is a master's student in Information Science and Technology at the University of Tokyo. I'm interested in artificial intelligence, especially in computer vision. In particular, I'm currently trying to solve a mystery of adversarial examples, which mislead the model's prediction while they don't affect human's decision.   
+Futa Waseda is a master's student in Information Science and Technology at the University of Tokyo. I'm interested in artificial intelligence, especially in computer vision. In particular, I'm currently trying to understand the reason of adversarial examples, which mislead the model's prediction while they don't affect human's decision.   
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+# {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
