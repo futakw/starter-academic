@@ -13,6 +13,8 @@ image:
   focal_point: Smart
 
 links:
+- name: Poster PDF
+  url: media/twitter_image_captioning_poster.pdf
 - icon: github
   icon_pack: fab
   name: github
@@ -30,7 +32,6 @@ url_video: ""
 
 # slides: example
 ---
-{{< icon name="download" pack="fas" >}} Download the{{< staticref "media/twitter_image_captioning_poster.pdf" "newtab" >}} poster(発表ポスター) {{< /staticref >}}.
 
 This work was done in the class activity at the university when I was a first-year master's student.
 

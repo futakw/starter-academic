@@ -80,10 +80,8 @@ image:
 # slides: example
 ---
 
-{{< icon name="download" pack="fas" >}} Download the{{< staticref "media/deim2019最終論文.pdf" "newtab" >}} PDF {{< /staticref >}}.
-
 MDSデータサイエンスコンテストに優勝した際の成果を発展させ、国内学会で発表したもの。
-(See awards section)
+
 
 <!-- {{% callout note %}}
 Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
