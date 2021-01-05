@@ -21,9 +21,13 @@ feature:
   icon_pack: fab
   name: python
 - description: 
-  icon: machine-learning
+  icon: chart-line
   icon_pack: fas
-  name: ML
+  name: ML/DL
+- description:
+  icon: grin-beam
+  icon_pack: fas
+  name: Smile
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
