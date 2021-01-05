@@ -6,7 +6,7 @@ title: Futa Waseda
 superuser: true
 
 # Role/position/tagline
-role: Master's Student 
+role: Master's Student in Information Science and Technology
 
 # Organizations/Affiliations to show in About widget
 organizations:

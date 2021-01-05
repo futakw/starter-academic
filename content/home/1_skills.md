@@ -25,9 +25,9 @@ feature:
   icon_pack: fas
   name: ML/DL
 - description:
-  icon: grin-beam
+  icon: handshake
   icon_pack: fas
-  name: Smile
+  name: Teamwork
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
