@@ -38,7 +38,10 @@
   url = "#6_accomplishments"
   weight = 80
 
-
+[[main]]
+    name = "CV"
+    url = "media/FutaWaseda_CV.pdf"
+    weight = 90
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/resume.pdf` and uncomment the lines below.
