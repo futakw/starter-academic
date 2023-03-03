@@ -1,25 +1,28 @@
 ---
-title: "消費者アンケートを活用した飲食店顧客の多面的理解"
+title: "Closer Look at the Transferability of Adversarial Examples:
+How They Fool Different Models Differently"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Tsubasa Sakai
-- Maiko Kamada
-- Kento Hori
 - admin
+- Sosuke Nishikawa
+- Trung-Nghia Le
+- Huy H. Nguyen
+- Isao Echizen
 
 # Author notes (optional)
 
-author_notes:
-- "Equal contribution"
+# author_notes:
+# - "Equal contribution"
+# - "Equal contribution"
 
-date: "2019-03-10T00:00:00Z"
+date: "2023-02-09T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-# publishDate: "2020-06-09T00:00:00Z"
+publishDate: "2023-01-02T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -28,10 +31,10 @@ doi: ""
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: 第11回データ工学と情報マネジメントに関するフォーラム（DEIM 2019）
-publication_short: DEIM 2019
+publication: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2023.
+publication_short: WACV 2023
 
-abstract: ビッグデータの分析を通じた消費者の趣味嗜好の理解とそれによる効率的な顧客獲得が広く試みられてい る。顧客の年齢・職業といった基本情報や購買履歴の分析から得られる情報は効果的であるが、多様な消費者の嗜 好を考慮すると、より多角的な視点からの消費者の購買心理の理解が必要である。本研究では、消費者の基本情報・ 内面・価値観・行動に関する計 2000 項目ほどの多角的なアンケートデータから「飲食店への来店頻度」を予測する タスクを通じて、各サービスを利用する消費者に特有の特徴量の集合の抽出を行った。結果、飲食店の購買データ のみではできるはずのなかった新たな視点からの消費者嗜好の把握が可能となり、また飲食店ごとに特徴的な消費 者層の把握が可能となった。本研究の結果は、マーケティングにおける消費者の情報収集を検討するうえでの重要 な示唆となる。
+abstract: "Deep neural networks are vulnerable to adversarial examples (AEs), which have adversarial transferability: AEs generated for the source model can mislead another (target) model’s predictions. However, the transferability has not been understood in terms of to which class target model’s predictions were misled (i.e., class-aware transferability). In this paper, we differentiate the cases in which a target model predicts the same wrong class as the source model (“same mistake”) or a different wrong class (“different mistake”) to analyze and provide an explanation of the mechanism. We find that (1) AEs tend to cause same mistakes, which correlates with “non-targeted transferability”; however, (2) different mistakes occur even between similar models, regardless of the perturbation size. Furthermore, we present evidence that the difference between same mistakes and different mistakes can be explained by non-robust features, predictive but human-uninterpretable patterns: different mistakes occur when non-robust features in AEs are used differently by models. Non-robust features can thus provide consistent explanations for the class-aware transferability of AEs."
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -42,16 +45,14 @@ tags: []
 featured: false
 
 # Custom links (uncomment lines below)
-links:
-- name: Conference Link
-  url: https://db-event.jpn.org/deim2019/
-- name: PDF
-  url: media/deim2019最終論文.pdf
+# links:
+# - name: Custom Link
+#   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: 'media/publication/WACV2023CLoser/641-wacv-poster.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
@@ -60,7 +61,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: ''
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
   focal_point: ""
   preview_only: false
 
@@ -79,11 +80,8 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-MDSデータサイエンスコンテストに優勝した際の成果を発展させ、国内学会で発表したもの。
-
-
-<!-- {{% callout note %}}
+<!-- 
+{{% callout note %}}
 Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 {{% /callout %}}
 
