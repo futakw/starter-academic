@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Machine learning Engineer.
+  - title: Machine learning Engineer
     company: Ollo inc.
     company_url: 'https://www.ollo.tech/'
     location: Tokyo, Japan
@@ -43,7 +43,7 @@ experience:
     description: |2-
         Supervised by Prof. Isao Echizen.
 
-  - - title: Research Assistant
+  - title: Research Assistant
     company:  National Institute of Informatics
     company_url: 'https://www.nii.ac.jp/en/'
     location: Tokyo, Japan.
@@ -55,7 +55,7 @@ experience:
         * Computer Vision
         * Adversarial Robustness
 
-  - - title: Exchange Student
+  - title: Exchange Student
     company:  Technical University of Munich
     company_url: ''
     location: Munich, Germany.
