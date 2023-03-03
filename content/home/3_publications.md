@@ -1,7 +1,7 @@
 ---
 # An instance of the Pages widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: Card
+widget: pages
 
 # This file represents a page section.
 headless: true
@@ -14,7 +14,8 @@ subtitle: ''
 
 content:
   # Page type to display. E.g. post, talk, publication...
-  page_type: publication
+  # page_type: publication
+  page_type: card
   # Choose how much pages you would like to display (0 = all pages)
   count: 10
   # Choose how many pages you would like to offset by
