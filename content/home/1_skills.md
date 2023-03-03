@@ -23,7 +23,7 @@ feature:
 - description: 
   icon: chart-line
   icon_pack: fas
-  name: ML/DL
+  name: Machine Learning/Deep Learning
 - description:
   icon: handshake
   icon_pack: fas
