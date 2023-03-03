@@ -26,7 +26,7 @@ experience:
     company: Ollo inc.
     company_url: 'https://www.ollo.tech/'
     location: Tokyo, Japan
-    date_start: '2020-04-01'
+    date_start: '2020-05-01'
     date_end: ''
     description: |2-
         Responsibilities include:
@@ -47,7 +47,7 @@ experience:
     company:  National Institute of Informatics
     company_url: 'https://www.nii.ac.jp/en/'
     location: Tokyo, Japan.
-    date_start: '2020-04-01'
+    date_start: '2020-05-01'
     date_end: ''
     description: |2-
         Research keywords:
