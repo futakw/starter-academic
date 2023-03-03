@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Masters Student
+    company:  The University of Tokyo
+    company_url: ''
+    location: Tokyo, Japan
+    date_start: '2020-04-01'
+    date_end: '2023-03-23'
+    description: |2-
+        Supervised by Prof. Isao Echizen.
+
   - title: Machine learning Engineer.
     company: Ollo inc.
     company_url: 'https://www.ollo.tech/'
@@ -30,10 +39,9 @@ experience:
     date_end: ''
     description: |2-
         Responsibilities include:
-        * Analysing
-        * Modelling
-        * Deploying
-        * Researching 
+        * Researcher
+        * Data Scientist
+        * Software Engineer
 
   - title: Research Assistant
     company:  National Institute of Informatics
@@ -45,5 +53,14 @@ experience:
         Research keywords:
         * Deep Learning
         * Computer Vision
-        * Adversarial Examples
+        * Adversarial Robustness
+
+  - title: Exchange Student
+    company:  Technical University of Munich
+    company_url: ''
+    location: Munich, Germany.
+    date_start: '2021-04-01'
+    date_end: '2022-03-15'
+    description: |2-
+        Conducted research, supervised by Christian Tomani.
 ---

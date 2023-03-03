@@ -5,32 +5,37 @@
 
 [[main]]
   name = "Home"
-  url = "#about"
+  url = "#0_about"
   weight = 10
 
 [[main]]
   name = "Skills"
-  url = "#skills"
+  url = "#1_skills"
   weight = 30
 
 [[main]]
   name = "Awards"
-  url = "#awards"
+  url = "#2_awards"
   weight = 40
 
 [[main]]
   name = "Publications"
-  url = "#publications"
+  url = "#3_publications"
+  weight = 70
+
+[[main]]
+  name = "Projects"
+  url = "#4_projects"
   weight = 70
 
 [[main]]
   name = "Accomplishments"
-  url = "#accomplishments"
+  url = "#5_accomplishments"
   weight = 80
 
 [[main]]
   name = "Experience"
-  url = "#experience"
+  url = "#6_experience"
   weight = 90
 
 

@@ -20,6 +20,7 @@ bio:
 interests:
 - Artificial Intelligence
 - Computer Vision
+- Robustness
 
 # Education to show in About widget
 education:
@@ -27,6 +28,7 @@ education:
   - course: BEng in Systems Innovation
     institution: The University of Tokyo
     year: 2020
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,7 +46,7 @@ social:
   link: https://github.com/futakw
 # - icon: linkedin
 #   icon_pack: fab
-#   link: https://www.linkedin.com/
+  # link: https://www.linkedin.com/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -54,7 +56,7 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "fuwafuwa1118@gmail.com"
+email: "futa-waseda@g.ecc.u-tokyo.ac.jp"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -65,6 +67,7 @@ highlight_name: false
 
 Futa Waseda is a master's student in Information Science and Technology at the University of Tokyo. 
 
-I'm interested in artificial intelligence, especially in computer vision. In particular, I'm currently trying to understand the reasons of adversarial examples, which mislead the model's prediction while they don't affect human's decision.   
+I'm interested in artificial intelligence, especially in computer vision. Specifically, I'm working on the problems of robust and reliable computer vision models. 
+
 
 
