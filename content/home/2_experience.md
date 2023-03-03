@@ -22,15 +22,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Masters Student
-    company:  The University of Tokyo
-    company_url: ''
-    location: Tokyo, Japan
-    date_start: '2020-04-01'
-    date_end: '2023-03-23'
-    description: |2-
-        Supervised by Prof. Isao Echizen.
-
   - title: Machine learning Engineer.
     company: Ollo inc.
     company_url: 'https://www.ollo.tech/'
@@ -41,26 +32,35 @@ experience:
         Responsibilities include:
         * Researcher
         * Data Scientist
-        * Software Engineer
-
-  - title: Research Assistant
-    company:  National Institute of Informatics
-    company_url: 'https://www.nii.ac.jp/en/'
-    location: Tokyo, Japan.
-    date_start: '2020-04-01'
-    date_end: ''
-    description: |2-
-        Research keywords:
-        * Deep Learning
-        * Computer Vision
-        * Adversarial Robustness
-
-  - title: Exchange Student
-    company:  Technical University of Munich
+        * Software Engineer 
+        
+  - title: Masters Student
+    company:  The University of Tokyo
     company_url: ''
-    location: Munich, Germany.
-    date_start: '2021-04-01'
-    date_end: '2022-03-15'
+    location: Tokyo, Japan
+    date_start: '2020-04-01'
+    date_end: '2023-03-23'
     description: |2-
-        Conducted research, supervised by Christian Tomani.
+        Supervised by Prof. Isao Echizen.
+
+    - title: Research Assistant
+      company:  National Institute of Informatics
+      company_url: 'https://www.nii.ac.jp/en/'
+      location: Tokyo, Japan.
+      date_start: '2020-04-01'
+      date_end: ''
+      description: |2-
+          Research keywords:
+          * Deep Learning
+          * Computer Vision
+          * Adversarial Robustness
+
+    - title: Exchange Student
+      company:  Technical University of Munich
+      company_url: ''
+      location: Munich, Germany.
+      date_start: '2021-04-01'
+      date_end: '2022-03-15'
+      description: |2-
+          Conducted research, supervised by Christian Tomani.
 ---
