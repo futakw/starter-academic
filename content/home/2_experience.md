@@ -33,7 +33,7 @@ experience:
         * Researcher
         * Data Scientist
         * Software Engineer 
-        
+
   - title: Masters Student
     company:  The University of Tokyo
     company_url: ''
@@ -43,24 +43,24 @@ experience:
     description: |2-
         Supervised by Prof. Isao Echizen.
 
-    - title: Research Assistant
-      company:  National Institute of Informatics
-      company_url: 'https://www.nii.ac.jp/en/'
-      location: Tokyo, Japan.
-      date_start: '2020-04-01'
-      date_end: ''
-      description: |2-
-          Research keywords:
-          * Deep Learning
-          * Computer Vision
-          * Adversarial Robustness
+  - - title: Research Assistant
+    company:  National Institute of Informatics
+    company_url: 'https://www.nii.ac.jp/en/'
+    location: Tokyo, Japan.
+    date_start: '2020-04-01'
+    date_end: ''
+    description: |2-
+        Research keywords:
+        * Deep Learning
+        * Computer Vision
+        * Adversarial Robustness
 
-    - title: Exchange Student
-      company:  Technical University of Munich
-      company_url: ''
-      location: Munich, Germany.
-      date_start: '2021-04-01'
-      date_end: '2022-03-15'
-      description: |2-
-          Conducted research, supervised by Christian Tomani.
+  - - title: Exchange Student
+    company:  Technical University of Munich
+    company_url: ''
+    location: Munich, Germany.
+    date_start: '2021-04-01'
+    date_end: '2022-03-15'
+    description: |2-
+        Conducted research, supervised by Christian Tomani.
 ---
