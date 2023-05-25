@@ -28,6 +28,9 @@ education:
   - course: BEng in Systems Innovation
     institution: The University of Tokyo
     year: 2020
+  - course: MS in Informatics
+    institution: The University of Tokyo
+    year: 2023
 
 
 # Social/Academic Networking
