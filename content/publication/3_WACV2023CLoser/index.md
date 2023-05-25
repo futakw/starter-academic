@@ -1,6 +1,6 @@
 ---
 title: "Closer Look at the Transferability of Adversarial Examples:
-How They Fool Different Models Differently"
+How They Fool Different Models Differently [WACV 2023]"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

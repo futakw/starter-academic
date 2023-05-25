@@ -65,7 +65,7 @@ highlight_name: false
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Futa Waseda is a master's student in Information Science and Technology at the University of Tokyo. 
+Futa Waseda is a PhD student in Information Science and Technology at The University of Tokyo. 
 
 I'm interested in artificial intelligence, especially in computer vision. Specifically, I'm working on the problems of robust and reliable computer vision models. 
 
