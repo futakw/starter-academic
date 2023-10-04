@@ -1,6 +1,6 @@
 ---
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: list
+widget: about
 
 # Activate this widget? true/false
 active: true
