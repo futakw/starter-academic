@@ -6,7 +6,7 @@ title: Futa Waseda
 superuser: true
 
 # Role/position/tagline
-role: Master's Student in Information Science and Technology
+role: PhD Student in Information Science and Technology
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -70,7 +70,7 @@ highlight_name: false
 
 Futa Waseda is a PhD student in Information Science and Technology at The University of Tokyo. 
 
-I'm interested in artificial intelligence, especially in computer vision. Specifically, I'm working on the problems of robust and reliable computer vision models. 
+I'm interested in artificial intelligence, especially in computer vision. Specifically, I'm working on the problems of robustness and reliability of deep learning-based computer vision. 
 
 
 
