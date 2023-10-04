@@ -12,9 +12,8 @@ headless: true
 weight: 20
 
 title: News
-
-# Choose the user profile to display
-# This should be the username (folder name) of a profile in your `content/authors/` folder.
-# See https://wowchemy.com/docs/get-started/#introduce-yourself
-author: admin
 ---
+
+- 2023/08/01: I reviewed 1 paper for NeurIPS2023.
+- 2023/04/23: 1 paper (as 1st author) accepted at **ICML2023**.
+- 2022/10/21: 1 paper (as 1st author) accepted at **WACV2023**.

@@ -1,5 +1,5 @@
 ---
-title: "[arXiv preprint] Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
+title: "Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection [arXiv preprint]"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
