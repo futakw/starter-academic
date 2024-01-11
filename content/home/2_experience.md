@@ -63,4 +63,16 @@ experience:
     date_end: '2022-03-15'
     description: |2-
         Conducted research, supervised by Christian Tomani.
+
+  - title: Research Internship
+    company:  NEC Corporation
+    company_url: 'https://www.nec.com/'
+    location: Tokyo, Japan.
+    date_start: '2023-08-16'
+    date_end: '2023-12-15'
+    description: |2-
+        Research keywords:
+        * Deep Learning
+        * Computer Vision
+        * Generalization to OOD
 ---
