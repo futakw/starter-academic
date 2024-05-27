@@ -14,6 +14,7 @@ title: News
 - 2024.05: 1 paper (as 1st author) accepted at [**MIRU2024 Oral presentation**](https://miru-committee.github.io/miru2024/).
 - 2024.03: Reviewed 5 papers for **ICML2024**.
 - 2024.02 - (current): I started research internship at [**CyberAgent AI Lab**](https://cyberagent.ai/ailab/)
+- 2024.11: Reviewed 2 papers for **ICLR2024**.
 - 2023.10: Reviewed 1 paper for **IEEE TIFS2024**.
 - 2023.09: Selected for research fellowship [**JST DC2**](https://www.jsps.go.jp/english/e-pd/).
 - 2023.08-2023.12: Research internship at [**NEC Japan**](https://jpn.nec.com/rd/rdcareer/internship/index.html).
