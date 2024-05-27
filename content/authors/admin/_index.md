@@ -57,7 +57,7 @@ social:
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: static/media/Futa_Waseda_CV_20240527.pdf
+  link: media/Futa_Waseda_CV_20240527.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "futa-waseda@g.ecc.u-tokyo.ac.jp"
