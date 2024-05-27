@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Futa Waseda
+title: Futa (Kai) Waseda
 
 # Is this the primary user of the site?
 superuser: true
@@ -18,9 +18,10 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
+- Deep Learning
 - Computer Vision
-- Robustness
+- Vision-Language Model
+- Robustness, Reliability
 
 # Education to show in About widget
 education:
@@ -54,9 +55,9 @@ social:
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
 # and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: media/resume.pdf
+- icon: cv
+  icon_pack: ai
+  link: static/media/Futa_Waseda_CV_20240527.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "futa-waseda@g.ecc.u-tokyo.ac.jp"
@@ -68,9 +69,10 @@ highlight_name: false
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Futa Waseda is a PhD student in Information Science and Technology at The University of Tokyo. 
+Welcome to my homepage!
+I am Futa Waseda, a PhD student in Information Science and Technology at The University of Tokyo.
 
-I'm interested in artificial intelligence, especially in computer vision. Specifically, I'm working on the problems of robustness and reliability of deep learning-based computer vision. 
+My research focuses on the robustness and reliability of deep learning models.
+I am particularly fascinated by computer vision and vision-language multi-modal learning, aiming to understand and mitigate real-world risks.
 
-
-
+Explore my work and join me in the journey to make AI more reliable and create a better future!

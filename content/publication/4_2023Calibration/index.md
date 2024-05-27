@@ -1,5 +1,5 @@
 ---
-title: "Beyond In-Domain Scenarios: Robust Density-Aware Calibration [ICML 2023]"
+title: "[ICML 2023] Beyond In-Domain Scenarios: Robust Density-Aware Calibration"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

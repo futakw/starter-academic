@@ -74,5 +74,18 @@ experience:
         Research keywords:
         * Deep Learning
         * Computer Vision
-        * Generalization to OOD
+        * Adversarial Robustness
+        * Parameter-Efficient Training
+
+  - title: Research Internship
+    company:  CyberAgent AI Lab
+    company_url: 'https://cyberagent.ai/ailab/'
+    location: Tokyo, Japan.
+    date_start: '2024-02-01'
+    date_end: ''
+    description: |2-
+        Research keywords:
+        * Deep Learning
+        * Vision-Language Models
+        * Adversarial Robustness
 ---
