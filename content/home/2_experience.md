@@ -88,4 +88,15 @@ experience:
         * Deep Learning
         * Vision-Language Models
         * Adversarial Robustness
+
+  - title: Research Internship
+    company:  SB Intuitions
+    company_url: 'https://www.sbintuitions.co.jp/'
+    location: Tokyo, Japan.
+    date_start: '2024-08-19'
+    date_end: ''
+    description: |2-
+        Research keywords:
+        * Deep Learning
+        * Reliable AI
 ---
