@@ -69,10 +69,11 @@ highlight_name: false
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Welcome to my homepage!
-I am Futa Waseda, a PhD student in Information Science and Technology at The University of Tokyo.
+I'm a PhD student in Information Science and Technology at The University of Tokyo.
 
-My research focuses on the robustness and reliability of deep learning models.
-I am particularly fascinated by computer vision and vision-language multi-modal learning, aiming to understand and mitigate real-world risks.
+My research interests are **robustness and reliability of deep learning models**. 
+I have worked on various topics in this field, including post-hoc calibration ([ICML'23](https://arxiv.org/pdf/2302.05118)), understanding adversarial attacks ([WACV'23](https://arxiv.org/abs/2112.14337)), adversarial defenses for computer vision ([ICIP'24](https://arxiv.org/abs/2309.15519), [ICLR'25](https://arxiv.org/abs/2402.14648)), adversarial defenses for vision-language models ([MIRU'24](https://arxiv.org/abs/2405.18770)), protecting IP in deep learning models ([arXiv](https://arxiv.org/abs/2410.08604)), and more.
 
-Explore my work and join me in the journey to make AI more reliable and create a better future!
+<span style="color:red">
+I am actively looking for research positions in the industry or academia starting in 2026. If my research aligns with your interests, I welcome the opportunity to discuss potential collaborations. Please feel free to contact me.
+</span>
