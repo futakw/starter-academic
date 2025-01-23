@@ -1,5 +1,5 @@
 ---
-title: "[arXiv] Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
+title: "[ICIP'24] Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

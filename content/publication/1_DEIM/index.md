@@ -1,5 +1,5 @@
 ---
-title: "[DEIM 2019] 消費者アンケートを活用した飲食店顧客の多面的理解"
+title: "[DEIM'19] 消費者アンケートを活用した飲食店顧客の多面的理解"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

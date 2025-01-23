@@ -72,6 +72,7 @@ highlight_name: false
 I'm a PhD student in Information Science and Technology at The University of Tokyo.
 
 My research interests are **robustness and reliability of deep learning models**. 
+
 I have worked on various topics in this field, including post-hoc calibration ([ICML'23](https://arxiv.org/pdf/2302.05118)), understanding adversarial attacks ([WACV'23](https://arxiv.org/abs/2112.14337)), adversarial defenses for computer vision ([ICIP'24](https://arxiv.org/abs/2309.15519), [ICLR'25](https://arxiv.org/abs/2402.14648)), adversarial defenses for vision-language models ([MIRU'24](https://arxiv.org/abs/2405.18770)), protecting IP in deep learning models ([arXiv](https://arxiv.org/abs/2410.08604)), and more.
 
 <span style="color:red">

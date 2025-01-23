@@ -1,5 +1,5 @@
 ---
-title: "[EEEIC 2020] Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading Market considering uncertainty"
+title: "[EEEIC'20] Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading Market considering uncertainty"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

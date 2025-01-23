@@ -1,5 +1,5 @@
 ---
-title: "[WACV 2023] Closer Look at the Transferability of Adversarial Examples:
+title: "[WACV'23] Closer Look at the Transferability of Adversarial Examples:
 How They Fool Different Models Differently"
 
 # Authors
