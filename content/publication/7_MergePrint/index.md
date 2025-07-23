@@ -5,16 +5,16 @@ title: "[ACL'25 Main] MergePrint: Merge-Resistant Fingerprints for Robust Black-
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Shojiro Yamabe*
-- Futa Waseda*
+- Shojiro Yamabe
+- admin
 - Tsubasa Takahashi
 - Koki Wataoka
 
 # Author notes (optional)
 
-# author_notes:
-# - "Equal contribution"
-# - "Equal contribution"
+author_notes:
+- "Equal contribution"
+- "Equal contribution"
 
 date: "2025-05-16T00:00:00Z"
 doi: ""
