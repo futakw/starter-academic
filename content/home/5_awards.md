@@ -31,6 +31,13 @@ item:
   title: "NII Inose Outstanding Student Award, 2025"
   url: "https://www.nii.ac.jp/en/"
 
+- organization: Meeting on Image Recognition and Understanding (MIRU)
+  organization_url: "https://miru-committee.github.io/miru2024/"
+  date_start: "2024-08-01"
+  description: "Received the MIRU 2024 Student Encouragement Award (MIRU'24 学生奨励賞)."
+  title: "MIRU'24 Student Encouragement Award (MIRU'24 学生奨励賞)"
+  url: "https://miru-committee.github.io/miru2024/"
+
 - organization: SAS Institute Japan
   organization_url: "https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html"
   date_start: "2019-06-01"

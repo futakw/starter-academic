@@ -8,7 +8,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: Selected News
+title: News
 ---
 
 <!-- ### Selected News -->
@@ -32,6 +32,8 @@ title: Selected News
 <!--
 Previous News List (Archived)
 
+- 2026.01: *Reviewed 4 papers for CVPR 2025.*
+- 2025.11: *Reviewed 5 papers for ICLR 2026.*
 - 2024.06: *Reviewed 5 papers for NeurIPS 2025.*
 - 2024.05: *Reviewed 5 papers for ICML 2025.*
 - 2024.08 - (current): Research internship at [**SB Intuitions**](https://www.sbintuitions.co.jp/).
