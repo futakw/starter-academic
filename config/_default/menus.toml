@@ -14,13 +14,13 @@
   weight = 20
 
 [[main]]
-  name = "Experience"
-  url = "#2_experience"
+  name = "Publications"
+  url = "#3_publications"
   weight = 30
 
 [[main]]
-  name = "Publications"
-  url = "#3_publications"
+  name = "Experience"
+  url = "#2_experience"
   weight = 40
 
 [[main]]

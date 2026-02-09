@@ -97,6 +97,11 @@
     transition: transform 160ms ease, box-shadow 160ms ease;
   }
 
+  .experience .card .card-body {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
   .project-card .card,
   .card.course {
     transition: transform 160ms ease, box-shadow 160ms ease;
@@ -124,6 +129,10 @@
 
   .site-footer .powered-by {
     display: none;
+  }
+
+  .theme-dropdown {
+    display: none !important;
   }
 
   .custom-footer {
@@ -436,6 +445,11 @@
   [id="3_publications"] .pub-list-custom:focus-within .pub-list-image {
     transform: scale(1.015);
     filter: saturate(1.03);
+  }
+
+  [id="5_awards"] .card .card-title,
+  [id="6_accomplishments"] .card .card-title {
+    color: #000 !important;
   }
 
   @media (prefers-reduced-motion: no-preference) {
