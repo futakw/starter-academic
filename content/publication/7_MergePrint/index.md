@@ -1,5 +1,5 @@
 ---
-title: "[ACL'25 Main] MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models"
+title: "MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -33,11 +33,15 @@ publication: "ACL 2025 Main"
 publication_short: "ACL 2025 Main"
 
 abstract: "Protecting the intellectual property of Large Language Models (LLMs) has become increasingly critical due to the high cost of training. Model merging, which integrates multiple expert models into a single multi-task model, introduces a novel risk of unauthorized use of LLMs due to its efficient merging process. While fingerprinting techniques have been proposed for verifying model ownership, their resistance to model merging remains unexplored. To address this gap, we propose a novel fingerprinting method, MergePrint, which embeds robust fingerprints capable of surviving model merging. MergePrint enables black-box ownership verification, where owners only need to check if a model produces target outputs for specific fingerprint inputs, without accessing model weights or intermediate outputs. By optimizing against a pseudo-merged model that simulates merged behavior, MergePrint ensures fingerprints that remain detectable after merging. Additionally, to minimize performance degradation, we pre-optimize the fingerprint inputs. MergePrint pioneers a practical solution for black-box ownership verification, protecting LLMs from misappropriation via merging, while also excelling in resistance to broader model theft threats."
+highlights:
+- Proposed MergePrint for merge-resistant fingerprinting of LLM ownership.
+- Enabled black-box verification without requiring model internals.
+- Preserved fingerprint detectability after model merging with limited utility loss.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: []
+tags: ["recent"]
 
 # Display this page in the Featured widget?
 featured: false

@@ -1,5 +1,5 @@
 ---
-title: "[EEEIC'20] Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading Market considering uncertainty"
+title: "Bidding Agent for Electric Vehicles in Peer-to-Peer Electricity Trading Market considering uncertainty"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -31,6 +31,10 @@ publication: 2020 IEEE International Conference on Environment and Electrical En
 publication_short: EEEIC 2020
 
 abstract: It is a problem that as the spread of solar power generation expands, the net power demand sharply fluctuates between day and night. The P2P (Peer to Peer) Electricity Market is expected to be a solution when accumulator-users play an important role. In such background, widespread EVs are expected to participate in the P2P market and utilize the battery storage. However, in previous research, only simulation and effect verification under an ideal condition were conducted and no EV bidding agent which works in the real situation was proposed. Therefore, in this paper, a whole system of a robust automatic bidding agent of EV which works in the real situation is proposed, and case studies based on the actual EV driving data were conducted. The results show that even EVs are running irregularly, proposed EV bidding agent was able to realize benefits for EV-users and leveling effect of the power demand through the day.
+highlights:
+- Proposed a robust EV bidding agent for real-world P2P electricity trading.
+- Validated with actual EV driving logs, not only idealized simulations.
+- Improved user-side benefits while smoothing day-night demand fluctuations.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.

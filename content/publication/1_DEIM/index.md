@@ -1,5 +1,5 @@
 ---
-title: "[DEIM'19] 消費者アンケートを活用した飲食店顧客の多面的理解"
+title: "消費者アンケートを活用した飲食店顧客の多面的理解"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -35,6 +35,10 @@ publication: 第11回データ工学と情報マネジメントに関するフ�
 publication_short: DEIM 2019
 
 abstract: ビッグデータの分析を通じた消費者の趣味嗜好の理解とそれによる効率的な顧客獲得が広く試みられてい る。顧客の年齢・職業といった基本情報や購買履歴の分析から得られる情報は効果的であるが、多様な消費者の嗜 好を考慮すると、より多角的な視点からの消費者の購買心理の理解が必要である。本研究では、消費者の基本情報・ 内面・価値観・行動に関する計 2000 項目ほどの多角的なアンケートデータから「飲食店への来店頻度」を予測する タスクを通じて、各サービスを利用する消費者に特有の特徴量の集合の抽出を行った。結果、飲食店の購買データ のみではできるはずのなかった新たな視点からの消費者嗜好の把握が可能となり、また飲食店ごとに特徴的な消費 者層の把握が可能となった。本研究の結果は、マーケティングにおける消費者の情報収集を検討するうえでの重要 な示唆となる。
+highlights:
+- 約2000項目の多面的アンケート特徴を活用して来店頻度を予測。
+- 購買履歴だけでは得られない顧客嗜好の構造を抽出。
+- 店舗ごとの特徴的な顧客層の理解につながる知見を提示。
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.

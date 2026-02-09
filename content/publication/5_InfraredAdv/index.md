@@ -1,5 +1,5 @@
 ---
-title: "[ICIP'24] Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
+title: "Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -34,11 +34,15 @@ publication: "ICIP 2024"
 publication_short: "ICIP 2024"
 
 abstract: "Infrared detection is an emerging technique for safety-critical tasks owing to its remarkable anti-interference capability. However, recent studies have revealed that it is vulnerable to physically-realizable adversarial patches, posing risks in its real-world applications. To address this problem, we are the first to investigate defense strategies against adversarial patch attacks on infrared detection, especially human detection. We have devised a straightforward defense strategy, patch-based occlusion-aware detection (POD), which efficiently augments training samples with random patches and subsequently detects them. POD not only robustly detects people but also identifies adversarial patch locations. Surprisingly, while being extremely computationally efficient, POD easily generalizes to state-of-the-art adversarial patch attacks that are unseen during training. Furthermore, POD improves detection precision even in a clean (i.e., no-patch) situation due to the data augmentation effect. Evaluation demonstrated that POD is robust to adversarial patches of various shapes and sizes. The effectiveness of our baseline approach is shown to be a viable defense mechanism for real-world infrared human detection systems, paving the way for exploring future research directions."
+highlights:
+- First defense study for physical adversarial patches in infrared human detection.
+- Proposed POD, an efficient patch-aware training and detection strategy.
+- Achieved strong robustness to unseen patch attacks while improving clean precision.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: []
+tags: ["recent"]
 
 # Display this page in the Featured widget?
 featured: false

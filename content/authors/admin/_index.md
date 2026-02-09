@@ -6,7 +6,7 @@ title: Futa (Kai) Waseda
 superuser: true
 
 # Role/position/tagline
-role: PhD Student in Information Science and Technology
+role: "PhD Candidate | Trustworthy AI: Robustness, Reliability, and VLM Defense"
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -48,19 +48,19 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/futakw
-# - icon: linkedin
-#   icon_pack: fab
-  # link: https://www.linkedin.com/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/futa-waseda/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: media/Futa_Waseda_CV_202407.pdf
+  link: media/Futa_Waseda_CV_202501.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "futa-waseda@g.ecc.u-tokyo.ac.jp"
+email: "futa-waseda@nii.ac.jp"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -69,12 +69,11 @@ highlight_name: false
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-I'm a PhD student in Information Science and Technology at The University of Tokyo.
+I study **Trustworthy AI**, focusing on adversarial robustness and reliable generalization.
 
-My research interests are **robustness and reliability of deep learning models**. 
+I approach this from **mechanism to deployment**: I analyze why models fail under adversarial perturbation ([WACV'23](https://arxiv.org/abs/2112.14337)), design robust training and defense methods for computer vision ([ICIP'24](https://arxiv.org/abs/2309.15519), [ICLR'25](https://arxiv.org/abs/2402.14648)), and extend these ideas to vision-language systems ([WACV'26](https://arxiv.org/abs/2405.18770), [ACMMM'25](https://arxiv.org/abs/2507.16257)).
+I also work on complementary reliability and security topics, including post-hoc calibration ([ICML'23](https://arxiv.org/pdf/2302.05118)) and model IP protection ([ACL'25 Main](https://arxiv.org/abs/2410.08604v4)).
 
-I have worked on various topics in this field, including post-hoc calibration ([ICML'23](https://arxiv.org/pdf/2302.05118)), understanding adversarial attacks ([WACV'23](https://arxiv.org/abs/2112.14337)), adversarial defenses for computer vision ([ICIP'24](https://arxiv.org/abs/2309.15519), [ICLR'25](https://arxiv.org/abs/2402.14648)), adversarial defenses for vision-language models ([MIRU'25 Oral](https://arxiv.org/abs/2405.18770), [ACMMM'25](https://arxiv.org/abs/2507.16257])), protecting IP in deep learning models ([ACL'25 Main](https://arxiv.org/abs/2410.08604v4)), and more.
-
-<span style="color:red">
+<!-- <span style="color:red">
 I am actively looking for research positions in the industry or academia starting in 2026. If my research aligns with your interests, I welcome the opportunity to discuss potential collaborations. Please feel free to contact me.
-</span>
+</span> -->

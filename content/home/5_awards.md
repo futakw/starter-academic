@@ -24,6 +24,13 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
 
+- organization: National Institute of Informatics (NII)
+  organization_url: "https://www.nii.ac.jp/en/"
+  date_start: "2025-09-01"
+  description: "Received the NII Inose Outstanding Student Award (NII猪瀬優秀学生賞)."
+  title: "NII Inose Outstanding Student Award, 2025"
+  url: "https://www.nii.ac.jp/en/"
+
 - organization: SAS Institute Japan
   organization_url: "https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html"
   date_start: "2019-06-01"

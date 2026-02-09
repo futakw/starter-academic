@@ -23,7 +23,7 @@ content:
   order: desc
   # Filter on criteria
   filters:
-    tag: ''
+    tag: 'recent'
     category: ''
     publication_type: ''
     author: ''
@@ -34,9 +34,15 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 3
+  view: 1
 ---
 
-{{% callout note %}}
+{{% callout tip %}}
+**Research strengths**
+
+- Defenses for visual and vision-language models under adversarial settings.
+- Reliable generalization via calibration and robustness analysis.
+- Practical security themes, including model IP protection.
+
 See all [publications](./publication/).
 {{% /callout %}}

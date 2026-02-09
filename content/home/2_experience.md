@@ -28,11 +28,7 @@ experience:
     location: Tokyo, Japan
     date_start: '2020-05-01'
     date_end: ''
-    description: |2-
-        Responsibilities include:
-        * Researcher
-        * Data Scientist
-        * Software Engineer 
+    description: "Worked as a researcher, data scientist, and software engineer."
 
   - title: Masters Student
     company:  The University of Tokyo
@@ -40,8 +36,7 @@ experience:
     location: Tokyo, Japan
     date_start: '2020-04-01'
     date_end: '2023-03-23'
-    description: |2-
-        Supervised by Prof. Isao Echizen.
+    description: "Supervised by Prof. Isao Echizen."
 
   - title: Research Assistant
     company:  National Institute of Informatics
@@ -49,11 +44,7 @@ experience:
     location: Tokyo, Japan.
     date_start: '2020-05-01'
     date_end: ''
-    description: |2-
-        Research keywords:
-        * Deep Learning
-        * Computer Vision
-        * Adversarial Robustness
+    description: "Research focus: deep learning, computer vision, and adversarial robustness."
 
   - title: Exchange Student
     company:  Technical University of Munich
@@ -61,8 +52,7 @@ experience:
     location: Munich, Germany.
     date_start: '2021-04-01'
     date_end: '2022-03-15'
-    description: |2-
-        Conducted research, supervised by Christian Tomani.
+    description: "Research on post-hoc calibration, supervised by Christian Tomani."
 
   - title: Research Internship
     company:  NEC Corporation
@@ -70,33 +60,37 @@ experience:
     location: Tokyo, Japan.
     date_start: '2023-08-16'
     date_end: '2023-12-15'
-    description: |2-
-        Research keywords:
-        * Deep Learning
-        * Computer Vision
-        * Adversarial Robustness
-        * Parameter-Efficient Training
+    description: "Research focus: deep learning, computer vision, adversarial robustness, and parameter-efficient training."
 
   - title: Research Internship
     company:  CyberAgent AI Lab
     company_url: 'https://cyberagent.ai/ailab/'
     location: Tokyo, Japan.
     date_start: '2024-02-01'
+    date_end: '2026-01-31'
+    description: "Research focus: deep learning, vision-language models, and adversarial robustness."
+
+  - title: Technical advisor
+    company:  Madori LABO（まどりLABO）
+    company_url: 'https://madori-labo.com'
+    location: Tokyo, Japan.
+    date_start: '2023-04-01'
     date_end: ''
-    description: |2-
-        Research keywords:
-        * Deep Learning
-        * Vision-Language Models
-        * Adversarial Robustness
+    description: "Co-founding engineer (pre-CTO) at a startup building an AI-driven floor-plan design assistant."
 
   - title: Research Internship
     company:  SB Intuitions
     company_url: 'https://www.sbintuitions.co.jp/'
     location: Tokyo, Japan.
     date_start: '2024-08-19'
+    date_end: '2025-08-01'
+    description: "Research focus: LLM's IP protection."
+
+  - title: Research Internship
+    company:  Turing
+    company_url: 'https://tur.ing/en'
+    location: Tokyo, Japan.
+    date_start: '2025-04-01'
     date_end: ''
-    description: |2-
-        Research keywords:
-        * Deep Learning
-        * Reliable AI
+    description: "Research focus: reliable vision-language models."
 ---

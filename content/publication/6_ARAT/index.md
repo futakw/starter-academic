@@ -1,5 +1,5 @@
 ---
-title: "[ICLR'25] Rethinking Invariance Regularization in Adversarial Training to Improve Robustness-Accuracy Trade-off"
+title: "Rethinking Invariance Regularization in Adversarial Training to Improve Robustness-Accuracy Trade-off"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -32,11 +32,15 @@ publication: "ICLR 2025"
 publication_short: "ICLR 2025"
 
 abstract: "Although adversarial training has been the state-of-the-art approach to defend against adversarial examples (AEs), it suffers from a robustness-accuracy trade-off, where high robustness is achieved at the cost of clean accuracy. In this work, we leverage invariance regularization on latent representations to learn discriminative yet adversarially invariant representations, aiming to mitigate this trade-off. We analyze two key issues in representation learning with invariance regularization: (1) a gradient conflict between invariance loss and classification objectives, leading to suboptimal convergence, and (2) the mixture distribution problem arising from diverged distributions of clean and adversarial inputs. To address these issues, we propose Asymmetrically Representation-regularized Adversarial Training (AR-AT), which incorporates asymmetric invariance loss with stop-gradient operation and a predictor to improve the convergence, and a split-BatchNorm (BN) structure to resolve the mixture distribution problem. Our method significantly improves the robustness-accuracy trade-off by learning adversarially invariant representations without sacrificing discriminative ability. Furthermore, we discuss the relevance of our findings to knowledge-distillation-based defense methods, contributing to a deeper understanding of their relative successes."
+highlights:
+- Revisited invariance regularization to improve the robustness-accuracy trade-off.
+- Proposed AR-AT with asymmetric loss, stop-gradient, predictor, and split-BN.
+- Learned adversarially invariant yet discriminative representations more effectively.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: []
+tags: ["recent"]
 
 # Display this page in the Featured widget?
 featured: false
