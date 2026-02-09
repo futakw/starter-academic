@@ -7,7 +7,7 @@ authors:
 - Antonio Tejero-de-Pablos
 - Isao Echizen
 
-date: "2025-11-01T00:00:00Z"
+date: "2026-03-06T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).

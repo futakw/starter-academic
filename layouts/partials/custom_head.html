@@ -17,6 +17,7 @@
     border-radius: 12px;
     background: #fffdf8;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 170ms ease, box-shadow 170ms ease, border-color 170ms ease;
   }
 
   .pub-list-image {
@@ -25,6 +26,8 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     object-fit: cover;
     margin-bottom: 0.75rem;
+    transform: translateZ(0);
+    transition: transform 220ms ease, filter 220ms ease;
   }
 
   .pub-highlights {
@@ -91,17 +94,322 @@
 
   .experience .card {
     margin-bottom: 0.6rem;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+
+  .project-card .card,
+  .card.course {
+    transition: transform 160ms ease, box-shadow 160ms ease;
   }
 
   .home-section {
     padding-top: 48px;
     padding-bottom: 48px;
+    position: relative;
+  }
+
+  .page-footer {
+    background: #efe3de;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+  }
+
+  .page-footer .container {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer .powered-by {
+    display: none;
+  }
+
+  .custom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .custom-footer-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.72);
+  }
+
+  .custom-footer-icons {
+    display: inline-flex;
+    gap: 0.85rem;
+    align-items: center;
+  }
+
+  .custom-footer-icons a {
+    color: rgba(0, 0, 0, 0.68);
+    font-size: 1.25rem;
+    line-height: 1;
+    transition: transform 120ms ease, color 120ms ease;
+  }
+
+  .custom-footer-icons a:hover,
+  .custom-footer-icons a:focus-visible {
+    color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-1px);
+  }
+
+  .custom-footer-copy {
+    margin: 2.5rem 0 0;
+    font-size: 0.78rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.56);
+  }
+
+
+  .btn.btn-outline-primary,
+  .network-icon a,
+  a.nav-link[href*="/media/Futa_Waseda_CV_"] {
+    transition: transform 110ms ease, box-shadow 110ms ease, background-color 110ms ease, color 110ms ease;
+    will-change: transform;
+  }
+
+  .btn.btn-outline-primary:hover,
+  .btn.btn-outline-primary:focus-visible,
+  .network-icon a:hover,
+  .network-icon a:focus-visible,
+  a.nav-link[href*="/media/Futa_Waseda_CV_"]:hover,
+  a.nav-link[href*="/media/Futa_Waseda_CV_"]:focus-visible {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .network-icon li {
+    position: relative;
+  }
+
+  .network-icon a[data-icon-label]::after {
+    content: attr(data-icon-label);
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: translateX(-50%);
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.64rem;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: #fff;
+    background: rgba(36, 41, 46, 0.92);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 140ms ease, transform 140ms ease;
+    white-space: nowrap;
+  }
+
+  .network-icon a[data-icon-label]:hover::after,
+  .network-icon a[data-icon-label]:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .email-copy-btn {
+    position: relative;
+  }
+
+  .dark .alert-tip {
+    color: rgba(255, 244, 220, 0.9);
+    background-color: rgba(68, 55, 29, 0.9);
+    border-color: rgba(197, 158, 83, 0.85);
+  }
+
+  .dark div.alert-tip > div:first-child::before {
+    color: rgba(255, 214, 128, 0.95);
+  }
+
+  .dark .alert-tip a {
+    color: rgba(255, 231, 185, 0.95);
+  }
+
+  .email-copy-btn .copy-toast {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.35rem);
+    transform: translateX(-50%);
+    padding: 0.22rem 0.5rem;
+    border-radius: 7px;
+    font-size: 0.62rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(31, 95, 111, 0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 140ms ease;
+    white-space: nowrap;
+  }
+
+  .email-copy-btn.is-copied .copy-toast {
+    opacity: 1;
+  }
+
+  .dark .email-copy-btn .copy-toast {
+    color: #e9f7fc;
+    background: rgba(41, 120, 140, 0.95);
+  }
+
+  .dark .network-icon a[data-icon-label]::after {
+    color: #0f1215;
+    background: rgba(236, 240, 244, 0.95);
+  }
+
+  .dark .pub-list-custom {
+    background: #343a40;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .dark .pub-list-custom .article-title a,
+  .dark .pub-list-custom .article-metadata,
+  .dark .pub-list-custom .pub-highlights li,
+  .dark .pub-list-custom .pub-date {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .dark .page-footer {
+    background: #1e2029;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .dark .custom-footer-title {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .dark .custom-footer-icons a {
+    color: rgba(255, 255, 255, 0.74);
+  }
+
+  .dark .custom-footer-icons a:hover,
+  .dark .custom-footer-icons a:focus-visible {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .dark .custom-footer-copy {
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  .bio-top-banner {
+    width: 100%;
+    height: 260px;
+    margin: 0 0 1.35rem;
+    background-image:
+      linear-gradient(180deg, rgba(8, 20, 28, 0.2) 0%, rgba(8, 20, 28, 0.42) 100%),
+      url('/media/wave_6.svg');
+    background-size: cover;
+    background-position: center 44%;
+    background-repeat: no-repeat;
+  }
+
+  [id="0_about"].home-section {
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+    min-height: calc(100vh - 70px);
+  }
+
+  [id="0_about"] > .container {
+    min-height: calc(100vh - 70px - 260px);
+    display: flex;
+    align-items: flex-start;
+  }
+
+  [id="0_about"] > .container > .row {
+    width: 100%;
+  }
+
+  [id="0_about"] #profile {
+    margin-top: -140px;
+    padding-top: 0;
+  }
+
+  [id="0_about"] #profile .avatar {
+    box-shadow: 0 0 0 9px #e2d4d0;
+  }
+
+  [id="0_about"] .article-style a {
+    color: rgba(0, 0, 0, 0.58);
+  }
+
+  [id="0_about"] .article-style a:hover,
+  [id="0_about"] .article-style a:focus-visible {
+    color: rgba(0, 0, 0, 0.74);
+  }
+
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .scroll-progress__bar {
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    background: linear-gradient(90deg, #9b5f00 0%, #d28a19 45%, #f2c96d 100%);
+    box-shadow: 0 0 14px rgba(210, 138, 25, 0.35);
   }
 
   @media (max-width: 768px) {
     .home-section {
       padding-top: 36px;
       padding-bottom: 36px;
+    }
+
+    .bio-top-banner {
+      height: 170px;
+      margin: 0 0 1rem;
+    }
+
+    [id="0_about"].home-section {
+      padding-bottom: 36px !important;
+      min-height: calc(100vh - 50px);
+    }
+
+    [id="0_about"] > .container {
+      min-height: calc(100vh - 50px - 170px);
+    }
+
+    [id="0_about"] #profile {
+      margin-top: -90px;
+    }
+
+    [id="0_about"] #profile .avatar {
+      box-shadow: 0 0 0 7px #e2d4d0;
+    }
+  }
+
+  .dark [id="0_about"] #profile .avatar {
+    box-shadow: 0 0 0 9px #272935;
+  }
+
+  .dark [id="0_about"] .article-style a {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .dark [id="0_about"] .article-style a:hover,
+  .dark [id="0_about"] .article-style a:focus-visible {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (max-width: 768px) {
+    .dark [id="0_about"] #profile .avatar {
+      box-shadow: 0 0 0 7px #272935;
     }
   }
 
@@ -110,4 +418,354 @@
       margin-bottom: 0;
     }
   }
+
+  .home-section .card:hover,
+  .home-section .card:focus-within {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+  }
+
+  [id="3_publications"] .pub-list-custom:hover,
+  [id="3_publications"] .pub-list-custom:focus-within {
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(106, 75, 0, 0.24);
+    box-shadow: 0 10px 26px rgba(80, 58, 20, 0.14);
+  }
+
+  [id="3_publications"] .pub-list-custom:hover .pub-list-image,
+  [id="3_publications"] .pub-list-custom:focus-within .pub-list-image {
+    transform: scale(1.015);
+    filter: saturate(1.03);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .js-reveal-item {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 520ms ease, transform 520ms ease;
+      will-change: opacity, transform;
+    }
+
+    .js-reveal-item.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .js-hero-item {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 560ms ease, transform 560ms ease;
+      will-change: opacity, transform;
+    }
+
+    .js-hero-item.is-ready {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pub-list-custom,
+    .pub-list-image,
+    .scroll-progress__bar,
+    .btn.btn-outline-primary,
+    .network-icon a,
+    a.nav-link[href*="/media/Futa_Waseda_CV_"] {
+      transition: none !important;
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    initScrollProgress();
+    useOriginalProfileImage();
+    initCopyEmailIcon();
+    initIconLabels();
+    initBioTopBanner();
+    initCustomFooter();
+    initHeroEntrance(reducedMotion);
+    initMagneticButtons(reducedMotion);
+
+    if (reducedMotion || !('IntersectionObserver' in window)) return;
+
+    var sections = Array.prototype.slice.call(
+      document.querySelectorAll('.page-body .home-section')
+    );
+
+    if (!sections.length) return;
+
+    var itemObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        // Keep stagger only for first reveal; remove delay so hover responds instantly.
+        entry.target.style.transitionDelay = '0ms';
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+
+    sections.forEach(function (section) {
+      var items = section.querySelectorAll(
+        '.card,' +
+        '.pub-list-custom,' +
+        '.project-card,' +
+        '.media.stream-item,' +
+        '#profile,' +
+        '.ul-edu li,' +
+        '.ul-interests li,' +
+        '.network-icon li'
+      );
+
+      items.forEach(function (item, idx) {
+        if (item.classList.contains('js-hero-item')) return;
+        item.classList.add('js-reveal-item');
+        item.style.transitionDelay = Math.min(idx * 70, 420) + 'ms';
+        itemObserver.observe(item);
+      });
+    });
+
+    function initScrollProgress() {
+      var progress = document.createElement('div');
+      progress.className = 'scroll-progress';
+
+      var bar = document.createElement('div');
+      bar.className = 'scroll-progress__bar';
+      progress.appendChild(bar);
+      document.body.appendChild(progress);
+
+      var ticking = false;
+
+      function update() {
+        var doc = document.documentElement;
+        var max = doc.scrollHeight - window.innerHeight;
+        var ratio = max > 0 ? window.scrollY / max : 0;
+        var clamped = Math.min(Math.max(ratio, 0), 1);
+        bar.style.transform = 'scaleX(' + clamped + ')';
+        ticking = false;
+      }
+
+      function requestTick() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+
+      update();
+      window.addEventListener('scroll', requestTick, { passive: true });
+      window.addEventListener('resize', requestTick);
+    }
+
+    function useOriginalProfileImage() {
+      var avatar = document.querySelector('#profile img.avatar');
+      if (!avatar) return;
+      avatar.src = '/media/suits_cropped.png';
+      avatar.removeAttribute('srcset');
+    }
+
+    function initCopyEmailIcon() {
+      var profile = document.getElementById('profile');
+      if (!profile) return;
+      var iconList = profile.querySelector('.network-icon');
+      if (!iconList) return;
+      if (iconList.querySelector('.email-copy-btn')) return;
+
+      var email = 'futa-waseda@nii.ac.jp';
+      var item = document.createElement('li');
+      item.className = 'email-copy-btn';
+
+      var button = document.createElement('a');
+      button.href = '#';
+      button.setAttribute('aria-label', 'copy email');
+      button.setAttribute('title', 'Copy email');
+      button.innerHTML = '<i class="fas fa-envelope big-icon"></i>';
+
+      var toast = document.createElement('span');
+      toast.className = 'copy-toast';
+      toast.textContent = 'Copied';
+
+      item.appendChild(button);
+      item.appendChild(toast);
+
+      var cvLink = iconList.querySelector('a[aria-label="cv"]');
+      if (cvLink && cvLink.parentElement && cvLink.parentElement.nextSibling) {
+        iconList.insertBefore(item, cvLink.parentElement.nextSibling);
+      } else if (cvLink && cvLink.parentElement) {
+        iconList.appendChild(item);
+      } else {
+        iconList.appendChild(item);
+      }
+
+      var hideTimer = null;
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        copyText(email);
+      });
+
+      function copyText(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+            fallbackCopy(text);
+          });
+          return;
+        }
+        fallbackCopy(text);
+      }
+
+      function fallbackCopy(text) {
+        var temp = document.createElement('textarea');
+        temp.value = text;
+        temp.setAttribute('readonly', '');
+        temp.style.position = 'absolute';
+        temp.style.left = '-9999px';
+        document.body.appendChild(temp);
+        temp.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(temp);
+        showCopied();
+      }
+
+      function showCopied() {
+        item.classList.add('is-copied');
+        if (hideTimer) window.clearTimeout(hideTimer);
+        hideTimer = window.setTimeout(function () {
+          item.classList.remove('is-copied');
+        }, 900);
+      }
+    }
+
+    function initIconLabels() {
+      var labelMap = {
+        'twitter': 'Twitter',
+        'graduation-cap': 'Google Scholar',
+        'github': 'GitHub',
+        'linkedin': 'LinkedIn',
+        'cv': 'CV',
+        'copy email': 'Email'
+      };
+
+      var links = document.querySelectorAll('#profile .network-icon a[aria-label]');
+      links.forEach(function (link) {
+        var key = (link.getAttribute('aria-label') || '').toLowerCase().trim();
+        if (!key) return;
+        link.setAttribute('data-icon-label', labelMap[key] || key);
+      });
+    }
+
+    function initBioTopBanner() {
+      var about = document.getElementById('0_about');
+      if (!about) return;
+      if (about.querySelector('.bio-top-banner')) return;
+
+      var container = about.querySelector(':scope > .container');
+      if (!container) return;
+
+      var banner = document.createElement('div');
+      banner.className = 'bio-top-banner';
+      container.insertAdjacentElement('beforebegin', banner);
+    }
+
+    function initCustomFooter() {
+      var footer = document.querySelector('.page-footer .site-footer');
+      if (!footer) return;
+
+      var year = new Date().getFullYear();
+      footer.innerHTML =
+        '<div class="custom-footer">' +
+          '<p class="custom-footer-title">Let&apos;s get in touch!</p>' +
+          '<div class="custom-footer-icons">' +
+            '<a href="https://www.linkedin.com/in/futa-waseda/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>' +
+            '<a href="https://twitter.com/futakw" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
+            '<a href="mailto:futa-waseda@nii.ac.jp" aria-label="Email"><i class="fas fa-envelope"></i></a>' +
+          '</div>' +
+          '<p class="custom-footer-copy">&copy; ' + year + ' Futa Waseda</p>' +
+        '</div>';
+    }
+
+    function initHeroEntrance(isReduced) {
+      var about = document.getElementById('0_about');
+      if (!about) return;
+
+      var heroItems = about.querySelectorAll(
+        '#profile .avatar,' +
+        '#profile .portrait-title,' +
+        '#profile .network-icon,' +
+        '.article-style,' +
+        '.ul-interests,' +
+        '.ul-edu'
+      );
+
+      if (!heroItems.length) return;
+
+      heroItems.forEach(function (item) {
+        item.classList.add('js-hero-item');
+      });
+
+      if (isReduced) {
+        heroItems.forEach(function (item) { item.classList.add('is-ready'); });
+        return;
+      }
+
+      var key = 'heroEntrancePlayed_v1';
+      var hasPlayed = false;
+      try {
+        hasPlayed = window.sessionStorage.getItem(key) === '1';
+      } catch (e) {
+        hasPlayed = false;
+      }
+
+      if (hasPlayed) {
+        heroItems.forEach(function (item) { item.classList.add('is-ready'); });
+        return;
+      }
+
+      heroItems.forEach(function (item, idx) {
+        item.style.transitionDelay = (120 + idx * 90) + 'ms';
+      });
+
+      window.requestAnimationFrame(function () {
+        heroItems.forEach(function (item) { item.classList.add('is-ready'); });
+      });
+
+      try {
+        window.sessionStorage.setItem(key, '1');
+      } catch (e) {}
+    }
+
+    function initMagneticButtons(isReduced) {
+      if (isReduced) return;
+
+      var buttons = document.querySelectorAll(
+        '.btn.btn-outline-primary, .network-icon a, a.nav-link[href*="/media/Futa_Waseda_CV_"]'
+      );
+
+      buttons.forEach(function (button) {
+        button.addEventListener('mouseenter', function () {
+          button.style.transitionDuration = '0ms';
+        });
+
+        button.addEventListener('mousemove', function (event) {
+          var rect = button.getBoundingClientRect();
+          var relX = (event.clientX - rect.left) / rect.width - 0.5;
+          var relY = (event.clientY - rect.top) / rect.height - 0.5;
+          var moveX = relX * 6;
+          var moveY = relY * 6;
+          button.style.transform = 'translate(' + moveX.toFixed(2) + 'px, ' + moveY.toFixed(2) + 'px)';
+        });
+
+        button.addEventListener('mouseleave', function () {
+          button.style.transitionDuration = '';
+          button.style.transform = '';
+        });
+
+        button.addEventListener('blur', function () {
+          button.style.transitionDuration = '';
+          button.style.transform = '';
+        });
+      });
+    }
+
+  });
+</script>
