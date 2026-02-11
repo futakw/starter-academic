@@ -132,10 +132,6 @@
     display: none;
   }
 
-  .theme-dropdown {
-    display: none !important;
-  }
-
   .custom-footer {
     display: flex;
     flex-direction: column;
@@ -231,6 +227,27 @@
     position: relative;
   }
 
+  .experience-company-logo {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.45rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: rgba(255, 255, 255, 0.92);
+    overflow: hidden;
+    vertical-align: text-bottom;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
   .dark .alert-tip {
     color: rgba(255, 244, 220, 0.9);
     background-color: rgba(68, 55, 29, 0.9);
@@ -277,6 +294,11 @@
   .dark .network-icon a[data-icon-label]::after {
     color: #0f1215;
     background: rgba(236, 240, 244, 0.95);
+  }
+
+  .dark .experience-company-logo {
+    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(36, 41, 48, 0.9);
   }
 
   .dark .pub-list-custom {
@@ -327,6 +349,12 @@
     background-size: cover;
     background-position: center 44%;
     background-repeat: no-repeat;
+  }
+
+  .dark .bio-top-banner {
+    background-image:
+      linear-gradient(180deg, rgba(10, 16, 24, 0.32) 0%, rgba(10, 16, 24, 0.58) 100%),
+      url('/media/wave_6_dark.svg');
   }
 
   .bio-top-banner::after {
@@ -471,6 +499,18 @@
     color: #000 !important;
   }
 
+  .dark [id="2_experience"] .card .card-title,
+  .dark [id="2_experience"] .card .card-title a,
+  .dark [id="2_experience"] .card h4 a,
+  .dark [id="5_awards"] .card .card-title,
+  .dark [id="5_awards"] .card .card-title a,
+  .dark [id="5_awards"] .card h4 a,
+  .dark [id="6_accomplishments"] .card .card-title,
+  .dark [id="6_accomplishments"] .card .card-title a,
+  .dark [id="6_accomplishments"] .card h4 a {
+    color: #fff !important;
+  }
+
   .js-reveal-item {
     opacity: 0;
     transform: translateY(18px);
@@ -596,6 +636,7 @@
     useOriginalProfileImage();
     initCopyEmailIcon();
     initIconLabels();
+    initExperienceLogos();
     initBioTopBanner();
     initCustomFooter();
     initHeroEntrance(reducedMotion);
@@ -763,6 +804,49 @@
         var key = (link.getAttribute('aria-label') || '').toLowerCase().trim();
         if (!key) return;
         link.setAttribute('data-icon-label', labelMap[key] || key);
+      });
+    }
+
+    function initExperienceLogos() {
+      var section = document.getElementById('2_experience');
+      if (!section) return;
+
+      // Only local files should be referenced here (officially distributable logos only).
+      // Add files under /static/media/experience-logos/ and map by company URL host.
+      var logoByHost = {
+        // 'www.nec.com': '/media/experience-logos/nec.svg',
+        // 'cyberagent.ai': '/media/experience-logos/cyberagent.svg',
+      };
+
+      var companyLinks = section.querySelectorAll('.exp-company a[href]');
+      companyLinks.forEach(function (link) {
+        if (link.querySelector('.experience-company-logo')) return;
+
+        var host = '';
+        try {
+          host = new URL(link.href).hostname.replace(/^www\./, '');
+        } catch (e) {
+          return;
+        }
+
+        var logoPath = logoByHost[host] || logoByHost['www.' + host];
+        if (!logoPath) return;
+
+        var iconWrap = document.createElement('span');
+        iconWrap.className = 'experience-company-logo';
+        iconWrap.setAttribute('aria-hidden', 'true');
+
+        var img = document.createElement('img');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.alt = '';
+        img.src = logoPath;
+        img.addEventListener('error', function () {
+          iconWrap.remove();
+        });
+
+        iconWrap.appendChild(img);
+        link.insertBefore(iconWrap, link.firstChild);
       });
     }
 

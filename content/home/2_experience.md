@@ -30,14 +30,6 @@ experience:
     date_end: ''
     description: "Started as a machine learning engineer and now provide technical guidance from a researcher's perspective."
 
-  - title: Masters Student
-    company:  The University of Tokyo
-    company_url: ''
-    location: Tokyo, Japan
-    date_start: '2020-04-01'
-    date_end: '2023-03-23'
-    description: "Supervised by Prof. Isao Echizen."
-
   - title: Research Assistant
     company:  National Institute of Informatics
     company_url: 'https://www.nii.ac.jp/en/'
@@ -45,14 +37,6 @@ experience:
     date_start: '2020-05-01'
     date_end: ''
     description: "Research focus: deep learning, computer vision, and adversarial robustness."
-
-  - title: Exchange Student
-    company:  Technical University of Munich
-    company_url: ''
-    location: Munich, Germany.
-    date_start: '2021-04-01'
-    date_end: '2022-03-15'
-    description: "Research on post-hoc calibration, supervised by Christian Tomani."
 
   - title: Research Internship
     company:  NEC Corporation
