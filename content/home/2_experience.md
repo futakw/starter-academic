@@ -22,13 +22,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Machine learning Engineer
+  - title: Technical Advisor
     company: Ollo inc.
     company_url: 'https://www.ollo.tech/'
     location: Tokyo, Japan
     date_start: '2020-05-01'
     date_end: ''
-    description: "Worked as a researcher, data scientist, and software engineer."
+    description: "Started as a machine learning engineer and now provide technical guidance from a researcher's perspective."
 
   - title: Masters Student
     company:  The University of Tokyo
@@ -70,13 +70,13 @@ experience:
     date_end: '2026-01-31'
     description: "Research focus: deep learning, vision-language models, and adversarial robustness."
 
-  - title: Technical advisor
+  - title: CTO
     company:  Madori LABO（まどりLABO）
     company_url: 'https://madori-labo.com'
     location: Tokyo, Japan.
     date_start: '2023-04-01'
     date_end: ''
-    description: "Co-founding engineer (pre-CTO) at a startup building an AI-driven floor-plan design assistant."
+    description: "Co-founding engineer at a startup building an AI-driven floor-plan design assistant."
 
   - title: Research Internship
     company:  SB Intuitions

@@ -28,7 +28,7 @@ item:
   organization_url: "https://www.nii.ac.jp/en/"
   date_start: "2025-09-01"
   description: "Received the NII Inose Outstanding Student Award (NII猪瀬優秀学生賞)."
-  title: "NII Inose Outstanding Student Award, 2025"
+  title: "NII Inose Outstanding Student Award (NII猪瀬優秀学生賞), 2025"
   url: "https://www.nii.ac.jp/en/"
 
 - organization: Meeting on Image Recognition and Understanding (MIRU)
@@ -43,13 +43,13 @@ item:
   date_start: "2019-06-01"
   description: "In the contest, participants were given data and asked to construct machine learning system with high accuracy. 
     (article url: https://enterprisezine.jp/article/detail/12209?p=2)"
-  title: "Won the special prize at SAS analytics hackathon 2019.（SAS社のThe Analytics Hackathon 2019にて特別賞）"
+  title: "Won the special prize at SAS analytics hackathon 2019.（SAS Institute Japan, The Analytics Hackathon 2019 特別賞）"
   url: "https://www.sas.com/ja_jp/events/19/the-analytics-hackathon.html#agenda.html"
 
 - organization: Mathematics and Informatics Center
   organization_url: "http://www.mi.u-tokyo.ac.jp/industry_consortium.html"
   date_start: "2018-11-23"
   description: "In the contest, participants were given big data and asked to perform value-generating analysis freely. Our group won the first prize and we were able to submit a paper. See the publication section."
-  title: "Won the first prize at MDS data science contest 2018.（MDSデータサイエンスコンテストで優勝）"
+  title: "Won the first prize at MDS data science contest 2018.（MDSデータサイエンスコンテスト 優勝）"
   url: "http://www.mi.u-tokyo.ac.jp/industry_consortium.html"
 ---
