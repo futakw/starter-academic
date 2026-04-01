@@ -6,12 +6,12 @@ title: Futa (Kai) Waseda
 superuser: true
 
 # Role/position/tagline
-role: "PhD Candidate | Trustworthy AI: Robustness, Reliability, and VLM Defense"
+role: "Project Assistant Professor | Trustworthy AI: Robustness, Reliability, and VLM Defense"
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: The University of Tokyo
-  url: https://www.i.u-tokyo.ac.jp/index_e.shtml
+- name: National Institute of Informatics (NII)
+  url: https://www.nii.ac.jp/en/
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
@@ -35,6 +35,9 @@ education:
   - course: MS in Informatics
     institution: The University of Tokyo
     year: 2023
+  - course: PhD in Informatics
+    institution: The University of Tokyo
+    year: 2026
 
 
 # Social/Academic Networking
