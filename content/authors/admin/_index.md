@@ -53,7 +53,7 @@ social:
   link: https://github.com/futakw
 - icon: cv
   icon_pack: ai
-  link: media/Futa_Waseda_CV_20260210.pdf
+  link: media/Futa_Waseda_CV_20260401.pdf
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/futa-waseda/
