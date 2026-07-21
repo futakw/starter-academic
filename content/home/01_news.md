@@ -13,6 +13,10 @@ title: News
 
 <!-- ### Selected News -->
 
+- 2026.06: One 1st-authored paper **accepted at [ECCV 2026](https://arxiv.org/pdf/2512.11899)**.
+- 2026.02: One co-authored paper **accepted at [CVPR 2026](https://cvpr.thecvf.com/)**.
+- 2026.01: One co-authored paper **accepted at [ICLR 2026](https://iclr.cc/)**.
+- 2026.03: Received **PhD in Informatics** from The University of Tokyo.
 - 2025.11: One 1st-authored paper **accepted at [WACV 2026](https://arxiv.org/abs/2405.18770)**.
 - 2025.09: Received **[NII Inose Outstanding Student Award, 2025](https://www.nii.ac.jp/en/)**.
 - 2025.07: One 1st-authored paper **accepted at [ACMMM 2025](https://arxiv.org/abs/2507.16257)**.

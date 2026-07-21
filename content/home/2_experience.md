@@ -30,12 +30,20 @@ experience:
     date_end: ''
     description: "Started as a machine learning engineer and now provide technical guidance from a researcher's perspective."
 
+  - title: Project Assistant Professor
+    company:  National Institute of Informatics
+    company_url: 'https://www.nii.ac.jp/en/'
+    location: Tokyo, Japan.
+    date_start: '2026-04-01'
+    date_end: ''
+    description: "Research focus: trustworthy AI, adversarial robustness, and vision-language model reliability."
+
   - title: Research Assistant
     company:  National Institute of Informatics
     company_url: 'https://www.nii.ac.jp/en/'
     location: Tokyo, Japan.
     date_start: '2020-05-01'
-    date_end: ''
+    date_end: '2026-03-31'
     description: "Research focus: deep learning, computer vision, and adversarial robustness."
 
   - title: Research Internship
@@ -54,7 +62,7 @@ experience:
     date_end: '2026-01-31'
     description: "Research focus: deep learning, vision-language models, and adversarial robustness."
 
-  - title: CTO
+  - title: Technical Advisor
     company:  Madori LABO（まどりLABO）
     company_url: 'https://madori-labo.com'
     location: Tokyo, Japan.
@@ -70,11 +78,11 @@ experience:
     date_end: '2025-08-01'
     description: "Research focus: LLM's IP protection."
 
-  - title: Research Internship
+  - title: Research Internship → Contractor
     company:  Turing
     company_url: 'https://tur.ing/en'
     location: Tokyo, Japan.
     date_start: '2025-04-01'
     date_end: ''
-    description: "Research focus: reliable vision-language models."
+    description: "Research Internship (Apr 2025 – Mar 2026) → Research Contractor (Apr 2026 – present). Research focus: reliable vision-language models."
 ---
