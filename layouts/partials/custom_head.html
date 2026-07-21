@@ -81,6 +81,19 @@
     font-size: 0.72rem;
   }
 
+  .pub-award-tag {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.12rem 0.55rem;
+    border-radius: 999px;
+    background: #c8860a;
+    color: #fff;
+    font-size: 0.74rem;
+    font-weight: 700;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
   .pub-date {
     font-size: 0.82rem;
     white-space: nowrap;
@@ -640,6 +653,8 @@
     initScrollProgress();
     useOriginalProfileImage();
     initCvLinks();
+    initPubAwardBadges();
+    initSeeAllPublicationsLink();
     initCopyEmailIcon();
     initIconLabels();
     initExperienceLogos();
@@ -685,6 +700,33 @@
         itemObserver.observe(item);
       });
     });
+
+    function initSeeAllPublicationsLink() {
+      document.querySelectorAll('a[href*="/tag/recent"]').forEach(function (a) {
+        a.href = '/publication/';
+      });
+    }
+
+    function initPubAwardBadges() {
+      var awards = [
+        { venue: 'APSIPA ASC 2025', label: 'Best Paper Finalist' }
+      ];
+      document.querySelectorAll('.pub-venue-tag').forEach(function (tag) {
+        var text = tag.textContent.trim();
+        awards.forEach(function (a) {
+          if (text !== a.venue) return;
+          var badge = document.createElement('span');
+          badge.className = 'pub-award-tag';
+          badge.textContent = a.label;
+          // Wrap venue-tag + award-badge so they stay grouped on the left
+          var group = document.createElement('span');
+          group.style.cssText = 'display:inline-flex;align-items:center;gap:0;';
+          tag.parentNode.insertBefore(group, tag);
+          group.appendChild(tag);
+          group.appendChild(badge);
+        });
+      });
+    }
 
     function initCvLinks() {
       // Read CV URL from navbar (source of truth: menus.toml)
