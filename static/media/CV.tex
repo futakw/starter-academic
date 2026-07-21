@@ -1,0 +1,269 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{url}
+% \usepackage[dvipdfmx]{graphicx,color}
+\usepackage[driverfallback=dvipdfm, pdfnewwindow]{hyperref}
+\usepackage{pxjahyper}
+
+\usepackage{soul}
+
+% materials
+% https://wordcloud.userlocal.jp/
+% https://www.youtube.com/watch?v=pjqi_M3SPwY&ab_channel=JeffSu
+
+% ADDED
+\usepackage{subfiles}% 必須
+
+
+% Set applicant's personal data for header
+\name{Futa (Kai) Waseda}
+% \address{11-1-201 Imai-Nishimachi Nakahara-ku, Kawasaki-shi, Kanagawa 211-0066 Japan}
+\address{Tokyo, Japan}
+% \contacts{+81 (070) 5582-4812 \linebreak fuwafuwa1118@gmail.com}
+\contacts{futa-waseda@nii.ac.jp}
+
+\begin{document}
+
+% Print the header
+\makeheader
+
+
+%%% SUMMARY
+\noindent\fbox{%
+\parbox{\textwidth}{%
+
+\textbf{Summary:}
+\begin{itemize}
+  \item Project Assistant Professor at National Institute of Informatics (NII), Echizen-lab.
+  \item Research focus: robustness and reliability of deep learning models (adversarial robustness, calibration, vision-language security).
+  \item Publications: \textbf{ECCV'26, WACV'26, ACMMM'25, ACL'25 Main, ICLR'25, ICIP'24, ICML'23, WACV'23}.
+  \item Awards/Scholarships: \textbf{NII Inose Outstanding Student Award (2025)}; \textbf{JSPS DC2} (acceptance rate: \textbf{17.9\%}).
+  \item Collaboration: Technical University of Munich (TUM), NEC, CyberAgent AI Lab, SB Intuitions, Turing Inc., and Ollo Inc.
+  \item English: TOEFL iBT \textbf{96}/120.
+\end{itemize}
+}%
+}
+
+%%% PERSONAL INFORMATION
+\begin{cvsection}{Personal Info}
+    \begin{cvsubsection}{}{}{}
+        \begin{itemize}
+            \item Nationality: Japan / USA \textit{(Dual nationality. \textbf{No VISA required to work in the USA})}
+            \item Language: Japanese (Native), English (Advanced; \textit{TOEFL: 96/120)}
+            \item Website: \href{https://futa-waseda.netlify.app}{https://futa-waseda.netlify.app} | Github: \href{https://github.com/futakw}{https://github.com/futakw}
+            \item Google scholar: \href{https://scholar.google.co.jp/citations?user=aBQ2en8AAAAJ&hl=en}{https://scholar.google.co.jp/citations?user=aBQ2en8AAAAJ\&hl=en}
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% EDUCATION
+\begin{cvsection}{Education}
+  \begin{cvsubsection}{Ph.D.}{The University of Tokyo, Japan}{April 2023 -- March 2026}
+    \begin{itemize}
+      \item Information Science and Technology | Supervisor: \href{https://scholar.google.co.jp/citations?user=RduUnVIAAAAJ&hl=en}{Prof. Isao Echizen}
+      \item Research: robustness and reliability of deep learning models.
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Exchange Student}{Technical University of Munich, Germany}{April 2021 -- March 2022}
+    \begin{itemize}
+      \item Informatics | Hosted by \href{https://scholar.google.co.jp/citations?hl=en&user=cXQciMEAAAAJ}{Prof. Daniel Cremers}; supervised by \href{https://scholar.google.co.jp/citations?user=gfRxpTUAAAAJ&hl=ja&oi=ao}{Christian Tomani}.
+      \item Research outcome (international collaboration): robust uncertainty calibration under distribution shift; accepted at \textbf{ICML 2023}.
+      \item Coursework: Novel Challenges on Deep Learning; Biologically-inspired Methods; Cognitive Neuroscience.
+      \item Scholarship (selective): \href{https://www.u-tokyo.ac.jp/adm/go-global/ja/scholarship-list-toyota.html}{\textbf{UTokyo--TOYOTA Study Abroad Scholarship 2021}}.
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{M.Sc.}{The University of Tokyo, Japan}{April 2020 -- March 2023}
+    \begin{itemize}
+      \item M.Sc. in Information Science and Technology (March 2023) | Supervisor: \href{https://scholar.google.co.jp/citations?user=RduUnVIAAAAJ&hl=en}{Prof. Isao Echizen} | \textbf{GPA: 3.93/4.00}.
+      \item Research outcome (core contribution): theory on adversarial example transferability; accepted at \textbf{WACV 2023}.
+      \item Coursework: Artificial Intelligence; Computer Vision; Neurointelligence; Cognitive Science.
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{B.Eng.}{The University of Tokyo, Japan}{April 2016 -- March 2020}
+    \begin{itemize}
+      \item B.Eng. in Systems Innovation (March 2020) | Supervisor: \href{https://scholar.google.co.jp/citations?hl=en&user=FhECBzMAAAAJ}{Prof. Kenji Tanaka} | \textbf{Major GPA: 3.52/4.00}.
+      \item Research outcome (industry-academia): auto-bidding agent for peer-to-peer electricity trading under uncertainty; accepted at \textbf{IEEE EEEIC 2020} (with TOYOTA).
+      \item Coursework: Mathematics; Programming; Statistical Machine Learning; Image Media Technologies; Strength of Materials; Fluid Mechanics; Economics; Multi-Agent System; Engineering Simulation.
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+%%% EMPLOYMENT
+\begin{cvsection}{Employment}
+
+  \begin{cvsubsection}{Project Assistant Professor}{\href{https://www.nii.ac.jp/en/}{National Institute of Informatics, Japan}}{April 2026 -- present}
+    \begin{itemize}
+      \item Research on trustworthy AI: adversarial robustness and reliability of vision-language models.
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Research Internship}{\href{https://tur.ing/en}{Turing Inc., Japan}}{April 2025 -- present}
+    \begin{itemize}
+      \item Research on reliable vision-language models. (Internship: Apr 2025 -- Mar 2026; Contractor: Apr 2026 -- present)
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Research Internship}{\href{https://www.sbintuitions.co.jp/}{SB Intuitions, Japan}}{Aug. 2024 -- Aug. 2025}
+    \begin{itemize}
+      \item Research on IP protection for large language models (\textbf{ACL~2025 Main}).
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Research Internship}{\href{https://research.cyberagent.ai/}{CyberAgent AI Lab, Japan}}{Feb. 2024 -- Jan. 2026}
+    \begin{itemize}
+      \item Research on adversarial robustness of vision-language models (\textbf{MIRU 2024 Oral (Top 31\%)}; \textbf{WACV 2026}).
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Research Internship}{\href{https://www.nec.com/}{NEC Corporation, Japan}}{Aug. 2023 -- Dec. 2023}
+    \begin{itemize}
+      \item Research on domain generalization for computer vision models (Secure System Platform team).
+      \item Resulted in a filed patent (details to be disclosed).
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Senior Researcher}{\href{https://ollo.jp/}{Ollo Inc., Japan}}{April 2020 -- present}
+    \begin{itemize}
+      \item Built a core behavior-recognition algorithm for factory operations (Python/PyTorch), contributing to a \textbf{20\% efficiency improvement} in deployed sites.
+      \item Promoted to \textit{Senior Researcher} (Oct. 2023); led technical direction-setting and mentorship within the algorithm team.
+    \end{itemize}
+  \end{cvsubsection}
+
+  \begin{cvsubsection}{Research Assistant}{\href{https://www.nii.ac.jp/en/}{National Institute of Informatics, Japan}}{April 2020 -- March 2026}
+    \begin{itemize}
+      \item Conducted research on robustness and reliability in computer vision, leading to publications at \textbf{WACV 2023, ICML 2023, ICLR 2025, ACMMM 2025, WACV 2026, ECCV 2026, etc}.
+      \item Mentored a 6-month international intern; initiated a project on defending infrared human detection against adversarial patches (\textbf{ICIP 2024}).
+    \end{itemize}
+  \end{cvsubsection}
+
+\end{cvsection}
+
+%%% PUBLICATIONS
+
+\begin{cvsection}{Publications (First-authored)}
+    \begin{cvsubsection}{}{}{}
+      \begin{itemize}
+            \item \ul{Futa Waseda}, Shojiro Yamabe, Daiki Shiono, Kento Sasaki, and Tsubasa Takahashi.
+            \href{https://arxiv.org/abs/2512.11899}{``Read or Ignore? A Unified Benchmark for Typographic-Attack Robustness and Text Recognition in Vision-Language Models''}, \textbf{ECCV~2026}.
+            \item \ul{Futa Waseda}, Antonio Tejero-de-Pablos, and Isao Echizen.
+            \href{https://arxiv.org/abs/2405.18770}{``Multimodal Adversarial Defense for Vision-Language Models by Leveraging One-To-Many Relationships''}, \textbf{WACV~2026}.
+            \item \ul{Futa Waseda}, Saku Sugawara, and Isao Echizen. \href{https://arxiv.org/abs/2507.16257}{``Quality Text, Robust Vision: The Role of Language in Enhancing Visual Robustness of Vision-Language Models''}, \textbf{ACMMM~2025}.
+            \item Shojiro Yamabe*, \ul{Futa Waseda*}, Tsubasa Takahashi, and Koki Wataoka. \href{https://arxiv.org/abs/2410.08604v4}{``MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models"}, \textbf{ACL~2025 Main}. (*Equal-contribution co-first author)
+            \item \ul{Futa Waseda}, Ching-Chun Chang and Isao Echizen \href{https://arxiv.org/abs/2402.14648}{``Rethinking Invariance Regularization in Adversarial Training to Improve Robustness-Accuracy Trade-off"}, \textbf{ICLR~2025}.
+            \item Lukas Strack* and \ul{Futa Waseda*} et al. \href{https://arxiv.org/abs/2309.15519}{``Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection."}, \textbf{ICIP 2024}. (*Equal-contribution co-first author)
+            \item Tomani, Christian* and \ul{Futa Waseda*} et al. \href{https://arxiv.org/abs/2302.05118}{``Beyond In-Domain Scenarios: Robust Density-Aware Calibration."} \textbf{\href{https://icml.cc/Conferences/2023}{ICML~2023}}. (*Equal-contribution co-first author)
+            \item \ul{Futa Waseda} et al. \href{https://arxiv.org/abs/2112.14337}{``Closer Look at the Transferability of Adversarial Examples: How They Fool Different Models Differently."} \textbf{\href{https://wacv2023.thecvf.com/home}{WACV~2023}}.
+            \item \ul{Futa Waseda}, and Kenji Tanaka. \href{https://ieeexplore.ieee.org/document/9160846/}{``Bidding agent for electric vehicles in peer-to-peer electricity trading market considering uncertainty."} \textbf{\href{https://www.eeeic.net/eeeic/}{EEEIC/I\&CPS Europe. IEEE, 2020}}.
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% PUBLICATIONS (Co-authored)
+
+\begin{cvsection}{Publications (Co-authored)}
+    \begin{cvsubsection}{}{}{}
+      \begin{itemize}
+            \item Shojiro Yamabe, Futa Waseda, Daiki Shiono, and Tsubasa Takahashi. \href{https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html}{``Text-Printed Image: Bridging the Image-Text Modality Gap for Text-centric Training of Large Vision-Language Models''}, \textbf{CVPR~2026}.
+            \item Tsubasa Takahashi, Shojiro Yamabe, Futa Waseda, and Kento Sasaki. \href{https://arxiv.org/abs/2510.00517}{``Understanding Sensitivity of Differential Attention through the Lens of Adversarial Robustness''}, \textbf{ICLR~2026}.
+            \item Yuki Nii, \ul{Futa Waseda}, Ching-Chun Chang, Isao Echizen. ``Uncolorable Examples: Preventing Unauthorized AI Colorization via Perception-Aware Chroma-Restrictive Perturbation''
+            \textbf{APSIPA ASC 2025 (Best paper finalist)}.
+            \item Axel Paivansalo, Ching-Chun Chang, Hanrui Wang, Futa Waseda, and Isao Echizen. ``Allegory of the Cave: Breakdown of Illusions in Multimodal Perception with Neural Radiance Fields'' APSIPA ASC 2025 Special Sessions.
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% REVIEWER EXPERIENCE
+
+\begin{cvsection}{Reviewer Experience}
+    \label{cvsec:scholorshop}
+    \begin{cvsubsection}{}{}{}	
+        \begin{itemize}
+            \item ICLR('26), CVPR('26), NeurIPS('26,'25,'23), ICML('26,'25,'24), ICLR('25,'24), IEEE TIFS('24), APSIPA('23)
+            % \item 2023.10: Reviewed 2 papers for ICLR2024.
+            % \item 2023.08: Reviewed 2 papers for APSIPA2023.
+            % \item 2023.07: Reviewed 1 paper for NeurIPS2023.
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% AWARDS
+\begin{cvsection}{Awards}
+  \begin{cvsubsection}{}{}{}
+    \begin{itemize}
+      \item \textbf{NII Inose Outstanding Student Award, 2025}---NII's top student award for Ph.D. graduates supervised by NII (National Institute of Informatics, Japan).
+      \item \textbf{Outstanding Performance Award}---Top 2/20 teams, ``Advanced Artificial Intelligence Theory'' (The University of Tokyo). Built an image-to-text model that generates humor-aware social media captions (\href{https://futa-waseda.netlify.app/project/twitter_image_captioning/}{link}).
+      \item \textbf{Special Prize}---Top 2/18 teams, The Analytics Hackathon 2019 (SAS Institute Japan). Developed an AI model to predict machinery failures from operational data (\href{https://enterprisezine.jp/article/detail/12209?p=2}{link}).
+      \item \textbf{First-Place Award}---Top 1/7 teams, MDS Data Science Contest 2018 (The University of Tokyo). Identified a new insight in the food industry using large-scale lifestyle data (\href{http://www.mi.u-tokyo.ac.jp/industry_consortium.html}{link}).
+    \end{itemize}
+  \end{cvsubsection}
+\end{cvsection}
+
+%%% SCHOLARSHIPS
+
+\begin{cvsection}{Scholarships}
+    \label{cvsec:scholorshop}
+    \begin{cvsubsection}{}{}{}	
+        \begin{itemize}
+            \item \href{https://www.jsps.go.jp/english/e-pd/}{\textbf{PhD Research Fellowship (DC2)}} from The Japan Society for the Promotion of Science (JSPS). 1,300\$/month. \ul{Acceptance rate: 17.9\%}. (April 2024 -- March 2026)
+            \item \href{https://www.cis-trans.jp/spring_gx/index-e.html}{\textbf{SPRING GX}} from Support for Pioneering Research Initiated by Next Generation (SPRING) of Japan Science and Technology Agency (JST). 1,200\$/month. \ul{Acceptance rate: 25\%}. (April 2023 -- March 2024)
+            \item \href{https://www.i.u-tokyo.ac.jp/edu/financial-support/ist-ra/index_e.shtml}{\textbf{Special Research Assistant 2023} at Information, Science and Technology Department}, The University of Tokyo. \ul{Selected as A+ prioritized research assistant} (declined after the SPRING GX acceptance).
+            \item \href{https://www.u-tokyo.ac.jp/adm/go-global/ja/scholarship-list-toyota.html}{\textbf{UTokyo-TOYOTA Study Abroad Scholarship 2021}}. 1,920\$/month. \ul{Top 2 students in the university.} (April 2021 -- March 2022)
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% RESEARCH FUNDING
+\begin{cvsection}{Research Fund}
+    \label{cvsec:scholorshop}
+    \begin{cvsubsection}{}{}{}	
+        \begin{itemize}
+            \item \href{https://www.jst.go.jp/kisoken/aip/en/program/wakate/index.html}{\textbf{AIP Challenge Program}} from Japan Science and Technology Agency (JST). 7,000\$. (April 2023 -- March 2024)
+            % \item The AIP Challenge Program aims to support the independence of young researchers belonging to the CREST team, and supports the research themes that they have set as individual research.
+        \end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+%%% SKILLS
+\begin{cvsection}{Skills}
+    \begin{cvsubsection}{}{}{}	
+        \begin{itemize}
+            \item \textbf{Programming:} Python; Java; HTML; CSS; JavaScript
+            % \item \textbf{Collaboration:} Good communication skills in Japanese and English for great academic collaboration.
+        \end{itemize}
+        
+    \end{cvsubsection}
+
+\end{cvsection}
+
+
+	
+\end{document}
+

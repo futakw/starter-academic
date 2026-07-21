@@ -1,4 +1,9 @@
 <style>
+  .author-highlighted {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
   .alert-tip {
     color: #5c4300;
     background-color: #fff8e6;
@@ -634,6 +639,7 @@
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     initScrollProgress();
     useOriginalProfileImage();
+    initCvLinks();
     initCopyEmailIcon();
     initIconLabels();
     initExperienceLogos();
@@ -679,6 +685,22 @@
         itemObserver.observe(item);
       });
     });
+
+    function initCvLinks() {
+      // Read CV URL from navbar (source of truth: menus.toml)
+      var cvUrl = '';
+      document.querySelectorAll('a.nav-link').forEach(function (a) {
+        var span = a.querySelector('span');
+        if (span && span.textContent.trim() === 'CV') {
+          cvUrl = a.getAttribute('href');
+        }
+      });
+      if (!cvUrl) return;
+      // Propagate to cv social icon
+      document.querySelectorAll('.network-icon a[aria-label="cv"]').forEach(function (a) {
+        a.href = cvUrl;
+      });
+    }
 
     function initScrollProgress() {
       var progress = document.createElement('div');
