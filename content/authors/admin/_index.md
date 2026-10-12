@@ -6,7 +6,7 @@ title: Futa Waseda
 superuser: true
 
 # Role/position/tagline
-role: "Project Assistant Professor | Trustworthy AI: Robustness, Reliability, and VLM/Physical AI Safety"
+role: "Project Assistant Professor"
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -72,15 +72,18 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-I work toward **Trustworthy AI**, studying AI safety and reliability, adversarial robustness, and generalization—from **understanding mechanisms to real-world applications**.
-- I analyze why models fail under adversarial perturbation (<a href="https://arxiv.org/abs/2112.14337" style="text-decoration: underline;">WACV'23</a>).
-- I design robust training and defense methods for computer vision (<a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
-- I extend these ideas to vision-language systems (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACMMM'25</a>).
-- I also work on complementary reliability and security topics, including model IP protection (<a href="https://arxiv.org/abs/2410.08604v4" style="text-decoration: underline;">ACL'25 Main</a>) and post-hoc calibration (<a href="https://arxiv.org/pdf/2302.05118" style="text-decoration: underline;">ICML'23</a>).
+I study the robustness, reliability, and safety of intelligent systems, from vision-language models to embodied AI.
+- **Adversarial Vulnerabilities:** Analyzing model failures under adversarial perturbations (<a href="https://arxiv.org/abs/2112.14337" style="text-decoration: underline;">WACV'23</a>).
+- **Robust Learning & Defense:** Developing robust training and defense methods for computer vision (<a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
+- **Multimodal Robustness:** Improving the robustness of vision-language models (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACM MM'25</a>).
+- **AI Reliability & Security:** Exploring model IP protection and post-hoc calibration (<a href="https://arxiv.org/abs/2410.08604v4" style="text-decoration: underline;">ACL'25 Main</a>, <a href="https://arxiv.org/pdf/2302.05118" style="text-decoration: underline;">ICML'23</a>).
+- **Visual Content Protection:** Developing colorization defenses and image-editing watermarks ([APSIPA’25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf), [SMC’26](https://arxiv.org/abs/2607.17610), [preprint](https://arxiv.org/abs/2609.04709)).
 
-- I develop content protection methods, including colorization defenses and image-editing watermarks ([APSIPA’25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf), [SMC’26](https://arxiv.org/abs/2607.17610), [preprint](https://arxiv.org/abs/2609.04709)).
+<p class="bio-eyebrow">Research Experience & Collaborations</p>
 
-I have collaborated widely across academia and industry through joint research and internships, including work with <a href="https://www.tum.de/en/" style="text-decoration: underline;">TUM</a>, <a href="https://www.nii.ac.jp/en/" style="text-decoration: underline;">NII</a>, <a href="https://www.nec.com/" style="text-decoration: underline;">NEC</a>, <a href="https://cyberagent.ai/ailab/" style="text-decoration: underline;">CyberAgent AI Lab</a>, <a href="https://www.sbintuitions.co.jp/" style="text-decoration: underline;">SB Intuitions</a>, and <a href="https://tur.ing/en" style="text-decoration: underline;">Turing</a>.
+<a href="https://www.tum.de/en/" style="text-decoration: underline;">TUM</a>, <a href="https://www.nii.ac.jp/en/" style="text-decoration: underline;">NII</a>, <a href="https://www.nec.com/" style="text-decoration: underline;">NEC</a>, <a href="https://cyberagent.ai/ailab/" style="text-decoration: underline;">CyberAgent AI Lab</a>, <a href="https://www.sbintuitions.co.jp/" style="text-decoration: underline;">SB Intuitions</a>, and <a href="https://tur.ing/en" style="text-decoration: underline;">Turing</a>.
+
+<p class="bio-eyebrow">Open to Collaborations</p>
 
 I welcome enquiries about **research collaborations** with academic and industry partners, **research internship supervision and mentoring**, and **research and technical consulting**. [Feel free to get in touch!](/contact/)
 

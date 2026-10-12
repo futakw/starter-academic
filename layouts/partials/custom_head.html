@@ -1,3 +1,31 @@
+<script>
+  (function () {
+    // Auto-redirect visitors to their preferred language on the homepage only.
+    // A manual language-switch click (see initLanguagePref below) is saved to
+    // localStorage and always takes priority over browser language.
+    try {
+      var STORAGE_KEY = 'lang-pref';
+      var path = window.location.pathname;
+      var isEnHome = path === '/';
+      var isJaHome = path === '/ja/' || path === '/ja';
+      if (!isEnHome && !isJaHome) return;
+
+      var saved = window.localStorage.getItem(STORAGE_KEY);
+      var preferJa = saved
+        ? saved === 'ja'
+        : /^ja/i.test(navigator.language || navigator.userLanguage || '');
+
+      if (preferJa && isEnHome) {
+        window.location.replace('/ja/');
+      } else if (!preferJa && isJaHome && saved === 'en') {
+        window.location.replace('/');
+      }
+    } catch (e) {
+      // localStorage may be unavailable (e.g. privacy mode); fail silently.
+    }
+  })();
+</script>
+
 <style>
   :root {
     --portfolio-background: #f8f5f0;
@@ -244,6 +272,20 @@
   [id="0_about"] .article-style li,
   [id="0_about"] .ul-interests li,
   [id="01_news"] .article-style li { margin-bottom: .1rem; }
+
+  [id="0_about"] .article-style h2 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+
+  .bio-eyebrow {
+    margin: 1.1rem 0 .3rem;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--portfolio-accent);
+  }
 
   .exp-company-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .75rem; }
   .exp-company-details { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: baseline; gap: .15rem .5rem; }
@@ -603,6 +645,8 @@
   [id="0_about"] .about-main h3 { margin-top: .5rem; margin-bottom: .4rem; }
   [id="0_about"] .portrait-title h2 { font-size: 1.7rem; }
   [id="0_about"] .portrait-title h3 { font-size: .9rem; line-height: 1.35; }
+  [id="0_about"] .portrait-title h3:first-of-type { color: #000; font-weight: 500; }
+  .dark [id="0_about"] .portrait-title h3:first-of-type { color: #fff; }
   [id="0_about"] .portrait-title .portrait-position { margin-bottom: .3rem; }
   [id="0_about"] .portrait-title .portrait-focus { margin-top: 0; margin-bottom: .6rem; }
   [id="0_about"] .network-icon { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem; margin-top: 1rem; padding: 0; }
@@ -618,6 +662,7 @@
 
   [id="0_about"] .article-style a {
     color: var(--portfolio-accent);
+    text-decoration: underline;
   }
 
   [id="0_about"] .article-style a:hover,
@@ -856,6 +901,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    initLanguagePref();
     initScrollProgress();
     useOriginalProfileImage();
     initCvLinks();
@@ -949,6 +995,22 @@
       // Propagate to cv social icon
       document.querySelectorAll('.network-icon a[aria-label="cv"]').forEach(function (a) {
         a.href = cvUrl;
+      });
+    }
+
+    function initLanguagePref() {
+      var links = document.querySelectorAll('.language-switch .language-link, .language-switch .language-current');
+      links.forEach(function (el) {
+        var lang = el.getAttribute('lang');
+        if (!lang) return;
+        if (el.tagName === 'A') {
+          el.addEventListener('click', function () {
+            try { window.localStorage.setItem('lang-pref', lang); } catch (e) {}
+          });
+        } else {
+          // The current-language span marks which language the visitor is already on.
+          try { window.localStorage.setItem('lang-pref', lang); } catch (e) {}
+        }
       });
     }
 
