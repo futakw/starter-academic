@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Reliable perception and action</title>
+  <desc id="desc">An image from a camera observation and a text language instruction connect to a VLA model and then to robot actions.</desc>
+  <rect width="640" height="220" fill="#f8f5f0"/>
+  <g fill="#fff" stroke="#9bafa1" stroke-width="2">
+    <rect x="30" y="38" width="150" height="58" rx="8"/>
+    <rect x="30" y="126" width="150" height="58" rx="8"/>
+    <rect x="260" y="68" width="138" height="86" rx="12"/>
+    <rect x="478" y="68" width="132" height="86" rx="12"/>
+  </g>
+  <g fill="none" stroke="#28533f" stroke-width="3">
+    <path d="M180 67H216V110H254M180 155H216V110M398 110H470"/>
+    <path d="m244 103 10 7-10 7m216-14 10 7-10 7"/>
+  </g>
+  <g fill="#203c2e" font-family="sans-serif" text-anchor="middle">
+    <text x="105" y="62" font-size="19" font-weight="700">Image</text>
+    <text x="105" y="83" font-size="13">Camera observation</text>
+    <text x="105" y="150" font-size="19" font-weight="700">Text</text>
+    <text x="105" y="171" font-size="13">Language instruction</text>
+    <text x="329" y="105" font-size="23" font-weight="700">VLA</text>
+    <text x="329" y="133" font-size="15">Perception + policy</text>
+    <text x="544" y="105" font-size="21" font-weight="700">Actions</text>
+    <text x="544" y="133" font-size="15">Robot behavior</text>
+  </g>
+</svg>

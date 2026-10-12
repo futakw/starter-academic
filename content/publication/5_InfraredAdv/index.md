@@ -18,7 +18,7 @@ author_notes:
 - "Equal contribution"
 
 date: "2024-10-27T00:00:00Z"
-doi: ""
+doi: "10.1109/ICIP51287.2024.10647435"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-09-27T00:00:00Z"
@@ -35,9 +35,9 @@ publication_short: "ICIP 2024"
 
 abstract: "Infrared detection is an emerging technique for safety-critical tasks owing to its remarkable anti-interference capability. However, recent studies have revealed that it is vulnerable to physically-realizable adversarial patches, posing risks in its real-world applications. To address this problem, we are the first to investigate defense strategies against adversarial patch attacks on infrared detection, especially human detection. We have devised a straightforward defense strategy, patch-based occlusion-aware detection (POD), which efficiently augments training samples with random patches and subsequently detects them. POD not only robustly detects people but also identifies adversarial patch locations. Surprisingly, while being extremely computationally efficient, POD easily generalizes to state-of-the-art adversarial patch attacks that are unseen during training. Furthermore, POD improves detection precision even in a clean (i.e., no-patch) situation due to the data augmentation effect. Evaluation demonstrated that POD is robust to adversarial patches of various shapes and sizes. The effectiveness of our baseline approach is shown to be a viable defense mechanism for real-world infrared human detection systems, paving the way for exploring future research directions."
 highlights:
-- First defense study for physical adversarial patches in infrared human detection.
-- Proposed POD, an efficient patch-aware training and detection strategy.
-- Achieved strong robustness to unseen patch attacks while improving clean precision.
+- Proposes the first defense against physical patches on infrared human detection.
+- Detects adversarial patches through patch-aware training.
+- Improves unseen-patch robustness and clean-image precision.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -82,6 +82,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "2024 IEEE International Conference on Image Processing (ICIP 2024)", "pages": "3896–3902", "doi": "10.1109/ICIP51287.2024.10647435", "source": "https://ieeexplore.ieee.org/document/10647435", "authors": ["Lukas Strack", "Futa Waseda", "Huy H. Nguyen", "Yinqiang Zheng", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICIP 2024", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1]}
 ---
 <!-- 
 {{% callout note %}}

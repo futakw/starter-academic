@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="universal-wrapper contact-page">
+  <h1>{{ .Title }}</h1>
+  <div class="article-style">{{ .Content }}</div>
+</main>
+<style>
+  .contact-page { max-width: 760px; padding-top: 1.25rem; padding-bottom: 2rem; }
+  .contact-page h1 { margin: 0 0 .65rem; text-align: left; }
+  .contact-page .article-style { font-size: 1.05rem; line-height: 1.4; }
+  .contact-page .article-style p { margin-bottom: .5rem; }
+  .contact-page .article-style .contact-email { margin-top: 1.6rem; margin-bottom: 1.6rem; }
+  .contact-page .article-style ul { margin-bottom: .6rem; }
+  .contact-page .article-style li { margin-bottom: .05rem; }
+  .contact-page .article-style hr { margin: .9rem 0; }
+</style>
+{{ end }}

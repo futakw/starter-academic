@@ -36,13 +36,3 @@ design:
   #   4 = Citation (publication only)
   view: 1
 ---
-
-{{% callout tip %}}
-**Research strengths**
-
-- Defenses for visual and vision-language models under adversarial settings.
-- Reliable generalization via calibration and robustness analysis.
-- Practical security themes, including model IP protection.
-
-See all [publications](./publication/).
-{{% /callout %}}

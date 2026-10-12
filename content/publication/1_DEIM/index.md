@@ -18,7 +18,7 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 
-date: "2019-03-10T00:00:00Z"
+date: "2019-03-05T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -85,6 +85,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "第11回データ工学と情報マネジメントに関するフォーラム（DEIM 2019）論文集", "pages": "1–8（論文番号 F3-4）", "source": "/media/deim2019最終論文.pdf", "sources": ["https://db-event.jpn.org/deim2019/", "https://db-event.jpn.org/deim2019/post/submission.html"], "authors": ["堀 賢人", "鎌田 麻衣子", "酒井 翼", "早稲田 風太", "坂田 一郎", "浅谷 公威"], "review": "査読無", "doi_status": "記載なし（論文・公式書誌）", "volume": "なし", "issue": "なし", "checked": "2026-10-12", "conference_group": "Local Conference", "abbreviation": "DEIM 2019"}
 ---
 
 MDSデータサイエンスコンテストに優勝した際の成果を発展させ、国内学会で発表したもの。

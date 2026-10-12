@@ -20,9 +20,9 @@ publication_short: "ICLR 2026"
 abstract: "We investigate how Differential Attention (DA) affects adversarial vulnerability in vision transformers and CLIP models. While DA suppresses redundant context via a subtractive structure, we show it paradoxically increases adversarial sensitivity through negative gradient alignment. Our analysis reveals a fundamental trade-off: DA improves discriminative focus on clean inputs but increases adversarial vulnerability."
 
 highlights:
-- Reveals that Differential Attention (DA), despite improving discriminative focus by suppressing redundant context, paradoxically increases adversarial sensitivity via negative gradient alignment.
-- Provides theoretical analysis and empirical validation across Vision Transformers and CLIP models, showing consistently higher attack success rates in DA-equipped models.
-- Identifies a fundamental trade-off between clean-input discriminability and adversarial robustness in DA, with depth-dependent protection patterns against small perturbations.
+- Reveals adversarial sensitivity in Differential Attention.
+- Explains amplification through opposing gradient directions.
+- Identifies a trade-off between selective attention and robustness.
 
 tags: ["recent"]
 
@@ -41,4 +41,5 @@ image:
   caption: ''
   focal_point: ""
   preview_only: false
+bibliography: {"venue": "Proceedings of the 14th International Conference on Learning Representations (ICLR 2026)", "pages": "71952–71970", "source": "https://openreview.net/forum?id=kwy0cKmTm3", "sources": ["https://proceedings.iclr.cc/paper_files/paper/2026/file/7514354a089c7df0d9746c0c4ae759f2-Paper-Conference.pdf", "https://proceedings.iclr.cc/paper_files/paper/8345-/bibtex"], "authors": ["Tsubasa Takahashi", "Shojiro Yamabe", "Futa Waseda", "Kento Sasaki"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "url": "https://openreview.net/forum?id=kwy0cKmTm3", "abbreviation": "ICLR 2026", "conference_group": "Conference Proceedings", "pages_source": "https://proceedings.iclr.cc/paper_files/paper/8345-/bibtex"}
 ---

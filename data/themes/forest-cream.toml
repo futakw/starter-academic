@@ -1,0 +1,11 @@
+name = "Forest & Cream"
+light = true
+primary = "#28533F"
+menu_primary = "#203C2E"
+menu_text = "#E3E9DF"
+menu_text_active = "#F8F5F0"
+menu_title = "#F8F5F0"
+background = "#F8F5F0"
+home_section_odd = "#F8F5F0"
+home_section_even = "#F0EEE7"
+font = "rose"

@@ -44,7 +44,7 @@ experience:
     location: Tokyo, Japan.
     date_start: '2020-05-01'
     date_end: '2026-03-31'
-    description: "Research focus: deep learning, computer vision, and adversarial robustness."
+    description: "Research focus: understanding the mechanisms of adversarial vulnerability in deep learning and developing defenses."
 
   - title: Research Internship
     company:  NEC Corporation
@@ -52,7 +52,7 @@ experience:
     location: Tokyo, Japan.
     date_start: '2023-08-16'
     date_end: '2023-12-15'
-    description: "Research focus: deep learning, computer vision, adversarial robustness, and parameter-efficient training."
+    description: "Research focus: parameter-efficient methods for improving adversarial robustness in image recognition models."
 
   - title: Research Internship
     company:  CyberAgent AI Lab
@@ -60,7 +60,7 @@ experience:
     location: Tokyo, Japan.
     date_start: '2024-02-01'
     date_end: '2026-01-31'
-    description: "Research focus: deep learning, vision-language models, and adversarial robustness."
+    description: "Research focus: adversarial robustness of vision-language models."
 
   - title: Technical Advisor
     company:  Madori LABO（まどりLABO）

@@ -28,7 +28,13 @@
 {{ if eq $item.Type "publication" }}
 <div class="view-list-item pub-list-custom">
   <div class="row">
-    <div class="col-12 col-md-4 col-lg-3">
+    <div class="col-12 col-md-4 col-lg-3 pub-media-column">
+      <div class="pub-topline">
+        {{ with ($item.Params.publication_short | default $item.Params.publication) }}
+        <span class="pub-venue-tag">{{ . | markdownify }}</span>
+        {{ end }}
+      </div>
+
       {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
       {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
       {{ with $resource }}
@@ -37,14 +43,13 @@
           <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="pub-list-image">
         </a>
       {{ end }}
+      {{ if $show_buttons }}
+      <div class="btn-links">
+        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      </div>
+      {{ end }}
     </div>
     <div class="col-12 col-md-8 col-lg-9">
-      <div class="pub-topline">
-        {{ with ($item.Params.publication_short | default $item.Params.publication) }}
-        <span class="pub-venue-tag">{{ . | markdownify }}</span>
-        {{ end }}
-        <span class="article-date pub-date">{{ $item.Date.Format (site.Params.publications.date_format | default "January 2006") }}</span>
-      </div>
       <h3 class="article-title mb-1 mt-1">
         <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
       </h3>
@@ -75,11 +80,6 @@
         {{ end }}
       {{ end }}
 
-      {{ if $show_buttons }}
-      <div class="btn-links">
-        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-      </div>
-      {{ end }}
     </div>
   </div>
 </div>

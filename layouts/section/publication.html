@@ -1,0 +1,86 @@
+{{ define "main" }}
+{{ $ja := eq .Lang "ja" }}
+{{ partial "page_header.html" . }}
+<main class="universal-wrapper publication-bibliography" aria-label="{{ if $ja }}論文一覧{{ else }}Publication list{{ end }}">
+  {{ with .Content }}<div class="article-style">{{ . }}</div>{{ end }}
+  {{ $number := 0 }}
+  {{ $papers := .RegularPages.ByDate.Reverse }}
+  {{ range $group := slice "Conference Proceedings" "Preprints" "Local Conference" }}
+  <h2>{{ if $ja }}{{ index (dict "Conference Proceedings" "国際会議論文" "Preprints" "プレプリント" "Local Conference" "国内会議論文") $group }}{{ else }}{{ $group }}{{ end }}</h2>
+  <ol class="bibliography-list" start="{{ add $number 1 }}">
+    {{ range $paper := $papers }}
+      {{ $b := $paper.Params.bibliography }}
+      {{ if eq ($b.conference_group | default "Conference Proceedings") $group }}
+      {{ $number = add $number 1 }}
+      <li><span class="bibliography-citation"><span class="bibliography-number">{{ $number }}. </span>{{ range $i, $author := $b.authors }}{{ if $i }}, {{ end }}{{ if in (slice "Futa Waseda" "Futa Kai Waseda" "早稲田 風太") $author }}<strong class="bibliography-emphasis">{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ if in ($b.equal_contribution | default slice) $i }}*{{ end }}{{ end }}. “<a href="{{ $b.source | relURL }}" target="_blank" rel="noopener noreferrer">{{ $paper.Title }}</a>”. {{ with $b.abbreviation }}{{ $parts := split $b.venue . }}{{ index $parts 0 }}<strong class="bibliography-emphasis">{{ . }}</strong>{{ delimit (after 1 $parts) . }}{{ else }}{{ $b.venue }}{{ end }}{{ if and $b.volume (ne $b.volume "なし") }}, Vol. {{ $b.volume }}{{ end }}{{ if and $b.issue (ne $b.issue "なし") }}, No. {{ $b.issue }}{{ end }}{{ with $b.pages }}, pp. {{ . }}{{ end }}, {{ $paper.Date.Format "2006" }}.{{ with $paper.Params.doi }} DOI: <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">https://doi.org/{{ . }}</a>.{{ end }}{{ with $b.url }} URL: <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>.{{ end }}{{ with $b.equal_contribution }} (*Equal contribution.){{ end }}</span>
+        {{ partial "publication_bibliography_tags" $paper }}
+      </li>
+      {{ end }}
+    {{ end }}
+  </ol>
+  {{ end }}
+  <div class="bibliography-copy-controls">
+    <button type="button" class="bibliography-copy" aria-label="{{ if $ja }}タグを除いて全論文の書誌情報をコピー{{ else }}Copy all publication citations without tags{{ end }}">{{ if $ja }}すべてコピー{{ else }}Copy all{{ end }}</button><span class="bibliography-copy-status" role="status" aria-live="polite"></span>
+  </div>
+</main>
+<style>
+  .publication-bibliography { padding-bottom: 2rem; }
+  .bibliography-list { list-style: none; padding: 0; margin: 0; }
+  .publication-bibliography h2 { margin: 1.25rem 0 .6rem; }
+  .bibliography-list li { position: relative; margin-bottom: .45rem; line-height: 1.35; letter-spacing: normal; word-spacing: normal; font-size: .9rem; padding-left: 1.6rem; text-indent: 0; overflow-wrap: anywhere; }
+  .bibliography-number { position: absolute; left: 0; top: 0; }
+  .bibliography-list a { color: inherit; font-weight: normal; }
+  .bibliography-list .bibliography-emphasis { font-weight: 700; text-decoration: underline; text-underline-offset: .12em; }
+  .bibliography-tags { display: inline; margin-left: .2rem; }
+  .bibliography-list .bibliography-tag { display: inline-block; margin: .1rem .15rem .1rem 0; padding: .08rem .3rem; border: 1px solid currentColor; border-radius: .2rem; background: transparent; font-size: .65rem; line-height: 1.3; font-weight: 500; text-decoration: none; white-space: nowrap; vertical-align: baseline; }
+  .bibliography-list .bibliography-tag-link { color: inherit; font-weight: normal; }
+  .bibliography-list a.bibliography-tag-link:hover, .bibliography-list a.bibliography-tag-link:focus-visible { text-decoration: underline; }
+  .bibliography-list .bibliography-tag-author { color: #19608a; }
+  .bibliography-list .bibliography-tag-award { color: #a5523a; }
+  .dark .bibliography-list .bibliography-tag-author { color: #9dd6f5; }
+  .dark .bibliography-list .bibliography-tag-award { color: #d8bba3; }
+  .bibliography-copy-controls { margin-top: 1.25rem; }
+  .bibliography-copy { padding: .3rem .65rem; border: 1px solid #a3aab1; border-radius: .2rem; background: transparent; color: inherit; font: inherit; font-size: .75rem; line-height: 1.3; cursor: pointer; }
+  .bibliography-copy:hover, .bibliography-copy:focus-visible { border-color: currentColor; text-decoration: underline; }
+  .bibliography-copy-status { margin-left: .25rem; font-size: .65rem; }
+</style>
+<script>
+  document.querySelectorAll('.bibliography-copy').forEach(function (button) {
+    var timer;
+    button.addEventListener('click', async function () {
+      var bibliography = button.closest('.publication-bibliography');
+      var text = Array.from(bibliography.querySelectorAll('.bibliography-citation')).map(function (citation) {
+        return citation.textContent.replace(/\s+/g, ' ').trim();
+      }).join('\n\n');
+      var status = bibliography.querySelector('.bibliography-copy-status');
+      button.disabled = true;
+      clearTimeout(timer);
+      try {
+        try {
+          if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+          await navigator.clipboard.writeText(text);
+        } catch (error) {
+          var field = document.createElement('textarea');
+          field.value = text;
+          field.style.position = 'fixed';
+          field.style.opacity = '0';
+          document.body.appendChild(field);
+          try {
+            field.select();
+            if (!document.execCommand('copy')) throw new Error('Copy failed');
+          } finally {
+            field.remove();
+            button.focus();
+          }
+        }
+        status.textContent = '{{ if $ja }}コピーしました{{ else }}Copied{{ end }}';
+      } catch (error) {
+        status.textContent = '{{ if $ja }}コピーに失敗しました{{ else }}Copy failed{{ end }}';
+      } finally {
+        button.disabled = false;
+        timer = setTimeout(function () { status.textContent = ''; }, 2000);
+      }
+    });
+  });
+</script>
+{{ end }}

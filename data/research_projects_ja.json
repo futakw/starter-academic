@@ -1,0 +1,196 @@
+{
+  "projects": [
+    {
+      "id": "physical-ai-safety",
+      "title": "Physical AIの安全性",
+      "subtitle": "信頼できるVLAモデルと身体性を持つAIエージェント",
+      "description": "変化する環境の中で、身体性を持つAIが安全に知覚・推論・行動するための研究に取り組んでいます。環境変化や敵対的入力への頑健性と、信頼できるVision-Language-Actionモデルの安全性評価基盤を研究します。",
+      "image": "/media/research/physical-ai.svg",
+      "image_alt": "A camera observation image and a text language instruction feed a VLA model that produces robot actions.",
+      "points": [
+        "実環境での分布変化に対する頑健性",
+        "敵対的攻撃に対する頑健性",
+        "信頼できるVLAの安全性評価"
+      ],
+      "funding": "JSPS KAKENHI · 26K25580",
+      "links": [
+        {
+          "label": "View Collapse · プレプリント",
+          "url": "https://arxiv.org/abs/2609.33707",
+          "title": "Does Adversarial Training Improve Generalization in Multi-View VLAs? Revealing and Mitigating View Collapse",
+          "publication": "15_ViewCollapse"
+        }
+      ]
+    },
+    {
+      "id": "adversarial-robustness",
+      "title": "敵対的攻撃への頑健性と汎化性能",
+      "subtitle": "失敗のメカニズムを理解し、頑健な表現を学習する",
+      "description": "敵対的な摂動や知覚の曖昧さによってモデルが失敗する理由を分析し、学習と予測の信頼性を高める手法を開発しています。失敗のメカニズムと、頑健な学習・防御・校正・汎化の関係を、さまざまなタスクやモダリティで探ります。",
+      "publication_image": "6_ARAT",
+      "image_alt": "Overview of asymmetric representation regularization for adversarial training.",
+      "points": [
+        "失敗メカニズムの理解・分析",
+        "頑健な学習",
+        "予測信頼度の校正と汎化"
+      ],
+      "links": [
+        {
+          "label": "Brain Decoding with CLIP · プレプリント",
+          "url": "https://arxiv.org/abs/2607.03165",
+          "title": "Rethinking Brain Decoding with CLIP: The Role of Adversarial Robustness",
+          "publication": "14_BrainDecoding"
+        },
+        {
+          "label": "Differential Attention · ICLR 2026",
+          "url": "https://openreview.net/forum?id=kwy0cKmTm3",
+          "title": "Understanding Sensitivity of Differential Attention through the Lens of Adversarial Robustness",
+          "publication": "12_ICLR2026_DiffAttn"
+        },
+        {
+          "label": "Allegory of the Cave · APSIPA ASC 2025",
+          "url": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P052.pdf",
+          "title": "Allegory of the Cave: Breakdown of Illusions in Multimodal Perception with Neural Radiance Fields",
+          "publication": "18_APSIPA2025_Allegory"
+        },
+        {
+          "label": "AR-AT · ICLR 2025",
+          "url": "https://openreview.net/forum?id=M9SKazbVkJ",
+          "title": "Rethinking Invariance Regularization in Adversarial Training to Improve Robustness-Accuracy Trade-off",
+          "publication": "6_ARAT"
+        },
+        {
+          "label": "Infrared Patch Defense · ICIP 2024",
+          "url": "https://ieeexplore.ieee.org/document/10647435",
+          "title": "Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection",
+          "publication": "5_InfraredAdv"
+        },
+        {
+          "label": "DAC · ICML 2023",
+          "url": "https://proceedings.mlr.press/v202/tomani23a.html",
+          "title": "Beyond In-Domain Scenarios: Robust Density-Aware Calibration",
+          "publication": "4_2023Calibration"
+        },
+        {
+          "label": "Adversarial Transferability · WACV 2023",
+          "url": "https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html",
+          "title": "Closer Look at the Transferability of Adversarial Examples: How They Fool Different Models Differently",
+          "publication": "3_WACV2023CLoser"
+        }
+      ]
+    },
+    {
+      "id": "reliable-vlms",
+      "title": "視覚言語モデルの信頼性",
+      "subtitle": "頑健なマルチモーダル理解と評価",
+      "description": "視覚情報と言語情報を信頼性高く理解するための、視覚言語モデルの学習手法とベンチマークを開発しています。マルチモーダルな敵対的防御、言語教師信号、画像と言語の対応付けに加え、画像中の文字を読むべきか無視すべきかを評価します。",
+      "publication_image": "9_WACV2026",
+      "image_alt": "Overview of multimodal adversarial training with one-to-many image-text relationships.",
+      "points": [
+        "頑健なマルチモーダル学習と敵対的防御",
+        "言語教師信号と画像・言語の対応付け",
+        "安全性評価・Typographic 攻撃への頑健性・文字認識"
+      ],
+      "links": [
+        {
+          "label": "RIO-Bench · ECCV 2026",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-032-37372-4_31",
+          "title": "Read or Ignore? A Unified Benchmark for Typographic-Attack Robustness and Text Recognition in Vision-Language Models",
+          "publication": "10_RIO"
+        },
+        {
+          "label": "Text-Printed Image · CVPR 2026",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html",
+          "title": "Text-Printed Image: Bridging the Image-Text Modality Gap for Text-centric Training of Large Vision-Language Models",
+          "publication": "11_CVPR2026_TPI"
+        },
+        {
+          "label": "MAT · WACV 2026",
+          "url": "https://openaccess.thecvf.com/content/WACV2026/html/Waseda_Multimodal_Adversarial_Defense_for_Vision-Language_Models_by_Leveraging_One-To-Many_Relationships_WACV_2026_paper.html",
+          "title": "Multimodal Adversarial Defense for Vision-Language Models by Leveraging One-To-Many Relationships",
+          "publication": "9_WACV2026"
+        },
+        {
+          "label": "QT-AFT · ACM MM 2025",
+          "url": "https://dl.acm.org/doi/10.1145/3746027.3755623",
+          "title": "Quality Text, Robust Vision: The Role of Language in Enhancing Visual Robustness of Vision-Language Models",
+          "publication": "8_QTAFT"
+        }
+      ]
+    },
+    {
+      "id": "ownership-content-protection",
+      "title": "モデルの所有権検証とコンテンツ保護",
+      "subtitle": "モデルと視覚コンテンツを無断利用から保護する",
+      "description": "モデルの所有権を検証し、視覚コンテンツを無断のAI処理から守る手法を開発しています。Model Mergeに耐えるフィンガープリント、画像編集を追跡する透かし、無断の色付けを防ぐコンテンツに応じた摂動を研究します。",
+      "image_alt": "Semantic Color Naturalness Breaker adds a perturbation to a grayscale image, causing unauthorized AI colorization to produce unnatural colors.",
+      "points": [
+        "Model Merge後の所有権検証",
+        "画像編集を追跡する透かし",
+        "知覚とコンテンツを考慮したAI色付け防止"
+      ],
+      "links": [
+        {
+          "label": "Semantic Color Naturalness Breaker · SMC 2026",
+          "url": "https://arxiv.org/abs/2607.17610",
+          "title": "Semantic Color Naturalness Breaker: Preventing Illegitimate Colorization via Content-Aware Color Priors",
+          "publication": "17_SMC2026_SCNB"
+        },
+        {
+          "label": "AngelFingerprint · プレプリント",
+          "url": "https://arxiv.org/abs/2609.04709",
+          "title": "AngelFingerprint: A Traceable, Explainable, and White-Box Stealthy Watermark for Text-Guided Image Editing",
+          "publication": "16_AngelFingerprint"
+        },
+        {
+          "label": "Uncolorable Examples · APSIPA ASC 2025",
+          "url": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf",
+          "title": "Uncolorable Examples: Preventing Unauthorized AI Colorization via Perception-Aware Chroma-Restrictive Perturbation",
+          "publication": "13_APSIPA2025_Uncolorable"
+        },
+        {
+          "label": "MergePrint · ACL 2025",
+          "url": "https://aclanthology.org/2025.acl-long.342/",
+          "title": "MergePrint: Merge-Resistant Fingerprints for Robust Black-box Ownership Verification of Large Language Models",
+          "publication": "7_MergePrint"
+        }
+      ],
+      "image": "/media/research/scnb.png"
+    }
+  ],
+  "funding": [
+    {
+      "scheme": "科研費・研究活動スタート支援",
+      "scheme_ja": "JSPS KAKENHI — Research Activity Start-up",
+      "title": "信頼できるVLAの実現に向けた安全評価基盤の構築",
+      "number": "26K25580",
+      "period": "2026年7月31日〜2028年3月31日",
+      "role": "研究代表者",
+      "amount": "260万円",
+      "amount_detail": "直接経費：200万円・間接経費：60万円",
+      "url": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26K25580/",
+      "title_en": "Building a Safety Evaluation Framework for Trustworthy Vision-Language-Action Models",
+      "source_label": "KAKENで課題を見る",
+      "status": "current"
+    },
+    {
+      "scheme": "日本学術振興会 特別研究員（DC2）",
+      "scheme_ja": "JSPS Research Fellowships for Young Scientists",
+      "period": "2024年4月〜2026年3月",
+      "role": "特別研究員（DC2）",
+      "url": "https://www.jsps.go.jp/j-pd/",
+      "source_label": "JSPSの制度を見る",
+      "status": "past"
+    },
+    {
+      "scheme": "JST AIPチャレンジプログラム",
+      "scheme_ja": "JST AIP Challenge Program",
+      "period": "2023年4月〜2024年3月",
+      "amount": "100万円",
+      "amount_label": "研究費",
+      "url": "https://www.jst.go.jp/kisoken/aip/program/wakate/index.html",
+      "source_label": "JSTの制度を見る",
+      "status": "past"
+    }
+  ]
+}

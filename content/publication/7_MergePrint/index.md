@@ -17,7 +17,7 @@ author_notes:
 - "Equal contribution"
 
 date: "2025-07-27T00:00:00Z"
-doi: ""
+doi: "10.18653/v1/2025.acl-long.342"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-05-16T00:00:00Z"
@@ -34,9 +34,9 @@ publication_short: "ACL 2025 Main"
 
 abstract: "Protecting the intellectual property of Large Language Models (LLMs) has become increasingly critical due to the high cost of training. Model merging, which integrates multiple expert models into a single multi-task model, introduces a novel risk of unauthorized use of LLMs due to its efficient merging process. While fingerprinting techniques have been proposed for verifying model ownership, their resistance to model merging remains unexplored. To address this gap, we propose a novel fingerprinting method, MergePrint, which embeds robust fingerprints capable of surviving model merging. MergePrint enables black-box ownership verification, where owners only need to check if a model produces target outputs for specific fingerprint inputs, without accessing model weights or intermediate outputs. By optimizing against a pseudo-merged model that simulates merged behavior, MergePrint ensures fingerprints that remain detectable after merging. Additionally, to minimize performance degradation, we pre-optimize the fingerprint inputs. MergePrint pioneers a practical solution for black-box ownership verification, protecting LLMs from misappropriation via merging, while also excelling in resistance to broader model theft threats."
 highlights:
-- Proposed MergePrint for merge-resistant fingerprinting of LLM ownership.
-- Enabled black-box verification without requiring model internals.
-- Preserved fingerprint detectability after model merging with limited utility loss.
+- Embeds LLM fingerprints that resist model merging.
+- Verifies ownership by querying models even with only black-box access.
+- Preserves fingerprint detection with limited utility loss.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -81,6 +81,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025), Long Papers", "volume": "1", "pages": "6894–6916", "doi": "10.18653/v1/2025.acl-long.342", "source": "https://aclanthology.org/2025.acl-long.342/", "authors": ["Shojiro Yamabe", "Futa Kai Waseda", "Tsubasa Takahashi", "Koki Wataoka"], "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ACL 2025", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1]}
 ---
 <!-- 
 {{% callout note %}}

@@ -33,9 +33,9 @@ publication_short: "ICLR 2025"
 
 abstract: "Although adversarial training has been the state-of-the-art approach to defend against adversarial examples (AEs), it suffers from a robustness-accuracy trade-off, where high robustness is achieved at the cost of clean accuracy. In this work, we leverage invariance regularization on latent representations to learn discriminative yet adversarially invariant representations, aiming to mitigate this trade-off. We analyze two key issues in representation learning with invariance regularization: (1) a gradient conflict between invariance loss and classification objectives, leading to suboptimal convergence, and (2) the mixture distribution problem arising from diverged distributions of clean and adversarial inputs. To address these issues, we propose Asymmetrically Representation-regularized Adversarial Training (AR-AT), which incorporates asymmetric invariance loss with stop-gradient operation and a predictor to improve the convergence, and a split-BatchNorm (BN) structure to resolve the mixture distribution problem. Our method significantly improves the robustness-accuracy trade-off by learning adversarially invariant representations without sacrificing discriminative ability. Furthermore, we discuss the relevance of our findings to knowledge-distillation-based defense methods, contributing to a deeper understanding of their relative successes."
 highlights:
-- Revisited invariance regularization to improve the robustness-accuracy trade-off.
-- Proposed AR-AT with asymmetric loss, stop-gradient, predictor, and split-BN.
-- Learned adversarially invariant yet discriminative representations more effectively.
+- Improves the robustness-accuracy trade-off in training.
+- Uses asymmetric regularization to resolve gradient conflict.
+- Separates clean and adversarial distributions with split BN.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -80,6 +80,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "Proceedings of the 13th International Conference on Learning Representations (ICLR 2025)", "pages": "45053–45076", "source": "https://openreview.net/forum?id=M9SKazbVkJ", "sources": ["https://www.proceedings.com/content/080/080508webtoc.pdf", "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"], "authors": ["Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "url": "https://openreview.net/forum?id=M9SKazbVkJ", "abbreviation": "ICLR 2025", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/futakw/AR-AT"}], "pages_source": "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"}
 ---
 <!-- 
 {{% callout note %}}

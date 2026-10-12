@@ -1,0 +1,11 @@
+name = "Slate Blue & Mist"
+light = true
+primary = "#3F627F"
+menu_primary = "#4B6176"
+menu_text = "#E1E9F0"
+menu_text_active = "#FFFFFF"
+menu_title = "#FFFFFF"
+background = "#F4F6F8"
+home_section_odd = "#F4F6F8"
+home_section_even = "#EBF0F4"
+font = "rose"

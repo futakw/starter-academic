@@ -1,4 +1,19 @@
 <style>
+  :root {
+    --portfolio-background: #f8f5f0;
+    --portfolio-surface: #fffcf7;
+    --portfolio-text: #203c2e;
+    --portfolio-muted: #5b6b61;
+    --portfolio-accent: #28533f;
+    --portfolio-border: #daddd2;
+  }
+  body { color: var(--portfolio-text); }
+  h1, h2, h3, h4, h5, h6 { color: var(--portfolio-text); }
+
+  #navbar-main .nav-icons .language-switch { display: flex; flex-direction: row; color: #f8f5f0; align-items: center; gap: .25rem; margin-left: .45rem; white-space: nowrap; font-size: .7rem; }
+  .language-switch .language-link { padding: .25rem !important; font-size: inherit; }
+  .language-current { font-weight: 700; padding: .25rem; }
+  .language-switch > :first-child::after { content: "/"; font-weight: 400; opacity: .6; margin-left: .5rem; }
   .author-highlighted {
     font-weight: 700;
     text-decoration: underline;
@@ -20,7 +35,7 @@
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    background: #fffdf8;
+    background: var(--portfolio-surface);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: transform 170ms ease, box-shadow 170ms ease, border-color 170ms ease;
   }
@@ -41,8 +56,8 @@
   }
 
   .pub-highlights li {
-    margin-bottom: 0.25rem;
-    line-height: 1.45;
+    margin-bottom: 0.1rem;
+    line-height: 1.4;
     font-size: 0.8rem;
   }
 
@@ -66,8 +81,8 @@
     margin-right: 0.5rem;
     padding: 0.12rem 0.55rem;
     border-radius: 999px;
-    background: #ffe9b8;
-    color: #6a4b00;
+    background: #e3e9df;
+    color: #28533f;
     font-size: 0.78rem;
     font-weight: 700;
     vertical-align: middle;
@@ -85,9 +100,9 @@
     display: inline-block;
     margin-left: 0.35rem;
     padding: 0.12rem 0.55rem;
-    border-radius: 999px;
-    background: #c8860a;
-    color: #fff;
+    border-radius: .2rem;
+    background: #f2e2da;
+    color: #9e4c35;
     font-size: 0.74rem;
     font-weight: 700;
     vertical-align: middle;
@@ -99,11 +114,48 @@
     white-space: nowrap;
   }
 
+  .pub-media-column .pub-topline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2rem;
+    margin-bottom: .45rem;
+  }
+
+  .pub-media-column .pub-venue-tag { font-family: "{{ .Scratch.Get "heading_font" | default "Lora" }}", serif; font-size: 1.15rem; line-height: 1.35; margin-right: 0; border-radius: .3rem; padding: .15rem .4rem; white-space: normal; }
+  .pub-media-column .pub-date { color: #777; }
+  .dark [id="3_publications"] .pub-media-column .pub-date { color: #aaa; }
+  .pub-media-column .btn-links { margin-top: .4rem; margin-bottom: .4rem; line-height: 1.4; }
+  .pub-list-custom .article-style { line-height: 1.4; margin-bottom: .4rem; }
+
+  [id="0_about"] .article-style,
+  [id="0_about"] .ul-interests,
+  [id="01_news"] .article-style { line-height: 1.4; }
+  [id="0_about"] .article-style p,
+  [id="01_news"] .article-style p { margin-bottom: .5rem; }
+  [id="0_about"] .article-style li,
+  [id="0_about"] .ul-interests li,
+  [id="01_news"] .article-style li { margin-bottom: .1rem; }
+
+  .exp-company-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .75rem; }
+  .exp-company-details { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: baseline; gap: .15rem .5rem; }
+  .exp-company-details .exp-company { flex: 0 1 auto; }
+  .exp-company-row .exp-date { margin-left: auto; text-align: right; white-space: nowrap; font-size: .75rem; }
+  .exp-location { font-size: .75rem; margin-top: .1rem; }
+
+  [id="2_experience"] .card-text,
+  [id="5_awards"] .card-text,
+  [id="6_accomplishments"] .card-text { margin: .25rem 0 0; padding: 0; line-height: 1.4; }
+  [id="2_experience"] .card-text p,
+  [id="5_awards"] .card-text p,
+  [id="6_accomplishments"] .card-text p { margin: 0; }
+  [id="5_awards"] .card .card-body,
+  [id="6_accomplishments"] .card .card-body { padding-top: .55rem; padding-bottom: .55rem; }
+
   .experience .exp-company,
   .experience .exp-company a {
     font-size: 1rem;
     font-weight: 700 !important;
-    color: #000 !important;
+    color: var(--portfolio-text) !important;
   }
 
   .experience .col.py-2 {
@@ -133,7 +185,7 @@
   }
 
   .page-footer {
-    background: #efe3de;
+    background: #f0eee7;
     border-top: 1px solid rgba(0, 0, 0, 0.09);
   }
 
@@ -161,7 +213,7 @@
     margin: 0;
     font-size: 1.15rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.72);
+    color: var(--portfolio-text);
   }
 
   .custom-footer-icons {
@@ -171,7 +223,7 @@
   }
 
   .custom-footer-icons a {
-    color: rgba(0, 0, 0, 0.68);
+    color: var(--portfolio-muted);
     font-size: 1.25rem;
     line-height: 1;
     transition: transform 120ms ease, color 120ms ease;
@@ -187,7 +239,7 @@
     margin: 2.5rem 0 0;
     font-size: 0.78rem;
     line-height: 1.2;
-    color: rgba(0, 0, 0, 0.56);
+    color: var(--portfolio-muted);
   }
 
 
@@ -359,10 +411,10 @@
     isolation: isolate;
     overflow: hidden;
     width: 100%;
-    height: 260px;
-    margin: 0 0 1.35rem;
+    height: clamp(130px, 20vh, 190px);
+    margin: 0 0 .5rem;
     background-image:
-      linear-gradient(180deg, rgba(8, 20, 28, 0.2) 0%, rgba(8, 20, 28, 0.42) 100%),
+      linear-gradient(180deg, rgba(248, 245, 240, 0.05) 0%, rgba(32, 60, 46, 0.08) 100%),
       url('/media/wave_6.svg');
     background-size: cover;
     background-position: center 44%;
@@ -387,12 +439,12 @@
 
   [id="0_about"].home-section {
     padding-top: 0 !important;
-    padding-bottom: 48px !important;
-    min-height: calc(100vh - 70px);
+    padding-bottom: 20px !important;
+    min-height: calc(100svh - 70px);
   }
 
   [id="0_about"] > .container {
-    min-height: calc(100vh - 70px - 260px);
+    min-height: 0;
     display: flex;
     align-items: flex-start;
   }
@@ -402,21 +454,48 @@
   }
 
   [id="0_about"] #profile {
-    margin-top: -140px;
+    margin-top: -100px;
     padding-top: 0;
   }
 
   [id="0_about"] #profile .avatar {
-    box-shadow: 0 0 0 9px #e2d4d0;
+    box-shadow: 0 0 0 9px var(--portfolio-background);
+    width: 200px;
+    height: 200px;
+  }
+
+  [id="0_about"] .article-style { font-size: .95rem; }
+  [id="0_about"] .article-style ul { margin-bottom: .5rem; }
+  [id="0_about"] .ul-interests { font-size: .9rem; }
+  [id="0_about"] .ul-edu .course { margin-bottom: .05rem; line-height: 1.3; font-size: .85rem; }
+  [id="0_about"] .ul-edu .institution { margin-bottom: .35rem; line-height: 1.3; font-size: .78rem; }
+  [id="0_about"] .about-main > h1,
+  [id="0_about"] .about-main h3 { font-family: "{{ .Scratch.Get "heading_font" | default "Lora" }}", sans-serif; font-weight: 700; line-height: 1.25; }
+  [id="0_about"] .about-main > h1 { font-size: 1.4rem; }
+  [id="0_about"] .about-main h3 { font-size: 1.25rem; }
+  [id="0_about"] .about-main h3 { margin-top: .5rem; margin-bottom: .4rem; }
+  [id="0_about"] .portrait-title h2 { font-size: 1.7rem; }
+  [id="0_about"] .portrait-title h3 { font-size: .9rem; line-height: 1.35; }
+  [id="0_about"] .portrait-title .portrait-position { margin-bottom: .3rem; }
+  [id="0_about"] .portrait-title .portrait-focus { margin-top: 0; margin-bottom: .6rem; }
+  [id="0_about"] .network-icon { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem; margin-top: 1rem; padding: 0; }
+  [id="0_about"] .network-icon li { margin: 0; }
+  [id="0_about"] .network-icon .big-icon { font-size: 1.55rem; }
+  @media (min-width: 992px) {
+    [id="0_about"] .about-profile { flex: 0 0 30%; max-width: 30%; }
+    [id="0_about"] .about-main { flex: 0 0 70%; max-width: 70%; margin-top: -.4rem; padding-left: 1.5rem; }
+    [id="0_about"] .about-main > h1 { margin-bottom: .6rem; }
+    [id="0_about"] .about-interests { flex: 0 0 52%; max-width: 52%; }
+    [id="0_about"] .about-education { flex: 0 0 48%; max-width: 48%; }
   }
 
   [id="0_about"] .article-style a {
-    color: rgba(0, 0, 0, 0.58);
+    color: var(--portfolio-accent);
   }
 
   [id="0_about"] .article-style a:hover,
   [id="0_about"] .article-style a:focus-visible {
-    color: rgba(0, 0, 0, 0.74);
+    color: #173326;
   }
 
   .scroll-progress {
@@ -435,8 +514,8 @@
     height: 100%;
     transform-origin: 0 50%;
     transform: scaleX(0);
-    background: linear-gradient(90deg, #9b5f00 0%, #d28a19 45%, #f2c96d 100%);
-    box-shadow: 0 0 14px rgba(210, 138, 25, 0.35);
+    background: #719582;
+    box-shadow: none;
   }
 
   @media (max-width: 768px) {
@@ -464,12 +543,12 @@
     }
 
     [id="0_about"] #profile .avatar {
-      box-shadow: 0 0 0 7px #e2d4d0;
+      box-shadow: 0 0 0 7px var(--portfolio-background);
     }
   }
 
   .dark [id="0_about"] #profile .avatar {
-    box-shadow: 0 0 0 9px #272935;
+    box-shadow: 0 0 0 9px var(--portfolio-background);
   }
 
   .dark [id="0_about"] .article-style a {
@@ -483,7 +562,7 @@
 
   @media (max-width: 768px) {
     .dark [id="0_about"] #profile .avatar {
-      box-shadow: 0 0 0 7px #272935;
+      box-shadow: 0 0 0 7px var(--portfolio-background);
     }
   }
 
@@ -502,8 +581,8 @@
   [id="3_publications"] .pub-list-custom:hover,
   [id="3_publications"] .pub-list-custom:focus-within {
     transform: translateY(-4px) scale(1.01);
-    border-color: rgba(106, 75, 0, 0.24);
-    box-shadow: 0 10px 26px rgba(80, 58, 20, 0.14);
+    border-color: rgba(40, 83, 63, 0.24);
+    box-shadow: 0 10px 26px rgba(32, 60, 46, 0.14);
   }
 
   [id="3_publications"] .pub-list-custom:hover .pub-list-image,
@@ -514,7 +593,7 @@
 
   [id="5_awards"] .card .card-title,
   [id="6_accomplishments"] .card .card-title {
-    color: #000 !important;
+    color: var(--portfolio-text) !important;
   }
 
   .dark [id="2_experience"] .card .card-title,
@@ -720,7 +799,7 @@
           badge.textContent = a.label;
           // Wrap venue-tag + award-badge so they stay grouped on the left
           var group = document.createElement('span');
-          group.style.cssText = 'display:inline-flex;align-items:center;gap:0;';
+          group.style.cssText = 'display:inline-flex;align-items:center;flex-wrap:wrap;gap:0.2rem;max-width:100%;';
           tag.parentNode.insertBefore(group, tag);
           group.appendChild(tag);
           group.appendChild(badge);
@@ -795,13 +874,13 @@
 
       var button = document.createElement('a');
       button.href = '#';
-      button.setAttribute('aria-label', 'copy email');
-      button.setAttribute('title', 'Copy email');
+      button.setAttribute('aria-label', '{{ if eq .Lang "ja" }}メールアドレスをコピー{{ else }}Copy email{{ end }}');
+      button.setAttribute('title', '{{ if eq .Lang "ja" }}メールアドレスをコピー{{ else }}Copy email{{ end }}');
       button.innerHTML = '<i class="fas fa-envelope big-icon"></i>';
 
       var toast = document.createElement('span');
       toast.className = 'copy-toast';
-      toast.textContent = 'Copied';
+      toast.textContent = '{{ if eq .Lang "ja" }}コピーしました{{ else }}Copied{{ end }}';
 
       item.appendChild(button);
       item.appendChild(toast);
@@ -934,7 +1013,7 @@
       var year = new Date().getFullYear();
       footer.innerHTML =
         '<div class="custom-footer">' +
-          '<p class="custom-footer-title">Let&apos;s get in touch!</p>' +
+          '<p class="custom-footer-title">{{ if eq .Lang "ja" }}お気軽にご連絡ください！{{ else }}Let&apos;s get in touch!{{ end }}</p>' +
           '<div class="custom-footer-icons">' +
             '<a href="https://www.linkedin.com/in/futa-waseda/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>' +
             '<a href="https://twitter.com/futakw" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>' +
@@ -953,8 +1032,8 @@
       var title = about.querySelector('#profile .portrait-title');
       var heading = about.querySelector('h1');
       var article = about.querySelector('.article-style');
-      var interestsHeading = about.querySelector('.col-md-5 h3');
-      var educationHeading = about.querySelector('.col-md-7 h3');
+      var interestsHeading = about.querySelector('.about-interests h3');
+      var educationHeading = about.querySelector('.about-education h3');
       var interests = about.querySelector('.ul-interests');
       var education = about.querySelector('.ul-edu');
       var iconItems = about.querySelectorAll('#profile .network-icon li');

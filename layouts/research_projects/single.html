@@ -1,0 +1,98 @@
+{{ define "main" }}
+{{ $data := site.Data.research_projects }}
+{{ $ja := eq .Lang "ja" }}
+{{ if $ja }}{{ $data = site.Data.research_projects_ja }}{{ end }}
+<main class="universal-wrapper research-page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="article-style research-intro">{{ . }}</div>{{ end }}
+  <div class="research-grid">
+    {{ range $data.projects }}
+    {{ $project := . }}
+    <article class="research-card" id="{{ .id }}" aria-labelledby="title-{{ .id }}">
+      {{ if .publication_image }}
+        {{ $paper := site.GetPage (printf "/publication/%s" .publication_image) }}
+        {{ with $paper.Resources.GetMatch "*featured*" }}
+          {{ $image := .Fit "1000x400" }}
+          <img class="research-image" src="{{ $image.RelPermalink }}" alt="{{ $project.image_alt }}" loading="lazy" width="{{ $image.Width }}" height="{{ $image.Height }}">
+        {{ end }}
+      {{ else }}
+        <img class="research-image" src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy" width="640" height="220">
+      {{ end }}
+      <div class="research-card-body">
+        <h2 id="title-{{ .id }}">{{ .title }}</h2>
+        <p class="research-subtitle">{{ .subtitle }}</p>
+        {{ with .funding }}<a class="research-funding-tag" href="#research-funding">{{ . }}</a>{{ end }}
+        <p>{{ .description }}</p>
+        <ul>{{ range .points }}<li>{{ . }}</li>{{ end }}</ul>
+        <div class="research-links" aria-label="{{ if $ja }}関連論文{{ else }}Related papers{{ end }}">
+          {{ range .links }}<a href="{{ .url | relURL }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>{{ end }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ with $data.funding }}
+  <section class="research-funding" id="research-funding" aria-labelledby="funding-title">
+    {{ range $status := slice "current" "past" }}
+    {{ with where $data.funding "status" $status }}
+    <div class="research-funding-group">
+    <h2 id="{{ if eq $status "current" }}funding-title{{ else }}funding-past-title{{ end }}">{{ if eq $status "current" }}{{ if $ja }}研究助成{{ else }}Research Funding{{ end }}{{ else }}{{ if $ja }}研究助成（終了）{{ else }}Past Research Funding{{ end }}{{ end }}</h2>
+    {{ range . }}
+    <div class="research-funding-body">
+      <h3>{{ .scheme }}</h3>
+      {{ with .scheme_ja }}<p class="research-subtitle">{{ . }}</p>{{ end }}
+      {{ with .title }}<p class="research-grant-title" lang="ja">{{ . }}</p>{{ end }}
+      {{ with .title_en }}<p class="research-subtitle" lang="en">{{ . }}</p>{{ end }}
+      <dl>
+        {{ with .number }}<dt>{{ if $ja }}課題番号{{ else }}Project number{{ end }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with .period }}<dt>{{ if $ja }}期間{{ else }}Period{{ end }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with .role }}<dt>{{ if $ja }}役割{{ else }}Role{{ end }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{ if .amount }}<dt>{{ .amount_label | default (cond $ja "配分額（総額）" "Total funding") }}</dt><dd>{{ .amount }}{{ with .amount_detail }}<span class="research-funding-detail">{{ . }}</span>{{ end }}</dd>{{ end }}
+      </dl>
+      <a class="research-source" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .source_label }} ↗</a>
+    </div>
+    {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+</main>
+<style>
+  .research-page { padding-top: 1.5rem; padding-bottom: 3rem; }
+  .research-page > h1 { margin-bottom: .7rem; }
+  .research-intro { max-width: 760px; line-height: 1.5; margin-bottom: 1.5rem; }
+  .research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem; }
+  .research-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--portfolio-border); border-radius: .5rem; background: var(--portfolio-surface); scroll-margin-top: 90px; }
+  .research-image { display: block; width: 100%; height: 175px; object-fit: contain; padding: .6rem; margin: 0; background: #fff; }
+  .research-card-body { padding: 1rem; display: flex; flex-direction: column; flex: 1; font-size: .85rem; line-height: 1.45; }
+  .research-card h2 { font-size: 1.15rem; line-height: 1.3; margin: 0 0 .35rem; }
+  .research-subtitle { color: var(--portfolio-muted); font-size: .8rem; margin-bottom: .65rem; }
+  .research-card p { margin-bottom: .65rem; }
+  .research-card ul { padding-left: 1.1rem; margin-bottom: .8rem; }
+  .research-card li { margin-bottom: .15rem; }
+  .research-funding-tag { align-self: flex-start; font-size: .7rem; padding: .15rem .35rem; border: 1px solid var(--portfolio-accent); border-radius: .2rem; margin-bottom: .65rem; }
+  .research-links { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; }
+  .research-links a { font-size: .7rem; padding: .2rem .4rem; border: 1px solid var(--portfolio-accent); border-radius: .2rem; }
+  .research-links a:hover, .research-source:hover { text-decoration: underline; }
+  .research-links a, .research-funding-tag { background: #e3e9df; color: var(--portfolio-text); }
+  .research-funding { margin-top: 2rem; scroll-margin-top: 90px; }
+  .research-funding h2 { font-size: 1.5rem; margin-bottom: .8rem; }
+  .research-funding-group + .research-funding-group { margin-top: 1.5rem; }
+  .research-funding-body { padding: 1.1rem; border: 1px solid var(--portfolio-border); border-left: 4px solid var(--portfolio-accent); border-radius: .3rem; background: var(--portfolio-surface); font-size: .85rem; }
+  .research-funding-body + .research-funding-body { margin-top: .8rem; }
+  .research-funding h3 { font-size: 1.1rem; margin: 0 0 .3rem; }
+  .research-grant-title { font-weight: 700; margin-bottom: .8rem; }
+  .research-funding dl { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: .4rem .8rem; margin-bottom: .8rem; }
+  .research-funding dt, .research-funding dd { margin: 0; }
+  .research-funding-detail { display: block; font-size: .75rem; margin-top: .2rem; }
+  .dark .research-card, .dark .research-funding-body { background: #28272a; border-color: #65554d; }
+  .dark .research-subtitle { color: #c4b5ac; }
+  .dark .research-funding-body { border-left-color: #b9927e; }
+  @media (max-width: 767px) {
+    .research-grid { grid-template-columns: minmax(0, 1fr); }
+    .research-funding dl { grid-template-columns: 1fr; gap: .2rem; }
+    .research-funding dd { margin-bottom: .5rem; }
+  }
+</style>
+{{ end }}

@@ -1,0 +1,11 @@
+name = "Navy & Off-white"
+light = true
+primary = "#315F87"
+menu_primary = "#26394D"
+menu_text = "#D8E3ED"
+menu_text_active = "#FFFFFF"
+menu_title = "#FFFFFF"
+background = "#F5F7F9"
+home_section_odd = "#F5F7F9"
+home_section_even = "#EDF2F6"
+font = "rose"

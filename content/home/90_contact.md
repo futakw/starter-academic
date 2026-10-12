@@ -1,31 +1,16 @@
 ---
-# An instance of the Contact widget.
-# Documentation: https://sourcethemes.com/academic/docs/page-builder/
-widget: contact
+widget: blank
 active: false
-
-# This file represents a page section.
 headless: true
-
-# Order that this section appears on the page.
 weight: 130
-
 title: Contact
-subtitle:
-
-content:
-  # Automatically link email and phone or display as text?
-  autolink: true
-  
-  # Email form provider
-  form:
-    provider: netlify
-    formspree:
-      id:
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
-  
+subtitle: ''
 design:
   columns: '2'
 ---
+
+I welcome opportunities for **research collaboration** and enquiries about **technical advisory work**, particularly in trustworthy AI, adversarial robustness, vision-language models, and Physical AI.
+
+If you have a research question or a practical challenge where my expertise could help, please feel free to get in touch.
+
+**Email:** futa-waseda [at] nii.ac.jp

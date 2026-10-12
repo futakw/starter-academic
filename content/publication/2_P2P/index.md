@@ -15,7 +15,7 @@ authors:
 # - "Equal contribution"
 
 date: "2020-06-09T00:00:00Z"
-doi: ""
+doi: "10.1109/EEEIC/ICPSEurope49358.2020.9160846"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-06-09T00:00:00Z"
@@ -79,6 +79,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "2020 IEEE International Conference on Environment and Electrical Engineering and 2020 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe 2020)", "pages": "1–6", "doi": "10.1109/EEEIC/ICPSEurope49358.2020.9160846", "source": "https://ieeexplore.ieee.org/document/9160846", "authors": ["Futa Waseda", "Kenji Tanaka"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "EEEIC / I&CPS Europe 2020", "conference_group": "Conference Proceedings"}
 ---
 <!-- 
 {{% callout note %}}

@@ -34,9 +34,9 @@ publication_short: ICML 2023
 
 abstract: "Calibrating deep learning models to yield uncertainty-aware predictions is crucial as deep neural networks get increasingly deployed in safety-critical applications. While existing post-hoc calibration methods achieve impressive results on in-domain test datasets, they are limited by their inability to yield reliable uncertainty estimates in domain-shift and out-of-domain (OOD) scenarios. We aim to bridge this gap by proposing DAC, an accuracy-preserving as well as Density-Aware Calibration method based on k-nearest-neighbors (KNN). In contrast to existing post-hoc methods, we utilize hidden layers of classifiers as a source for uncertainty-related information and study their importance. We show that DAC is a generic method that can readily be combined with state-of-the-art post-hoc methods. DAC boosts the robustness of calibration performance in domain-shift and OOD, while maintaining excellent in-domain predictive uncertainty estimates. We demonstrate that DAC leads to consistently better calibration across a large number of model architectures, datasets, and metrics. Additionally, we show that DAC improves calibration substantially on recent large-scale neural networks pre-trained on vast amounts of data."
 highlights:
-- Proposed DAC, a KNN-based density-aware post-hoc calibration method.
-- Improved uncertainty reliability under domain shift and OOD conditions.
-- Maintained strong in-domain performance across diverse models and datasets.
+- Calibrates confidence using local feature density.
+- Improves reliability under domain shifts and OOD inputs.
+- Maintains performance across models and datasets.
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -81,6 +81,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+bibliography: {"venue": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Proceedings of Machine Learning Research", "volume": "202", "pages": "34344–34368", "source": "https://proceedings.mlr.press/v202/tomani23a.html", "authors": ["Christian Tomani", "Futa Kai Waseda", "Yuesong Shen", "Daniel Cremers"], "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICML 2023", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1], "resources": [{"label": "GitHub", "url": "https://github.com/futakw/DensityAwareCalibration"}]}
 ---
 <!-- 
 {{% callout note %}}
