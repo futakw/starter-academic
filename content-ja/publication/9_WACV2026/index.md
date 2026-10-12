@@ -41,7 +41,7 @@ url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/r1r7nwhcAO8?si=Tw34ESAoB39Dw1Dh'
 
 # Featured image
 image:
@@ -50,3 +50,5 @@ image:
   preview_only: false
 bibliography: {"venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)", "pages": "6968–6977", "doi": "10.1109/WACV61042.2026.00673", "source": "https://openaccess.thecvf.com/content/WACV2026/html/Waseda_Multimodal_Adversarial_Defense_for_Vision-Language_Models_by_Leveraging_One-To-Many_Relationships_WACV_2026_paper.html", "authors": ["Futa Waseda", "Antonio Tejero-de-Pablos", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "WACV 2026", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/CyberAgentAILab/multimodal-adversarial-training"}]}
 ---
+
+<div class="yt-embed"><iframe src="https://www.youtube.com/embed/r1r7nwhcAO8" title="WACV 2026 presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>

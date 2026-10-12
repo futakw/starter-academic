@@ -3,6 +3,7 @@ title: trip map
 summary: Demo web application I made in school. In this app, you can clip the place you want to go in the future, find the shortest way to go through the chosen spots. I was responsible for front-end system using html, css, javascript. 
 tags:
 - Web App
+- Archived
 date: "2018-04-30T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -12,9 +13,7 @@ image:
   caption: App
   focal_point: Smart
 
-links:
-- name: url
-  url: https://tripmap-psi.herokuapp.com/
+links: []
 url_code: ""
 url_pdf: ""
 url_slides: ""

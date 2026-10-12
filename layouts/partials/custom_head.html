@@ -10,6 +10,115 @@
   body { color: var(--portfolio-text); }
   h1, h2, h3, h4, h5, h6 { color: var(--portfolio-text); }
 
+  /* Side Projects: replace Isotope masonry's ragged brick layout with an
+     equal-height grid so every card's bottom edge lines up per row. */
+  [id="4_projects"] .projects-container.js-layout-masonry {
+    position: static !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 991.98px) {
+    [id="4_projects"] .projects-container.js-layout-masonry {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    [id="4_projects"] .projects-container.js-layout-masonry {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  [id="4_projects"] .project-card.project-item {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  [id="4_projects"] .project-card .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  [id="4_projects"] .project-card .card-image {
+    display: block;
+  }
+
+  [id="4_projects"] .project-card .card-image img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  [id="4_projects"] .project-card .card-text {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  [id="4_projects"] .project-card-clickable {
+    cursor: pointer;
+  }
+
+  [id="4_projects"] .project-card.js-id-Archived .card-image img {
+    filter: grayscale(55%);
+    opacity: 0.75;
+  }
+
+  [id="4_projects"] .project-card.js-id-Archived .card-title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  [id="4_projects"] .project-status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.08rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--portfolio-muted);
+    background: rgba(0, 0, 0, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    white-space: nowrap;
+  }
+
+  .dark [id="4_projects"] .project-status-badge {
+    color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .yt-embed {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+    margin: 1rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #000;
+  }
+
+  .yt-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   #navbar-main .nav-icons .language-switch { display: flex; flex-direction: row; color: #f8f5f0; align-items: center; gap: .25rem; margin-left: .45rem; white-space: nowrap; font-size: .7rem; }
   .language-switch .language-link { padding: .25rem !important; font-size: inherit; }
   .language-current { font-weight: 700; padding: .25rem; }
@@ -297,25 +406,43 @@
     position: relative;
   }
 
-  .experience-company-logo {
-    display: inline-flex;
-    width: 22px;
-    height: 22px;
-    margin-right: 0.45rem;
-    border-radius: 5px;
+  .experience .card .card-body.has-logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .experience-card-logo {
+    flex: 0 0 auto;
+    width: 44px;
+    height: 44px;
+    margin-top: 0.1rem;
+    border-radius: 9px;
     border: 1px solid rgba(0, 0, 0, 0.14);
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.95);
     overflow: hidden;
-    vertical-align: text-bottom;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .experience-company-logo img {
+  .experience-card-logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
+  }
+
+  .experience-card-content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  @media (max-width: 575.98px) {
+    .experience-card-logo {
+      width: 36px;
+      height: 36px;
+    }
   }
 
   .dark .alert-tip {
@@ -366,9 +493,9 @@
     background: rgba(236, 240, 244, 0.95);
   }
 
-  .dark .experience-company-logo {
+  .dark .experience-card-logo {
     border-color: rgba(255, 255, 255, 0.22);
-    background: rgba(36, 41, 48, 0.9);
+    background: rgba(255, 255, 255, 0.95);
   }
 
   .dark .pub-list-custom {
@@ -737,6 +864,8 @@
     initCopyEmailIcon();
     initIconLabels();
     initExperienceLogos();
+    initProjectStatusBadges();
+    initProjectCardClick();
     initBioTopBanner();
     initCustomFooter();
     initHeroEntrance(reducedMotion);
@@ -957,13 +1086,22 @@
       // Only local files should be referenced here (officially distributable logos only).
       // Add files under /static/media/experience-logos/ and map by company URL host.
       var logoByHost = {
-        // 'www.nec.com': '/media/experience-logos/nec.svg',
-        // 'cyberagent.ai': '/media/experience-logos/cyberagent.svg',
+        'ollo.tech': '/media/experience-logos/ollo.png',
+        'nii.ac.jp': '/media/experience-logos/nii.png',
+        'nec.com': '/media/experience-logos/nec.png',
+        'cyberagent.ai': '/media/experience-logos/cyberagent-ai-lab.png',
+        'madori-labo.com': '/media/experience-logos/madori-labo.png',
+        'sbintuitions.co.jp': '/media/experience-logos/sb-intuitions.png',
+        'tur.ing': '/media/experience-logos/turing.png'
       };
 
-      var companyLinks = section.querySelectorAll('.exp-company a[href]');
-      companyLinks.forEach(function (link) {
-        if (link.querySelector('.experience-company-logo')) return;
+      var cards = section.querySelectorAll('.card');
+      cards.forEach(function (card) {
+        var body = card.querySelector('.card-body');
+        if (!body || body.querySelector('.experience-card-logo')) return;
+
+        var link = body.querySelector('.exp-company a[href]');
+        if (!link) return;
 
         var host = '';
         try {
@@ -975,9 +1113,9 @@
         var logoPath = logoByHost[host] || logoByHost['www.' + host];
         if (!logoPath) return;
 
-        var iconWrap = document.createElement('span');
-        iconWrap.className = 'experience-company-logo';
-        iconWrap.setAttribute('aria-hidden', 'true');
+        var logoWrap = document.createElement('div');
+        logoWrap.className = 'experience-card-logo';
+        logoWrap.setAttribute('aria-hidden', 'true');
 
         var img = document.createElement('img');
         img.loading = 'lazy';
@@ -985,11 +1123,65 @@
         img.alt = '';
         img.src = logoPath;
         img.addEventListener('error', function () {
-          iconWrap.remove();
+          logoWrap.remove();
+          body.classList.remove('has-logo');
         });
+        logoWrap.appendChild(img);
 
-        iconWrap.appendChild(img);
-        link.insertBefore(iconWrap, link.firstChild);
+        var content = document.createElement('div');
+        content.className = 'experience-card-content';
+        while (body.firstChild) {
+          content.appendChild(body.firstChild);
+        }
+
+        body.appendChild(logoWrap);
+        body.appendChild(content);
+        body.classList.add('has-logo');
+      });
+    }
+
+    function initProjectStatusBadges() {
+      var section = document.querySelector('[id="4_projects"]');
+      if (!section) return;
+
+      var isJa = (document.documentElement.lang || '').toLowerCase().indexOf('ja') === 0;
+      var badgeText = isJa ? '終了' : 'Archived';
+
+      section.querySelectorAll('.project-card.js-id-Archived h4').forEach(function (h4) {
+        if (h4.querySelector('.project-status-badge')) return;
+
+        var row = document.createElement('span');
+        row.className = 'card-title-row';
+        while (h4.firstChild) {
+          row.appendChild(h4.firstChild);
+        }
+
+        var badge = document.createElement('span');
+        badge.className = 'project-status-badge';
+        badge.textContent = badgeText;
+
+        row.appendChild(badge);
+        h4.appendChild(row);
+      });
+    }
+
+    function initProjectCardClick() {
+      var section = document.querySelector('[id="4_projects"]');
+      if (!section) return;
+
+      section.querySelectorAll('.project-card .card').forEach(function (card) {
+        var titleLink = card.querySelector('h4 a[href]');
+        if (!titleLink) return;
+
+        card.classList.add('project-card-clickable');
+        card.addEventListener('click', function (e) {
+          if (e.target.closest('a')) return;
+          if (titleLink.target === '_blank') {
+            window.open(titleLink.href, '_blank', 'noopener');
+          } else {
+            window.location.href = titleLink.href;
+          }
+        });
       });
     }
 

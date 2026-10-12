@@ -3,6 +3,7 @@ title: Oshaberi-Bot（おしゃべりぼっと）
 summary: My first twitter bot app. He learns japanese from his followers, by fitting retrieved data to Markov model.
 tags:
 - Web App
+- Archived
 date: "2020-04-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

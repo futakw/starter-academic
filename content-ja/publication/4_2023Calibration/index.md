@@ -17,7 +17,7 @@ author_notes:
 - "Equal contribution"
 
 date: "2023-07-23T00:00:00Z"
-doi: ""
+doi: "10.48550/arXiv.2302.05118"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-03-01T00:00:00Z"

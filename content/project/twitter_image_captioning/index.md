@@ -3,6 +3,7 @@ title: Twitter Image Captioning
 summary: Made a model which outputs text from a image like human tweets, using Encoder-Decoder Model. Application of image captioning technique.
 tags:
 - Deep learning
+- Archived
 date: "2021-01-05T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

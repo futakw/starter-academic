@@ -44,7 +44,7 @@ url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/W5CxnKPkTz0?si=e0-Pu1YehJilwYAs'
 
 # Featured image
 image:
@@ -55,3 +55,5 @@ bibliography: {"venue": "Proceedings of the European Conference on Computer Visi
 ---
 
 <strong>TL;DR:</strong> VLMs must sometimes read text in images and sometimes ignore it — but no model does both well. We propose RIO-Bench, the first benchmark unifying typographic-attack robustness and text recognition evaluation. We further introduce a data-driven defense that adaptively selects when to use in-image text, outperforming prior non-adaptive approaches.
+
+<div class="yt-embed"><iframe src="https://www.youtube.com/embed/W5CxnKPkTz0" title="ECCV 2026 presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>

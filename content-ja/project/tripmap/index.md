@@ -3,6 +3,7 @@ title: Trip Map
 summary: 行きたい場所を保存し、選択した場所を巡る最短経路を探す旅行計画アプリ。
 tags:
 - Web App
+- Archived
 date: "2018-04-30T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

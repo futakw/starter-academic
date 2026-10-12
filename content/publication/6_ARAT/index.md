@@ -45,10 +45,9 @@ tags: ["recent"]
 # Display this page in the Featured widget?
 featured: false
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: OpenReview
+  url: https://openreview.net/forum?id=M9SKazbVkJ
 
 url_pdf: 'https://arxiv.org/abs/2402.14648'
 url_code: ''

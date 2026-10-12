@@ -3,6 +3,7 @@ title: Twitter Image Captioning
 summary: 画像から、主観やユーモアを含むツイート風の文章を生成。
 tags:
 - Deep learning
+- Archived
 date: "2021-01-05T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

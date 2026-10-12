@@ -28,6 +28,10 @@ tags: ["recent"]
 
 featured: false
 
+links:
+- name: OpenReview
+  url: https://openreview.net/forum?id=kwy0cKmTm3
+
 url_pdf: 'https://arxiv.org/pdf/2510.00517'
 url_code: ''
 url_dataset: ''

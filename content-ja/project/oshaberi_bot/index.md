@@ -3,6 +3,7 @@ title: おしゃべりぼっと
 summary: フォロワーの投稿をマルコフモデルで学習する、初めて作ったTwitterボット。
 tags:
 - Web App
+- Archived
 date: "2020-04-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

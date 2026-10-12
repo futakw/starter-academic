@@ -8,7 +8,7 @@ authors:
 - Tsubasa Takahashi
 
 date: "2026-06-01T00:00:00Z"
-doi: ""
+doi: "10.48550/arXiv.2512.03463"
 
 publishDate: "2026-07-21T00:00:00Z"
 
