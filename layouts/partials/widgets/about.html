@@ -84,7 +84,7 @@
 
       {{ with $person.interests }}
       <div class="col-md-7 about-interests">
-        <h3>{{ i18n "interests" | markdownify }}</h3>
+        <h3><a href="{{ "projects/" | relLangURL }}">{{ i18n "interests" | markdownify }}</a></h3>
         <ul class="ul-interests">
           {{ range . }}
           <li>{{ . | markdownify | emojify }}</li>

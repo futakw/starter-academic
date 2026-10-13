@@ -295,11 +295,14 @@
 
   [id="2_experience"] .card-text,
   [id="5_awards"] .card-text,
+  [id="55_research_grants"] .card-text,
   [id="6_accomplishments"] .card-text { margin: .25rem 0 0; padding: 0; line-height: 1.4; }
   [id="2_experience"] .card-text p,
   [id="5_awards"] .card-text p,
+  [id="55_research_grants"] .card-text p,
   [id="6_accomplishments"] .card-text p { margin: 0; }
   [id="5_awards"] .card .card-body,
+  [id="55_research_grants"] .card .card-body,
   [id="6_accomplishments"] .card .card-body { padding-top: .55rem; padding-bottom: .55rem; }
 
   .experience .exp-company,
@@ -657,6 +660,18 @@
     [id="0_about"] .about-main { flex: 0 0 70%; max-width: 70%; margin-top: -.4rem; padding-left: 1.5rem; }
     [id="0_about"] .about-main > h1 { margin-bottom: .6rem; }
     [id="0_about"] .about-interests { flex: 0 0 52%; max-width: 52%; }
+  [id="0_about"] .about-interests h3 a,
+  [id="0_about"] .about-education h3 a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 140ms ease, opacity 140ms ease;
+  }
+  [id="0_about"] .about-interests h3 a:hover,
+  [id="0_about"] .about-interests h3 a:focus-visible {
+    border-bottom-color: currentColor;
+    opacity: 0.85;
+  }
     [id="0_about"] .about-education { flex: 0 0 48%; max-width: 48%; }
   }
 
@@ -764,6 +779,7 @@
   }
 
   [id="5_awards"] .card .card-title,
+  [id="55_research_grants"] .card .card-title,
   [id="6_accomplishments"] .card .card-title {
     color: var(--portfolio-text) !important;
   }
@@ -774,6 +790,9 @@
   .dark [id="5_awards"] .card .card-title,
   .dark [id="5_awards"] .card .card-title a,
   .dark [id="5_awards"] .card h4 a,
+  .dark [id="55_research_grants"] .card .card-title,
+  .dark [id="55_research_grants"] .card .card-title a,
+  .dark [id="55_research_grants"] .card h4 a,
   .dark [id="6_accomplishments"] .card .card-title,
   .dark [id="6_accomplishments"] .card .card-title a,
   .dark [id="6_accomplishments"] .card h4 a {
