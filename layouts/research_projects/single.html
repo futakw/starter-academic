@@ -24,6 +24,13 @@
         {{ with .funding }}<a class="research-funding-tag" href="#research-funding">{{ . }}</a>{{ end }}
         <p>{{ .description }}</p>
         <ul>{{ range .points }}<li>{{ . }}</li>{{ end }}</ul>
+        {{ with .resources }}
+        <div class="research-resources" aria-label="{{ if $ja }}研究リソース{{ else }}Research resources{{ end }}">
+          {{ range . }}
+          <p><strong><a href="{{ .url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> {{ .title }}</a></strong><br>{{ .description }}</p>
+          {{ end }}
+        </div>
+        {{ end }}
         <div class="research-links" aria-label="{{ if $ja }}関連論文{{ else }}Related papers{{ end }}">
           {{ range .links }}<a href="{{ .url | relURL }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>{{ end }}
         </div>
@@ -73,6 +80,8 @@
   .research-card li { margin-bottom: .15rem; }
   .research-funding-tag { align-self: flex-start; font-size: .7rem; padding: .15rem .35rem; border: 1px solid var(--portfolio-accent); border-radius: .2rem; margin-bottom: .65rem; }
   .research-links { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; }
+  .research-resources { margin-bottom: .8rem; overflow-wrap: anywhere; }
+  .research-resources a { text-decoration: underline; text-underline-offset: .15em; }
   .research-links a { font-size: .7rem; padding: .2rem .4rem; border: 1px solid var(--portfolio-accent); border-radius: .2rem; }
   .research-links a:hover, .research-source:hover { text-decoration: underline; }
   .research-links a, .research-funding-tag { background: #e3e9df; color: var(--portfolio-text); }

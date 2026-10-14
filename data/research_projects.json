@@ -13,6 +13,13 @@
         "Safety evaluation for trustworthy VLAs"
       ],
       "funding": "JSPS KAKENHI · 26K25580",
+      "resources": [
+        {
+          "title": "Awesome Physical AI Safety",
+          "description": "An LLM-assisted bibliography on safety, security, robustness, and trustworthy deployment across VLA, robotics, autonomous systems, and embodied agents.",
+          "url": "https://github.com/futakw/Awesome-Physical-AI-Safety"
+        }
+      ],
       "links": [
         {
           "label": "View Collapse · Preprint",

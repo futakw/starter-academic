@@ -13,6 +13,13 @@
         "信頼できるVLAの安全性評価"
       ],
       "funding": "JSPS KAKENHI · 26K25580",
+      "resources": [
+        {
+          "title": "Awesome Physical AI Safety",
+          "description": "VLA・ロボット・自律システム・身体性AIの安全性、セキュリティ、頑健性、信頼できる運用をまとめたLLM支援型文献集。",
+          "url": "https://github.com/futakw/Awesome-Physical-AI-Safety"
+        }
+      ],
       "links": [
         {
           "label": "View Collapse · プレプリント",

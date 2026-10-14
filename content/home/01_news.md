@@ -12,6 +12,7 @@ title: News
 ---
 
 <!-- Top Reviewer month is provisionally listed as the ICLR 2026 conference month. -->
+- 2026.10: Released <strong><a href="https://github.com/futakw/Awesome-Physical-AI-Safety" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Awesome Physical AI Safety</a></strong>, a curated collection of research resources on physical AI safety.
 - 2026.10: I will serve as an **Area Chair for [ICLR 2027](https://iclr.cc/Conferences/2027/)** 🎓
 - 2026.07: Awarded a **[JSPS KAKENHI Research Activity Start-up grant](https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-26K25580/)** as Principal Investigator 📜
 - 2026.07: One co-authored paper **accepted at [SMC 2026](https://arxiv.org/abs/2607.17610)** 🎉

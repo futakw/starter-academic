@@ -12,6 +12,7 @@ title: ニュース
 ---
 
 <!-- Top Reviewer month follows the provisional English version. -->
+- 2026.10: Physical AIの安全性に関する研究資料をまとめた<strong><a href="https://github.com/futakw/Awesome-Physical-AI-Safety" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Awesome Physical AI Safety</a></strong>を公開しました。
 - 2026.10: <strong>[ICLR 2027](https://iclr.cc/Conferences/2027/)のArea Chair</strong>を務めます 🎓
 - 2026.07: 研究代表者として<strong>[科研費・研究活動スタート支援](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26K25580/)</strong>に採択されました 📜
 - 2026.07: 共著論文が<strong>[SMC 2026](https://arxiv.org/abs/2607.17610)に採択</strong>されました 🎉
