@@ -23,7 +23,7 @@ design:
 <p style="margin-bottom:0.3rem"><strong>Conference Travel History</strong></p>
 <ul style="margin-top:0;">
 <li>2026: ECCV (Malmö, Sweden), WACV (Tucson, Arizona, USA)</li>
-<li>2025: ACMMM (Dublin, Ireland), ACL (Vienna, Austria), ICLR (Singapore)</li>
+<li>2025: ACM MM (Dublin, Ireland), ACL (Vienna, Austria), ICLR (Singapore)</li>
 <li>2024: ICIP (Abu Dhabi, UAE)</li>
 <li>2023: ICML (Honolulu, Hawaii, USA), WACV (Waikoloa, Hawaii, USA)</li>
 </ul>

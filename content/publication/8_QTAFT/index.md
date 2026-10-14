@@ -1,4 +1,6 @@
 ---
+media_slides_path: '/media/slides/qtaft-acmmm2025'
+media_slides_count: 6
 title: "Quality Text, Robust Vision: The Role of Language in Enhancing Visual Robustness of Vision-Language Models"
 
 # Authors
@@ -29,7 +31,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "ACM Multimedia 2025"
-publication_short: "ACMMM 2025"
+publication_short: "ACM MM 2025"
 
 abstract: "Defending pre-trained vision-language models (VLMs), such as CLIP, against adversarial attacks is crucial, as these models are widely used in diverse zero-shot tasks, including image classification. However, existing adversarial training (AT) methods for robust fine-tuning largely overlook the role of language in enhancing visual robustness. Specifically, (1) supervised AT methods rely on short texts (e.g., class labels) to generate adversarial perturbations, leading to overfitting to object classes in the training data, and (2) unsupervised AT avoids this overfitting but remains suboptimal against practical text-guided adversarial attacks due to its lack of semantic guidance. To address these limitations, we propose Quality Text-guided Adversarial Fine-Tuning (QT-AFT), which leverages high-quality captions during training to guide adversarial examples away from diverse semantics present in images. This enables the visual encoder to robustly recognize a broader range of image features even under adversarial noise, thereby enhancing robustness across diverse downstream tasks. QT-AFT overcomes the key weaknesses of prior methods -- overfitting in supervised AT and lack of semantic awareness in unsupervised AT -- achieving state-of-the-art zero-shot adversarial robustness and clean accuracy, evaluated across 16 zero-shot datasets. Furthermore, our comprehensive study uncovers several key insights into the role of language in enhancing vision robustness; for example, describing object properties in addition to object names further enhances zero-shot robustness. Our findings point to an urgent direction for future work -- centering high-quality linguistic supervision in robust visual representation learning."
 highlights:
@@ -46,23 +48,21 @@ tags: ["recent"]
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links: [{"name": "GitHub", "icon": "github", "icon_pack": "fab", "url": "https://github.com/futakw/QTAFT"}, {"name": "Hugging Face", "url": "https://huggingface.co/futakw/clip-qt-aft"}]
 
-url_pdf: 'https://arxiv.org/abs/2507.16257'
+url_paper: 'https://arxiv.org/abs/2507.16257'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/media/slides/qtaft-acmmm2025/QualityTextRobustVision-3min.pdf'
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/kzgIE-c-AEk'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -80,7 +80,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
-bibliography: {"venue": "Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM 2025)", "pages": "4808–4816", "doi": "10.1145/3746027.3755623", "source": "https://dl.acm.org/doi/10.1145/3746027.3755623", "authors": ["Futa Waseda", "Saku Sugawara", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ACM MM 2025", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/futakw/QTAFT"}]}
+bibliography: {"venue": "Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM 2025)", "pages": "4808–4816", "doi": "10.1145/3746027.3755623", "source": "https://dl.acm.org/doi/10.1145/3746027.3755623", "authors": ["Futa Waseda", "Saku Sugawara", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ACM MM 2025", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/futakw/QTAFT"}, {"label": "Hugging Face", "url": "https://huggingface.co/futakw/clip-qt-aft"}]}
 ---
 <!-- 
 {{% callout note %}}
@@ -92,3 +92,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

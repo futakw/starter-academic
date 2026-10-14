@@ -1,4 +1,6 @@
 ---
+media_slides_path: '/media/slides/arat-iclr2025'
+media_slides_count: 8
 title: "Rethinking Invariance Regularization in Adversarial Training to Improve Robustness-Accuracy Trade-off"
 
 # Authors
@@ -48,20 +50,24 @@ featured: false
 links:
 - name: OpenReview
   url: https://openreview.net/forum?id=M9SKazbVkJ
+- name: GitHub
+  icon: github
+  icon_pack: fab
+  url: https://github.com/futakw/AR-AT
 
-url_pdf: 'https://arxiv.org/abs/2402.14648'
+url_paper: 'https://arxiv.org/abs/2402.14648'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: 'https://iclr.cc/media/iclr-2025/Slides/29949.pdf'
 url_source: ''
-url_video: ''
+url_video: 'https://iclr.cc/virtual/2025/poster/29949'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -79,7 +85,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
-bibliography: {"venue": "Proceedings of the 13th International Conference on Learning Representations (ICLR 2025)", "pages": "45053–45076", "source": "https://openreview.net/forum?id=M9SKazbVkJ", "sources": ["https://www.proceedings.com/content/080/080508webtoc.pdf", "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"], "authors": ["Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "url": "https://openreview.net/forum?id=M9SKazbVkJ", "abbreviation": "ICLR 2025", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/futakw/AR-AT"}], "pages_source": "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"}
+bibliography: {"venue": "Proceedings of the 13th International Conference on Learning Representations (ICLR 2025)", "pages": "45053–45076", "source": "https://openreview.net/forum?id=M9SKazbVkJ", "sources": ["https://www.proceedings.com/content/080/080508webtoc.pdf", "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"], "authors": ["Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "url": "https://openreview.net/forum?id=M9SKazbVkJ", "abbreviation": "ICLR 2025", "conference_group": "Conference Proceedings", "resources": [{"label": "GitHub", "url": "https://github.com/futakw/AR-AT"}, {"label": "Slides", "url": "https://iclr.cc/media/iclr-2025/Slides/29949.pdf"}, {"label": "Video", "url": "https://iclr.cc/virtual/2025/poster/29949"}], "pages_source": "https://proceedings.iclr.cc/paper_files/paper/561-/bibtex"}
 ---
 <!-- 
 {{% callout note %}}
@@ -91,3 +97,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

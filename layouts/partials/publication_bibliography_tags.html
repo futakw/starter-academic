@@ -5,10 +5,8 @@
     {{- $isFirstAuthor = true -}}
   {{- end -}}
 {{- end -}}
-{{- if or $isFirstAuthor $b.resources $b.awards -}}
 <span class="bibliography-tags" aria-label="Publication tags">
   {{- if $isFirstAuthor }}<span class="bibliography-tag bibliography-tag-author">1st author</span>{{ end -}}
-  {{- range $b.resources }}<a class="bibliography-tag bibliography-tag-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>{{ end -}}
+  {{ partial "page_links.html" (dict "page" . "is_list" 1) }}
   {{- range $b.awards }}<span class="bibliography-tag bibliography-tag-award">{{ . }}</span>{{ end -}}
 </span>
-{{- end -}}

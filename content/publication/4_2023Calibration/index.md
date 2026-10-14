@@ -1,4 +1,7 @@
 ---
+media_slides_path: '/media/slides/dac-icml2023'
+media_slides_count: 7
+media_poster_image: '/media/publication/ICML2023DAC/poster_ICML2023_DAC.png'
 title: "Beyond In-Domain Scenarios: Robust Density-Aware Calibration"
 
 # Authors
@@ -47,23 +50,25 @@ tags: ["recent"]
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: GitHub
+  icon: github
+  icon_pack: fab
+  url: https://github.com/futakw/DensityAwareCalibration
 
-url_pdf: 'https://arxiv.org/pdf/2302.05118'
+url_paper: 'https://arxiv.org/abs/2302.05118'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: '/media/publication/ICML2023DAC/poster_ICML2023_DAC.png'
 url_project: ''
-url_slides: ''
+url_slides: '/media/publication/ICML2023DAC/ICML2023_DAC_final.pdf'
 url_source: ''
-url_video: ''
+url_video: 'https://slideslive.com/39003814/beyond-indomain-scenarios-robust-densityaware-calibration?ref=speaker-67105'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -81,7 +86,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
-bibliography: {"venue": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Proceedings of Machine Learning Research", "volume": "202", "pages": "34344–34368", "source": "https://proceedings.mlr.press/v202/tomani23a.html", "authors": ["Christian Tomani", "Futa Kai Waseda", "Yuesong Shen", "Daniel Cremers"], "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICML 2023", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1], "resources": [{"label": "GitHub", "url": "https://github.com/futakw/DensityAwareCalibration"}]}
+bibliography: {"venue": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Proceedings of Machine Learning Research", "volume": "202", "pages": "34344–34368", "source": "https://proceedings.mlr.press/v202/tomani23a.html", "authors": ["Christian Tomani", "Futa Kai Waseda", "Yuesong Shen", "Daniel Cremers"], "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICML 2023", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1], "resources": [{"label": "GitHub", "url": "https://github.com/futakw/DensityAwareCalibration"}, {"label": "Poster", "url": "/media/publication/ICML2023DAC/poster_ICML2023_DAC.png"}, {"label": "Slides", "url": "/media/publication/ICML2023DAC/ICML2023_DAC_final.pdf"}, {"label": "Video", "url": "https://slideslive.com/39003814/beyond-indomain-scenarios-robust-densityaware-calibration?ref=speaker-67105"}]}
 ---
 <!-- 
 {{% callout note %}}
@@ -93,3 +98,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

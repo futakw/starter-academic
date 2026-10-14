@@ -28,7 +28,7 @@ tags: ["recent"]
 
 featured: false
 
-url_pdf: 'https://arxiv.org/pdf/2510.08979'
+url_paper: 'https://arxiv.org/abs/2510.08979'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -43,3 +43,5 @@ image:
   preview_only: false
 bibliography: {"venue": "2025 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC 2025)", "pages": "2523–2528", "doi": "10.1109/APSIPAASC65261.2025.11249222", "source": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf", "authors": ["Yuki Nii", "Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "APSIPA ASC 2025", "conference_group": "Conference Proceedings", "awards": ["Best Paper Finalist"]}
 ---
+
+{{< publication_media >}}

@@ -52,10 +52,8 @@ featured: false
 links:
 - name: Conference Link
   url: https://db-event.jpn.org/deim2019/
-- name: PDF
-  url: media/deim2019最終論文.pdf
 
-url_pdf: ''
+url_paper: '/ja/publication/1_deim/'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -100,3 +98,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

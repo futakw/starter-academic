@@ -1,0 +1,15 @@
+{{ if site.Params.show_related }}
+{{ if (index site.Params.show_related .Type) | and (ne .Params.show_related false) | or .Params.show_related }}
+  {{ $related := site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+  <div class="article-widget content-widget-hr">
+    <h3>{{ i18n "related" }}</h3>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ if eq .Type "publication" }}{{ $venue := .Params.publication_short | default .Params.bibliography.abbreviation | default .Params.publication }}{{ if in (.Params.publication_types | default slice) "3" }}{{ $venue = printf "arXiv %s" (.Date.Format "2006") }}{{ end }}{{ with $venue }}【{{ . | plainify }}】{{ end }}{{ end }}{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+{{ end }}
+{{ end }}

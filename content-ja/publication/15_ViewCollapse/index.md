@@ -6,6 +6,8 @@ publication_types: ["3"]
 publication: "arXiv:2609.33707"
 tags: []
 featured: false
-url_pdf: "https://arxiv.org/pdf/2609.33707"
+url_paper: 'https://arxiv.org/abs/2609.33707'
 bibliography: {"authors": ["Futa Waseda", "Shuhei Kurita", "Isao Echizen"], "venue": "arXiv:2609.33707", "source": "https://arxiv.org/abs/2609.33707", "conference_group": "Preprints", "checked": "2026-10-12"}
 ---
+
+{{< publication_media >}}

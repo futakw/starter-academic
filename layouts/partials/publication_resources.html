@@ -1,0 +1,21 @@
+{{ $page := . }}
+{{ $items := slice }}
+{{ range $entry := slice (dict "key" "url_paper" "label" "Paper") (dict "key" "url_preprint" "label" "Preprint") (dict "key" "url_project" "label" "Project") (dict "key" "url_code" "label" "Code") (dict "key" "url_dataset" "label" "Dataset") (dict "key" "url_video" "label" "Video") (dict "key" "url_slides" "label" "Slides") (dict "key" "url_poster" "label" "Poster") (dict "key" "url_source" "label" "Source") }}
+  {{ with index $page.Params $entry.key }}
+    {{ $url := . | relURL }}
+    {{ with $page.Resources.GetMatch . }}{{ $url = .RelPermalink }}{{ end }}
+    {{ $items = $items | append (dict "url" $url "label" $entry.label) }}
+  {{ end }}
+{{ end }}
+{{ with $page.Params.doi }}{{ $items = $items | append (dict "url" (printf "https://doi.org/%s" .) "label" "DOI") }}{{ end }}
+{{ range $page.Params.links }}{{ $items = $items | append (dict "url" (.url | relURL) "label" .name) }}{{ end }}
+{{ range $page.Params.bibliography.resources }}{{ $items = $items | append (dict "url" (.url | relURL) "label" .label) }}{{ end }}
+{{ $seen := slice }}
+{{ $result := slice }}
+{{ range $items }}
+  {{ if not (in $seen .url) }}
+    {{ $result = $result | append . }}
+    {{ $seen = $seen | append .url }}
+  {{ end }}
+{{ end }}
+{{ return $result }}

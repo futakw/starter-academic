@@ -12,10 +12,10 @@ highlights:
 - 軽度な摂動制約や一般的な後処理に対しても頑健。
 tags: ["recent"]
 featured: false
-url_pdf: "https://arxiv.org/abs/2607.17610"
+url_paper: 'https://arxiv.org/abs/2607.17610'
 url_video: "https://youtu.be/KKFiYxHJ6kE?si=zOlO4fbXZFvQI15W"
 doi: "10.48550/arXiv.2607.17610"
 bibliography: {"authors": ["Yuki Nii", "Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "venue": "2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2026)", "abbreviation": "SMC 2026", "source": "https://arxiv.org/abs/2607.17610", "conference_group": "Conference Proceedings", "checked": "2026-10-12", "sources": ["https://conf.papercept.net/conferences/conferences/SMC26/program/SMC26_ContentListWeb_2.html"]}
 ---
 
-<div class="yt-embed"><iframe src="https://www.youtube.com/embed/KKFiYxHJ6kE" title="SMC 2026 presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+{{< publication_media >}}

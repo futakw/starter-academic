@@ -23,7 +23,7 @@ title: News
 - 2025.11: One 1st-authored paper **accepted at [WACV 2026](https://arxiv.org/abs/2405.18770)** 🎉
 - 2025.10: Our paper *Uncolorable Examples* was selected as a **[Best Paper Finalist at APSIPA ASC 2025](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf)** 🏆
 - 2025.09: Received **[NII Inose Outstanding Student Award, 2025](https://www.nii.ac.jp/en/)** 🏆
-- 2025.07: One 1st-authored paper **accepted at [ACMMM 2025](https://arxiv.org/abs/2507.16257)** 🎉
+- 2025.07: One 1st-authored paper **accepted at [ACM MM 2025](https://arxiv.org/abs/2507.16257)** 🎉
 - 2025.05: One 1st-authored paper **accepted at [ACL 2025 Main](https://arxiv.org/abs/2410.08604v4)** 🎉
 - 2025.01: One 1st-authored paper **accepted at [ICLR 2025](https://arxiv.org/abs/2402.14648)** 🎉
 - 2024.09: One 1st-authored paper **accepted at [ICIP 2024](https://arxiv.org/abs/2309.15519)** 🎉

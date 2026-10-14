@@ -27,6 +27,13 @@
 </script>
 
 <style>
+  .publication-slides { margin-top: 1.5rem; }
+  .publication-slides figure { margin: 0; border: 1px solid var(--portfolio-border); border-radius: .3rem; overflow: hidden; background: white; }
+.publication-slides img { width: 100%; height: auto; }
+.publication-slides img[hidden] { display: none; }
+.publication-slides-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: .6rem; }
+.publication-slides-controls button { color: var(--portfolio-text); background: var(--portfolio-surface); border: 1px solid var(--portfolio-border); border-radius: .25rem; padding: .2rem .7rem; }
+.publication-slides-controls button:disabled { opacity: .4; }
   :root {
     --portfolio-background: #f8f5f0;
     --portfolio-surface: #fffcf7;

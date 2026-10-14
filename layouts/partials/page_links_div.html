@@ -1,0 +1,7 @@
+{{ if eq .Type "publication" }}
+<div class="btn-links mb-3">
+  {{ partial "page_links.html" (dict "page" . "is_list" 0) }}
+</div>
+{{ else }}
+{{ partial "legacy_page_links_div.html" . }}
+{{ end }}

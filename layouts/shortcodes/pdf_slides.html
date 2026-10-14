@@ -1,0 +1,41 @@
+{{ $url := .Page.Params.url_slides }}
+{{ $title := .Page.Title }}
+{{ $ja := eq .Page.Lang "ja" }}
+{{ $path := .Get "path" }}
+{{ $count := int (.Get "count") }}
+{{ with $url }}
+<section class="publication-slides" aria-label="{{ if $ja }}発表スライド{{ else }}Presentation slides{{ end }}">
+  <h3>{{ if $ja }}発表スライド{{ else }}Presentation Slides{{ end }}</h3>
+  <p><a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">{{ if $ja }}スライドPDFを別タブで開く{{ else }}Open slide PDF in a new tab{{ end }} ↗</a></p>
+  <figure>
+    {{ range seq $count }}
+    <img src="{{ printf "%s/slide-%d.jpg" $path . | relURL }}" alt="{{ $title }} — {{ if $ja }}発表スライド{{ else }}presentation slide{{ end }} {{ . }}" width="1600" height="900" loading="lazy" {{ if ne . 1 }}hidden{{ end }}>
+    {{ end }}
+  </figure>
+  <div class="publication-slides-controls">
+    <button type="button" data-slide-prev disabled aria-label="{{ if $ja }}前のスライド{{ else }}Previous slide{{ end }}">←</button>
+    <span data-slide-status aria-live="polite">1 / {{ $count }}</span>
+    <button type="button" data-slide-next aria-label="{{ if $ja }}次のスライド{{ else }}Next slide{{ end }}">→</button>
+  </div>
+  <script>
+    (() => {
+      const section = document.currentScript.closest('.publication-slides');
+      const slides = section.querySelectorAll('figure img');
+      const previous = section.querySelector('[data-slide-prev]');
+      const next = section.querySelector('[data-slide-next]');
+      const status = section.querySelector('[data-slide-status]');
+      let index = 0;
+      function showSlide(newIndex) {
+        slides[index].hidden = true;
+        index = Math.max(0, Math.min(slides.length - 1, newIndex));
+        slides[index].hidden = false;
+        previous.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+        status.textContent = `${index + 1} / ${slides.length}`;
+      }
+      previous.addEventListener('click', () => showSlide(index - 1));
+      next.addEventListener('click', () => showSlide(index + 1));
+    })();
+  </script>
+</section>
+{{ end }}

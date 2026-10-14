@@ -32,7 +32,7 @@ links:
 - name: OpenReview
   url: https://openreview.net/forum?id=kwy0cKmTm3
 
-url_pdf: 'https://arxiv.org/pdf/2510.00517'
+url_paper: 'https://arxiv.org/abs/2510.00517'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -47,3 +47,5 @@ image:
   preview_only: false
 bibliography: {"venue": "Proceedings of the 14th International Conference on Learning Representations (ICLR 2026)", "pages": "71952–71970", "source": "https://openreview.net/forum?id=kwy0cKmTm3", "sources": ["https://proceedings.iclr.cc/paper_files/paper/2026/file/7514354a089c7df0d9746c0c4ae759f2-Paper-Conference.pdf", "https://proceedings.iclr.cc/paper_files/paper/8345-/bibtex"], "authors": ["Tsubasa Takahashi", "Shojiro Yamabe", "Futa Waseda", "Kento Sasaki"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "url": "https://openreview.net/forum?id=kwy0cKmTm3", "abbreviation": "ICLR 2026", "conference_group": "Conference Proceedings", "pages_source": "https://proceedings.iclr.cc/paper_files/paper/8345-/bibtex"}
 ---
+
+{{< publication_media >}}

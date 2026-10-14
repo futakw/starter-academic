@@ -23,7 +23,7 @@ design:
 <p style="margin-bottom:0.3rem"><strong>学会参加歴</strong></p>
 <ul style="margin-top:0;">
 <li>2026: ECCV（スウェーデン、マルメ）、WACV（アメリカ、ツーソン）</li>
-<li>2025: ACMMM（アイルランド、ダブリン）、ACL（オーストリア、ウィーン）、ICLR（シンガポール）</li>
+<li>2025: ACM MM（アイルランド、ダブリン）、ACL（オーストリア、ウィーン）、ICLR（シンガポール）</li>
 <li>2024: ICIP（UAE、アブダビ）</li>
 <li>2023: ICML（アメリカ、ホノルル）、WACV（アメリカ、ワイコロア）</li>
 </ul>

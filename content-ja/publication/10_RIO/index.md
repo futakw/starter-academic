@@ -1,4 +1,7 @@
 ---
+media_slides_path: '/media/slides/rio-eccv2026'
+media_slides_count: 6
+media_poster_image: '/media/publication/ECCV2026/poster-preview.jpg'
 title: "Read or Ignore? A Unified Benchmark for Typographic-Attack Robustness and Text Recognition in Vision-Language Models"
 
 # Authors
@@ -37,12 +40,14 @@ tags: ["recent"]
 # Display this page in the Featured widget?
 featured: false
 
-url_pdf: 'https://arxiv.org/pdf/2512.11899'
+links: [{"name": "GitHub", "icon": "github", "icon_pack": "fab", "url": "https://github.com/turingmotors/RIO-Bench"}, {"name": "Hugging Face", "url": "https://huggingface.co/datasets/turing-motors/RIO-Bench"}]
+
+url_paper: 'https://arxiv.org/abs/2512.11899'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: '/media/publication/ECCV2026/ECCV26_6579_ReadorIgnore_poster.pdf'
 url_project: 'https://turingmotors.github.io/rio-vqa/'
-url_slides: ''
+url_slides: '/media/slides/rio-eccv2026/ECCV26_6579_ReadorIgnore_5min.pdf'
 url_source: ''
 url_video: 'https://youtu.be/W5CxnKPkTz0?si=e0-Pu1YehJilwYAs'
 
@@ -54,6 +59,5 @@ image:
 bibliography: {"venue": "Proceedings of the European Conference on Computer Vision (ECCV 2026), Lecture Notes in Computer Science", "volume": "17048", "pages": "562–580", "doi": "10.1007/978-3-032-37372-4_31", "source": "https://link.springer.com/chapter/10.1007/978-3-032-37372-4_31", "authors": ["Futa Waseda", "Shojiro Yamabe", "Daiki Shiono", "Kento Sasaki", "Tsubasa Takahashi"], "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ECCV 2026", "conference_group": "Conference Proceedings", "resources": [{"label": "Project page", "url": "https://turingmotors.github.io/rio-vqa/"}, {"label": "GitHub", "url": "https://github.com/turingmotors/RIO-Bench"}, {"label": "Hugging Face", "url": "https://huggingface.co/datasets/turing-motors/RIO-Bench"}]}
 ---
 
-<strong>TL;DR:</strong> VLMs must sometimes read text in images and sometimes ignore it — but no model does both well. We propose RIO-Bench, the first benchmark unifying typographic-attack robustness and text recognition evaluation. We further introduce a data-driven defense that adaptively selects when to use in-image text, outperforming prior non-adaptive approaches.
 
-<div class="yt-embed"><iframe src="https://www.youtube.com/embed/W5CxnKPkTz0" title="ECCV 2026 presentation video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+{{< publication_media >}}

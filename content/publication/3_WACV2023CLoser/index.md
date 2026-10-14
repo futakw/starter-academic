@@ -1,4 +1,5 @@
 ---
+media_poster_image: '/media/publication/WACV2023CLoser/poster-preview.jpg'
 title: "Closer Look at the Transferability of Adversarial Examples: How They Fool Different Models Differently"
 
 # Authors
@@ -52,19 +53,19 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html'
+url_paper: 'https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html'
 url_code: ''
 url_dataset: ''
-url_poster: 'media/publication/WACV2023CLoser/641-wacv-poster.pdf'
+url_poster: '/media/publication/WACV2023CLoser/641-wacv-poster.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/SOjjrKqee08'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -82,7 +83,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
-bibliography: {"venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2023)", "pages": "1360–1368", "doi": "10.1109/WACV56688.2023.00141", "source": "https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html", "authors": ["Futa Waseda", "Sosuke Nishikawa", "Trung-Nghia Le", "Huy H. Nguyen", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "WACV 2023", "conference_group": "Conference Proceedings"}
+bibliography: {"venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2023)", "pages": "1360–1368", "doi": "10.1109/WACV56688.2023.00141", "source": "https://openaccess.thecvf.com/content/WACV2023/html/Waseda_Closer_Look_at_the_Transferability_of_Adversarial_Examples_How_They_WACV_2023_paper.html", "authors": ["Futa Waseda", "Sosuke Nishikawa", "Trung-Nghia Le", "Huy H. Nguyen", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "WACV 2023", "conference_group": "Conference Proceedings", "resources": [{"label": "Poster", "url": "/media/publication/WACV2023CLoser/641-wacv-poster.pdf"}, {"label": "Video", "url": "https://youtu.be/SOjjrKqee08"}]}
 ---
 <!-- 
 {{% callout note %}}
@@ -94,3 +95,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

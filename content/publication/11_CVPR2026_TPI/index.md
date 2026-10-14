@@ -28,7 +28,7 @@ tags: ["recent"]
 
 featured: false
 
-url_pdf: 'https://openaccess.thecvf.com/content/CVPR2026/papers/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.pdf'
+url_paper: 'https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -43,3 +43,5 @@ image:
   preview_only: false
 bibliography: {"venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)", "pages": "17270–17281", "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html", "authors": ["Shojiro Yamabe", "Futa Waseda", "Daiki Shiono", "Tsubasa Takahashi"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "CVPR 2026", "conference_group": "Conference Proceedings"}
 ---
+
+{{< publication_media >}}

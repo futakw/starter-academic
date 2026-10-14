@@ -1,0 +1,13 @@
+{{ $ja := eq .Page.Lang "ja" }}
+{{ $title := .Page.Title }}
+{{ $image := .Get "image" }}
+{{ with .Page.Params.url_poster }}
+{{ $pdf := hasSuffix (lower .) ".pdf" }}
+<section class="publication-poster">
+  <h3>{{ if $ja }}発表ポスター{{ else }}Presentation Poster{{ end }}</h3>
+  <p><a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">{{ if $ja }}ポスター{{ if $pdf }}PDF{{ else }}画像{{ end }}を別タブで開く{{ else }}Open poster {{ if $pdf }}PDF{{ else }}image{{ end }} in a new tab{{ end }} ↗</a></p>
+  <a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ $image | relURL }}" alt="{{ $title }} — {{ if $ja }}発表ポスター{{ else }}presentation poster{{ end }}" loading="lazy" style="display:block;width:100%;height:auto;">
+  </a>
+</section>
+{{ end }}

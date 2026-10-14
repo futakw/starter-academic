@@ -1,0 +1,11 @@
+{{ $page := .page }}
+{{ if ne $page.Type "publication" }}
+{{ partial "legacy_page_links.html" . }}
+{{ else }}
+{{ range partial "publication_resources.html" $page }}
+<a class="btn btn-outline-primary my-1 mr-1{{ if $.is_list }} btn-sm{{ end }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+{{ end }}
+{{ with $page.Resources.GetMatch "cite.bib" }}
+<button type="button" class="btn btn-outline-primary my-1 mr-1{{ if $.is_list }} btn-sm{{ end }} js-cite-modal" data-filename="{{ .RelPermalink }}">{{ i18n "btn_cite" }}</button>
+{{ end }}
+{{ end }}

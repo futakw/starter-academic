@@ -1,0 +1,10 @@
+{{ $lang := cond (eq .Lang "ja") "ja" "en" }}
+{{ $points := index (index site.Data.publication_tldr (path.Base .File.Dir)) $lang }}
+{{ if ne (len $points) 3 }}{{ errorf "Publication %s needs three abstract points" .File.Path }}{{ end }}
+<h3>TL;DR</h3>
+<ul class="pub-abstract pub-abstract-points">
+{{ range $i, $point := $points }}
+<li><strong>{{ index $point 0 }}</strong>{{ if eq $lang "ja" }}：{{ else }}: {{ end }}{{ index $point 1 | markdownify }}</li>
+{{ end }}
+</ul>
+<style>.pub-abstract-points{padding-left:1.25rem;margin-bottom:1.5rem}.pub-abstract-points li{margin-bottom:.45rem;overflow-wrap:anywhere}</style>

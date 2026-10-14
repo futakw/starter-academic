@@ -77,7 +77,7 @@ I study the robustness, reliability, and safety of intelligent systems, from vis
 - **Robust Learning & Defense:** Developing robust training and defense methods for computer vision (<a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
 - **Multimodal Robustness:** Improving the robustness of vision-language models (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACM MM'25</a>).
 - **AI Reliability & Security:** Exploring model IP protection and post-hoc calibration (<a href="https://arxiv.org/abs/2410.08604v4" style="text-decoration: underline;">ACL'25 Main</a>, <a href="https://arxiv.org/pdf/2302.05118" style="text-decoration: underline;">ICML'23</a>).
-- **Visual Content Protection:** Developing colorization defenses and image-editing watermarks ([APSIPA’25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf), [SMC’26](https://arxiv.org/abs/2607.17610), [preprint](https://arxiv.org/abs/2609.04709)).
+- **Visual Content Protection:** Developing colorization defenses and image-editing watermarks ([APSIPA'25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf), [SMC'26](https://arxiv.org/abs/2607.17610), [preprint](https://arxiv.org/abs/2609.04709)).
 
 <p class="bio-eyebrow">Research Experience & Collaborations</p>
 

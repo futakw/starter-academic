@@ -1,4 +1,6 @@
 ---
+media_slides_path: '/media/slides/pod-icip2024'
+media_slides_count: 11
 title: "Defending Against Physical Adversarial Patch Attacks on Infrared Human Detection"
 
 # Authors
@@ -48,23 +50,21 @@ tags: ["recent"]
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links: [{"name": "GitHub", "icon": "github", "icon_pack": "fab", "url": "https://github.com/Louquinze/POD"}]
 
-url_pdf: 'https://arxiv.org/pdf/2309.15519.pdf'
+url_paper: 'https://arxiv.org/abs/2309.15519'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: '/media/publication/ICIP2024/ICIP2024_presentation.pdf'
 url_source: ''
 url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [<strong>Unsplash</strong>](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -82,7 +82,7 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
-bibliography: {"venue": "2024 IEEE International Conference on Image Processing (ICIP 2024)", "pages": "3896–3902", "doi": "10.1109/ICIP51287.2024.10647435", "source": "https://ieeexplore.ieee.org/document/10647435", "authors": ["Lukas Strack", "Futa Waseda", "Huy H. Nguyen", "Yinqiang Zheng", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICIP 2024", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1]}
+bibliography: {"venue": "2024 IEEE International Conference on Image Processing (ICIP 2024)", "pages": "3896–3902", "doi": "10.1109/ICIP51287.2024.10647435", "source": "https://ieeexplore.ieee.org/document/10647435", "authors": ["Lukas Strack", "Futa Waseda", "Huy H. Nguyen", "Yinqiang Zheng", "Isao Echizen"], "volume": "なし", "issue": "なし", "review": "査読有", "doi_status": "未確認（会議版）", "checked": "2026-10-12", "abbreviation": "ICIP 2024", "conference_group": "Conference Proceedings", "equal_contribution": [0, 1], "resources": [{"label": "GitHub", "url": "https://github.com/Louquinze/POD"}, {"label": "Slides", "url": "/media/publication/ICIP2024/ICIP2024_presentation.pdf"}]}
 ---
 <!--
 {{% callout note %}}
@@ -94,3 +94,5 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+
+{{< publication_media >}}

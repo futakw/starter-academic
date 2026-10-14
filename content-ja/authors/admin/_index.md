@@ -74,11 +74,11 @@ highlight_name: true
 
 視覚言語モデルから身体性を持つAI(embodied AI)まで、知能システムの頑健性・信頼性・安全性を研究しています。
 
-- **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV’23](https://arxiv.org/abs/2112.14337)）。
-- **頑健な学習と防御:** コンピュータビジョンにおける頑健な学習・防御手法の開発（[ICLR’25](https://arxiv.org/abs/2402.14648)、[ICIP’24](https://arxiv.org/abs/2309.15519)）。
-- **マルチモーダルの頑健性:** 視覚言語モデルの頑健性向上（[ECCV’26](https://arxiv.org/pdf/2512.11899)、[WACV’26](https://arxiv.org/abs/2405.18770)、[ACM MM’25](https://arxiv.org/abs/2507.16257)）。
-- **AIの信頼性とセキュリティ:** モデルの知的財産保護と予測信頼度の校正（[ACL’25 Main](https://arxiv.org/abs/2410.08604v4)、[ICML’23](https://arxiv.org/pdf/2302.05118)）。
-- **視覚コンテンツ保護:** 無断AI色付けへの防御や画像編集の透かし（[APSIPA’25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf)、[SMC’26](https://arxiv.org/abs/2607.17610)、[プレプリント](https://arxiv.org/abs/2609.04709)）。
+- **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV'23](https://arxiv.org/abs/2112.14337)）。
+- **頑健な学習と防御:** コンピュータビジョンにおける頑健な学習・防御手法の開発（[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。
+- **マルチモーダルの頑健性:** 視覚言語モデルの頑健性向上（[ECCV'26](https://arxiv.org/pdf/2512.11899)、[WACV'26](https://arxiv.org/abs/2405.18770)、[ACM MM'25](https://arxiv.org/abs/2507.16257)）。
+- **AIの信頼性とセキュリティ:** モデルの知的財産保護と予測信頼度の校正（[ACL'25 Main](https://arxiv.org/abs/2410.08604v4)、[ICML'23](https://arxiv.org/pdf/2302.05118)）。
+- **視覚コンテンツ保護:** 無断AI色付けへの防御や画像編集の透かし（[APSIPA'25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf)、[SMC'26](https://arxiv.org/abs/2607.17610)、[プレプリント](https://arxiv.org/abs/2609.04709)）。
 
 <p class="bio-eyebrow">Research Experience & Collaborations</p>
 
