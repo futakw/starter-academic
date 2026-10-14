@@ -14,6 +14,9 @@ tags: ["recent"]
 featured: false
 url_paper: 'https://arxiv.org/abs/2607.17610'
 url_video: "https://youtu.be/KKFiYxHJ6kE?si=zOlO4fbXZFvQI15W"
+url_slides: '/media/slides/scnb-smc2026/SMC26S_238.pdf'
+media_slides_path: '/media/slides/scnb-smc2026'
+media_slides_count: 14
 doi: "10.48550/arXiv.2607.17610"
 bibliography: {"authors": ["Yuki Nii", "Futa Waseda", "Ching-Chun Chang", "Isao Echizen"], "venue": "2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2026)", "abbreviation": "SMC 2026", "source": "https://arxiv.org/abs/2607.17610", "conference_group": "Conference Proceedings", "checked": "2026-10-12", "sources": ["https://conf.papercept.net/conferences/conferences/SMC26/program/SMC26_ContentListWeb_2.html"]}
 ---
