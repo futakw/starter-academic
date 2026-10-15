@@ -46,6 +46,15 @@
         {{ end }}
       </div>
 
+      {{ with $person.education }}
+        {{ with index .courses 0 }}
+        <p class="profile-education">
+          <i class="fas fa-graduation-cap"></i>
+          {{ .course }}, {{ .institution }}{{ with .year }} ({{ . }}){{ end }}
+        </p>
+        {{ end }}
+      {{ end }}
+
       <ul class="network-icon" aria-hidden="true">
         {{ range $person.social }}
         {{ $pack := or .icon_pack "fas" }}

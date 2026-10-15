@@ -27,7 +27,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: 博士（情報理工学）
+  - course: 博士
     institution: 東京大学
     year: 2026
   - course: 修士（情報理工学）
@@ -74,16 +74,14 @@ highlight_name: true
 
 安全で信頼できるフィジカルAIの実現に向け、敵対的頑健性、視覚言語システムの信頼性、VLAモデルの安全性評価を研究しています。
 
-- **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV'23](https://arxiv.org/abs/2112.14337)）。
-- **頑健な学習と防御:** 頑健な学習手法と現代的な視覚モデルの敵対的感度を研究（[ICLR'26](https://arxiv.org/abs/2510.00517)、[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。
-- **マルチモーダル学習と頑健性:** 視覚言語モデルの学習効率・信頼性・敵対的頑健性を向上（[ECCV'26](https://arxiv.org/pdf/2512.11899)、[CVPR'26](https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html)、[WACV'26](https://arxiv.org/abs/2405.18770)、[ACM MM'25](https://arxiv.org/abs/2507.16257)）。
-- **AIの信頼性とセキュリティ:** モデルの知的財産保護と予測信頼度の校正（[ACL'25 Main](https://arxiv.org/abs/2410.08604v4)、[ICML'23](https://arxiv.org/pdf/2302.05118)）。
-- **視覚コンテンツ保護:** 無断AI色付けへの防御や画像編集の透かし（[APSIPA'25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf)、[SMC'26](https://arxiv.org/abs/2607.17610)、[プレプリント](https://arxiv.org/abs/2609.04709)）。
+<ol class="research-overview">
+  <li><div><strong>Physical AI Safety</strong><span>VLAモデルの安全性評価と頑健性を研究（<a href="https://arxiv.org/abs/2609.33707">プレプリント</a>）。</span></div></li>
+  <li><div><strong>Adversarial & OOD Robustness</strong><span>敵対的頑健性と分布外一般化を研究（<a href="https://arxiv.org/abs/2510.00517">ICLR'26</a>、<a href="https://arxiv.org/abs/2402.14648">ICLR'25</a>、<a href="https://arxiv.org/abs/2309.15519">ICIP'24</a>、<a href="https://arxiv.org/pdf/2302.05118">ICML'23</a>、<a href="https://arxiv.org/abs/2112.14337">WACV'23</a>）。</span></div></li>
+  <li><div><strong>Trustworthy Multimodal AI</strong><span>視覚言語モデルの信頼性・学習効率・頑健性を向上（<a href="https://arxiv.org/abs/2512.11899">ECCV'26</a>、<a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html">CVPR'26</a>、<a href="https://arxiv.org/abs/2405.18770">WACV'26</a>、<a href="https://arxiv.org/abs/2507.16257">ACM MM'25</a>）。</span></div></li>
+  <li><div><strong>AI Security and Privacy</strong><span>モデル所有権検証・予測信頼度・コンテンツ保護を研究（<a href="https://arxiv.org/abs/2410.08604v4">ACL'25 Main</a>、<a href="https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf">APSIPA'25</a>、<a href="https://arxiv.org/abs/2607.17610">SMC'26</a>、<a href="https://arxiv.org/abs/2609.04709">プレプリント</a>）。</span></div></li>
+</ol>
 
-<p class="bio-eyebrow">Research Experience & Collaborations</p>
-
-[TUM](https://www.tum.de/en/)、[NII](https://www.nii.ac.jp/)、[NEC](https://www.nec.com/)、[CyberAgent AI Lab](https://cyberagent.ai/ailab/)、[SB Intuitions](https://www.sbintuitions.co.jp/)、[Turing](https://tur.ing/)など。
-
-<p class="bio-eyebrow">Open to Collaborations</p>
-
-大学・研究機関や企業との<strong>共同研究</strong>、<strong>研究インターンの受け入れ・指導</strong>、<strong>研究・技術コンサルティング</strong>に関するご相談を歓迎しています。[お気軽にご連絡ください！](/ja/contact/)
+<div class="bio-detail-grid">
+  <div class="bio-detail-card"><p class="bio-eyebrow">Research Experience & Collaborations</p><p><a href="https://www.tum.de/en/">TUM</a>、<a href="https://www.nii.ac.jp/">NII</a>、<a href="https://www.nec.com/">NEC</a>、<a href="https://cyberagent.ai/ailab/">CyberAgent AI Lab</a>、<a href="https://www.sbintuitions.co.jp/">SB Intuitions</a>、<a href="https://tur.ing/">Turing</a>など。</p></div>
+  <div class="bio-detail-card"><p class="bio-eyebrow">Open to Collaborations</p><p>大学・研究機関や企業との<strong>共同研究</strong>、<strong>研究インターンの受け入れ・指導</strong>、<strong>研究・技術コンサルティング</strong>に関するご相談を歓迎しています。<a href="/ja/contact/">お問い合わせ</a></p></div>
+</div>

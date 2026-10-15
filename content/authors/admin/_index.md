@@ -27,7 +27,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Informatics
+  - course: Ph.D.
     institution: The University of Tokyo
     year: 2026
   - course: MS in Informatics
@@ -73,19 +73,18 @@ highlight_name: true
 ---
 
 I study adversarial robustness, reliable vision-language systems, and Vision-Language-Action (VLA) safety evaluation toward safe and trustworthy Physical AI.
-- **Adversarial Vulnerabilities:** Analyzing model failures under adversarial perturbations (<a href="https://arxiv.org/abs/2112.14337" style="text-decoration: underline;">WACV'23</a>).
-- **Robust Learning & Defense:** Investigating robust training and adversarial sensitivity in modern vision architectures (<a href="https://arxiv.org/abs/2510.00517" style="text-decoration: underline;">ICLR'26</a>, <a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
-- **Multimodal Learning & Robustness:** Improving the training efficiency, reliability, and adversarial robustness of vision-language models (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html" style="text-decoration: underline;">CVPR'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACM MM'25</a>).
-- **AI Reliability & Security:** Exploring model IP protection and post-hoc calibration (<a href="https://arxiv.org/abs/2410.08604v4" style="text-decoration: underline;">ACL'25 Main</a>, <a href="https://arxiv.org/pdf/2302.05118" style="text-decoration: underline;">ICML'23</a>).
-- **Visual Content Protection:** Developing colorization defenses and image-editing watermarks ([APSIPA'25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf), [SMC'26](https://arxiv.org/abs/2607.17610), [preprint](https://arxiv.org/abs/2609.04709)).
 
-<p class="bio-eyebrow">Research Experience & Collaborations</p>
+<ol class="research-overview">
+  <li><div><strong>Physical AI Safety</strong><span>Evaluating the safety and robustness of VLA models (<a href="https://arxiv.org/abs/2609.33707">preprint</a>).</span></div></li>
+  <li><div><strong>Adversarial & OOD Robustness</strong><span>Studying adversarial robustness and out-of-distribution generalization (<a href="https://arxiv.org/abs/2510.00517">ICLR'26</a>, <a href="https://arxiv.org/abs/2402.14648">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519">ICIP'24</a>, <a href="https://arxiv.org/pdf/2302.05118">ICML'23</a>, <a href="https://arxiv.org/abs/2112.14337">WACV'23</a>).</span></div></li>
+  <li><div><strong>Trustworthy Multimodal AI</strong><span>Improving the reliability, training efficiency, and robustness of vision-language models (<a href="https://arxiv.org/abs/2512.11899">ECCV'26</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html">CVPR'26</a>, <a href="https://arxiv.org/abs/2405.18770">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257">ACM MM'25</a>).</span></div></li>
+  <li><div><strong>AI Security and Privacy</strong><span>Researching model ownership verification, predictive confidence, and content protection (<a href="https://arxiv.org/abs/2410.08604v4">ACL'25 Main</a>, <a href="https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf">APSIPA'25</a>, <a href="https://arxiv.org/abs/2607.17610">SMC'26</a>, <a href="https://arxiv.org/abs/2609.04709">preprint</a>).</span></div></li>
+</ol>
 
-<a href="https://www.tum.de/en/" style="text-decoration: underline;">TUM</a>, <a href="https://www.nii.ac.jp/en/" style="text-decoration: underline;">NII</a>, <a href="https://www.nec.com/" style="text-decoration: underline;">NEC</a>, <a href="https://cyberagent.ai/ailab/" style="text-decoration: underline;">CyberAgent AI Lab</a>, <a href="https://www.sbintuitions.co.jp/" style="text-decoration: underline;">SB Intuitions</a>, and <a href="https://tur.ing/en" style="text-decoration: underline;">Turing</a>.
-
-<p class="bio-eyebrow">Open to Collaborations</p>
-
-I welcome enquiries about **research collaborations** with academic and industry partners, **research internship supervision and mentoring**, and **research and technical consulting**. [Feel free to get in touch!](/contact/)
+<div class="bio-detail-grid">
+  <div class="bio-detail-card"><p class="bio-eyebrow">Research Experience & Collaborations</p><p><a href="https://www.tum.de/en/">TUM</a>, <a href="https://www.nii.ac.jp/en/">NII</a>, <a href="https://www.nec.com/">NEC</a>, <a href="https://cyberagent.ai/ailab/">CyberAgent AI Lab</a>, <a href="https://www.sbintuitions.co.jp/">SB Intuitions</a>, and <a href="https://tur.ing/en">Turing</a>.</p></div>
+  <div class="bio-detail-card"><p class="bio-eyebrow">Open to Collaborations</p><p>I welcome enquiries about <strong>research collaborations</strong>, <strong>research internship supervision</strong>, and <strong>research and technical consulting</strong>. <a href="/contact/">Contact me</a></p></div>
+</div>
 
 <!-- <span style="color:red">
 I am actively looking for research positions in the industry or academia starting in 2026. If my research aligns with your interests, I welcome the opportunity to discuss potential collaborations. Please feel free to contact me.
