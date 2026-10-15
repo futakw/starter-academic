@@ -40,7 +40,7 @@
       {{ with $resource }}
         {{ $image := .Fill (printf "420x236 %s" $anchor) }}
         <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-          <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="pub-list-image">
+          <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="pub-list-image" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" decoding="async">
         </a>
       {{ end }}
       {{ if $show_buttons }}

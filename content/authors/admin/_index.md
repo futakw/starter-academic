@@ -72,7 +72,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-I study trustworthy AI, with a focus on physical AI safety, adversarial robustness, and reliable vision-language systems.
+I study adversarial robustness, reliable vision-language systems, and Vision-Language-Action (VLA) safety evaluation toward safe and trustworthy Physical AI.
 - **Adversarial Vulnerabilities:** Analyzing model failures under adversarial perturbations (<a href="https://arxiv.org/abs/2112.14337" style="text-decoration: underline;">WACV'23</a>).
 - **Robust Learning & Defense:** Investigating robust training and adversarial sensitivity in modern vision architectures (<a href="https://arxiv.org/abs/2510.00517" style="text-decoration: underline;">ICLR'26</a>, <a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
 - **Multimodal Learning & Robustness:** Improving the training efficiency, reliability, and adversarial robustness of vision-language models (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html" style="text-decoration: underline;">CVPR'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACM MM'25</a>).

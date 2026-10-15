@@ -2,11 +2,11 @@
   "projects": [
     {
       "id": "physical-ai-safety",
-      "title": "Physical AIの安全性",
+      "title": "フィジカルAIの安全性",
       "subtitle": "信頼できるVLAモデルと身体性を持つAIエージェント",
       "description": "変化する環境の中で、身体性を持つAIが安全に知覚・推論・行動するための研究に取り組んでいます。環境変化や敵対的入力への頑健性と、信頼できるVision-Language-Actionモデルの安全性評価基盤を研究します。",
       "image": "/media/research/physical-ai.svg",
-      "image_alt": "A camera observation image and a text language instruction feed a VLA model that produces robot actions.",
+      "image_alt": "カメラ画像と言語指示を入力として、ロボットの行動を生成するVLAモデルの概要。",
       "points": [
         "実環境での分布変化に対する頑健性",
         "敵対的攻撃に対する頑健性",
@@ -35,7 +35,7 @@
       "subtitle": "失敗のメカニズムを理解し、頑健な表現を学習する",
       "description": "敵対的な摂動や知覚の曖昧さによってモデルが失敗する理由を分析し、学習と予測の信頼性を高める手法を開発しています。失敗のメカニズムと、頑健な学習・防御・校正・汎化の関係を、さまざまなタスクやモダリティで探ります。",
       "publication_image": "6_ARAT",
-      "image_alt": "Overview of asymmetric representation regularization for adversarial training.",
+      "image_alt": "敵対的学習における非対称な表現正則化手法の概要。",
       "points": [
         "失敗メカニズムの理解・分析",
         "頑健な学習",
@@ -92,7 +92,7 @@
       "subtitle": "頑健なマルチモーダル理解と評価",
       "description": "視覚情報と言語情報を信頼性高く理解するための、視覚言語モデルの学習手法とベンチマークを開発しています。マルチモーダルな敵対的防御、言語教師信号、画像と言語の対応付けに加え、画像中の文字を読むべきか無視すべきかを評価します。",
       "publication_image": "9_WACV2026",
-      "image_alt": "Overview of multimodal adversarial training with one-to-many image-text relationships.",
+      "image_alt": "一対多の画像・テキスト関係を利用したマルチモーダル敵対的学習の概要。",
       "points": [
         "頑健なマルチモーダル学習と敵対的防御",
         "言語教師信号と画像・言語の対応付け",
@@ -130,7 +130,7 @@
       "title": "モデルの所有権検証とコンテンツ保護",
       "subtitle": "モデルと視覚コンテンツを無断利用から保護する",
       "description": "モデルの所有権を検証し、視覚コンテンツを無断のAI処理から守る手法を開発しています。Model Mergeに耐えるフィンガープリント、画像編集を追跡する透かし、無断の色付けを防ぐコンテンツに応じた摂動を研究します。",
-      "image_alt": "Semantic Color Naturalness Breaker adds a perturbation to a grayscale image, causing unauthorized AI colorization to produce unnatural colors.",
+      "image_alt": "グレースケール画像に摂動を加え、無断AI色付けを不自然にするSemantic Color Naturalness Breakerの概要。",
       "points": [
         "Model Merge後の所有権検証",
         "画像編集を追跡する透かし",

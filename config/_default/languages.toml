@@ -4,12 +4,18 @@
   contentDir = "content"
   weight = 1
 
+  [en.params]
+    description = "Futa Waseda is an NII researcher studying adversarial robustness, reliable vision-language systems, and VLA safety evaluation toward trustworthy Physical AI."
+
 [ja]
   languageCode = "ja-jp"
   languageName = "日本語"
   contentDir = "content-ja"
   weight = 2
   hasCJKLanguage = true
+
+  [ja.params]
+    description = "早稲田風太（国立情報学研究所）は、敵対的頑健性、視覚言語システムの信頼性、VLAモデルの安全性評価を通じて、安全で信頼できるフィジカルAIの実現を目指しています。"
 
   [[ja.menu.main]]
     name = "ホーム"

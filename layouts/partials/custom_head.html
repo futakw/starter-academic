@@ -1,3 +1,11 @@
+{{ if .IsHome }}
+  {{ $isJa := eq .Site.Language.Lang "ja" }}
+  {{ $affiliation := dict "@type" "Organization" "name" (cond $isJa "国立情報学研究所" "National Institute of Informatics") "url" (cond $isJa "https://www.nii.ac.jp/" "https://www.nii.ac.jp/en/") }}
+  {{ $person := dict "@type" "Person" "@id" (printf "%s#person" .Permalink) "name" "Futa Waseda" "alternateName" "早稲田風太" "url" .Permalink "image" ("media/suits_cropped.webp" | absURL) "jobTitle" (cond $isJa "特任助教" "Project Assistant Professor") "description" .Site.Params.description "affiliation" $affiliation "sameAs" (slice "https://scholar.google.co.jp/citations?hl=ja&user=aBQ2en8AAAAJ" "https://github.com/futakw" "https://www.linkedin.com/in/futa-waseda/" "https://twitter.com/futakw") "knowsAbout" (slice "Physical AI Safety" "Vision-Language-Action Models" "Embodied AI Safety" "Adversarial Robustness" "Trustworthy Multimodal AI") }}
+  {{ $profilePage := dict "@context" "https://schema.org" "@type" "ProfilePage" "url" .Permalink "mainEntity" $person }}
+<script type="application/ld+json">{{ $profilePage | jsonify | safeJS }}</script>
+{{ end }}
+
 <script>
   (function () {
     // Auto-redirect visitors to their preferred language on the homepage only.
@@ -1004,7 +1012,6 @@
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     initLanguagePref();
     initScrollProgress();
-    useOriginalProfileImage();
     initCvLinks();
     initPubAwardBadges();
     initSeeAllPublicationsLink();
@@ -1144,13 +1151,6 @@
       update();
       window.addEventListener('scroll', requestTick, { passive: true });
       window.addEventListener('resize', requestTick);
-    }
-
-    function useOriginalProfileImage() {
-      var avatar = document.querySelector('#profile img.avatar');
-      if (!avatar) return;
-      avatar.src = '/media/suits_cropped.png';
-      avatar.removeAttribute('srcset');
     }
 
     function initCopyEmailIcon() {

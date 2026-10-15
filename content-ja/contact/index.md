@@ -11,7 +11,7 @@ type: contact
 
 研究トピック:
 
-- <strong>Physical AIの安全性</strong> — Vision-Language-Action（VLA）モデルと身体性を持つAIエージェント
+- <strong>フィジカルAIの安全性</strong> — Vision-Language-Action（VLA）モデルと身体性を持つAIエージェント
 - <strong>敵対的攻撃への頑健性と汎化性能</strong>
 - <strong>視覚言語モデルの信頼性</strong>
 - <strong>モデルの所有権検証とコンテンツ保護</strong>

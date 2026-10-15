@@ -7,7 +7,7 @@ title: Featured Resource
 
 <article class="featured-resource-card">
   <a class="featured-resource-media" href="https://futakw.github.io/Awesome-Physical-AI-Safety/" target="_blank" rel="noopener noreferrer" aria-label="Explore the Awesome Physical AI Safety catalog">
-    <img src="/media/awesome-physical-ai-safety.webp" alt="Overview of the Awesome Physical AI Safety research catalog and its threat taxonomy" width="1731" height="909" loading="eager">
+    <img src="/media/awesome-physical-ai-safety.webp" alt="Overview of the Awesome Physical AI Safety research catalog and its threat taxonomy" width="1731" height="909" loading="lazy" decoding="async">
   </a>
   <div class="featured-resource-body">
     <h2>Awesome Physical AI Safety</h2>
@@ -16,6 +16,8 @@ title: Featured Resource
       <a href="https://futakw.github.io/Awesome-Physical-AI-Safety/" target="_blank" rel="noopener noreferrer">Explore Catalog <span aria-hidden="true">↗</span></a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/futakw/Awesome-Physical-AI-Safety" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub <span aria-hidden="true">↗</span></a>
+      <span aria-hidden="true">·</span>
+      <a href="/projects/#physical-ai-safety">Physical AI Safety Research</a>
     </div>
   </div>
 </article>

@@ -18,7 +18,7 @@ bio:
 
 # Interests to show in About widget
 interests:
-- Physical AIの安全性
+- フィジカルAIの安全性
 - 敵対的攻撃への頑健性と汎化性能
 - 視覚言語モデルの信頼性
 - モデルの所有権検証とコンテンツ保護
@@ -72,7 +72,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-Physical AIの安全性、敵対的頑健性、視覚言語システムの信頼性を中心に、Trustworthy AIを研究しています。
+安全で信頼できるフィジカルAIの実現に向け、敵対的頑健性、視覚言語システムの信頼性、VLAモデルの安全性評価を研究しています。
 
 - **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV'23](https://arxiv.org/abs/2112.14337)）。
 - **頑健な学習と防御:** 頑健な学習手法と現代的な視覚モデルの敵対的感度を研究（[ICLR'26](https://arxiv.org/abs/2510.00517)、[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。
