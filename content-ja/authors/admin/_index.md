@@ -75,8 +75,8 @@ highlight_name: true
 Physical AIの安全性、敵対的頑健性、視覚言語システムの信頼性を中心に、Trustworthy AIを研究しています。
 
 - **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV'23](https://arxiv.org/abs/2112.14337)）。
-- **頑健な学習と防御:** コンピュータビジョンにおける頑健な学習・防御手法の開発（[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。
-- **マルチモーダルの頑健性:** 視覚言語モデルの頑健性向上（[ECCV'26](https://arxiv.org/pdf/2512.11899)、[WACV'26](https://arxiv.org/abs/2405.18770)、[ACM MM'25](https://arxiv.org/abs/2507.16257)）。
+- **頑健な学習と防御:** 頑健な学習手法と現代的な視覚モデルの敵対的感度を研究（[ICLR'26](https://arxiv.org/abs/2510.00517)、[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。
+- **マルチモーダル学習と頑健性:** 視覚言語モデルの学習効率・信頼性・敵対的頑健性を向上（[ECCV'26](https://arxiv.org/pdf/2512.11899)、[CVPR'26](https://openaccess.thecvf.com/content/CVPR2026/html/Yamabe_Text-Printed_Image_Bridging_the_Image-Text_Modality_Gap_for_Text-centric_Training_CVPR_2026_paper.html)、[WACV'26](https://arxiv.org/abs/2405.18770)、[ACM MM'25](https://arxiv.org/abs/2507.16257)）。
 - **AIの信頼性とセキュリティ:** モデルの知的財産保護と予測信頼度の校正（[ACL'25 Main](https://arxiv.org/abs/2410.08604v4)、[ICML'23](https://arxiv.org/pdf/2302.05118)）。
 - **視覚コンテンツ保護:** 無断AI色付けへの防御や画像編集の透かし（[APSIPA'25](https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P284.pdf)、[SMC'26](https://arxiv.org/abs/2607.17610)、[プレプリント](https://arxiv.org/abs/2609.04709)）。
 
