@@ -72,7 +72,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-視覚言語モデルから身体性を持つAI(embodied AI)まで、知能システムの頑健性・信頼性・安全性を研究しています。
+Physical AIの安全性、敵対的頑健性、視覚言語システムの信頼性を中心に、Trustworthy AIを研究しています。
 
 - **敵対的脆弱性:** 敵対的摂動によるモデルの失敗メカニズムの分析（[WACV'23](https://arxiv.org/abs/2112.14337)）。
 - **頑健な学習と防御:** コンピュータビジョンにおける頑健な学習・防御手法の開発（[ICLR'25](https://arxiv.org/abs/2402.14648)、[ICIP'24](https://arxiv.org/abs/2309.15519)）。

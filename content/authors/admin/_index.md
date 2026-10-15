@@ -72,7 +72,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 ---
 
-I study the robustness, reliability, and safety of intelligent systems, from vision-language models to embodied AI.
+I study trustworthy AI, with a focus on physical AI safety, adversarial robustness, and reliable vision-language systems.
 - **Adversarial Vulnerabilities:** Analyzing model failures under adversarial perturbations (<a href="https://arxiv.org/abs/2112.14337" style="text-decoration: underline;">WACV'23</a>).
 - **Robust Learning & Defense:** Developing robust training and defense methods for computer vision (<a href="https://arxiv.org/abs/2402.14648" style="text-decoration: underline;">ICLR'25</a>, <a href="https://arxiv.org/abs/2309.15519" style="text-decoration: underline;">ICIP'24</a>).
 - **Multimodal Robustness:** Improving the robustness of vision-language models (<a href="https://arxiv.org/pdf/2512.11899" style="text-decoration: underline;">ECCV'26</a>, <a href="https://arxiv.org/abs/2405.18770" style="text-decoration: underline;">WACV'26</a>, <a href="https://arxiv.org/abs/2507.16257" style="text-decoration: underline;">ACM MM'25</a>).

@@ -912,6 +912,77 @@
     }
   }
 
+  [id="30_featured_resource"] .featured-resource-card {
+    overflow: hidden;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 0.5rem;
+    background: var(--portfolio-surface);
+  }
+
+  [id="30_featured_resource"] .featured-resource-media {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid var(--portfolio-border);
+    background: #fff;
+  }
+
+  [id="30_featured_resource"] .featured-resource-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transition: transform 240ms ease;
+  }
+
+  [id="30_featured_resource"] .featured-resource-media:hover img,
+  [id="30_featured_resource"] .featured-resource-media:focus-visible img {
+    transform: scale(1.01);
+  }
+
+  [id="30_featured_resource"] .featured-resource-body {
+    padding: 1.1rem 1.2rem 1.2rem;
+  }
+
+  [id="30_featured_resource"] .featured-resource-body h2 {
+    margin: 0 0 0.45rem;
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  [id="30_featured_resource"] .featured-resource-body p {
+    margin: 0 0 0.8rem;
+    color: var(--portfolio-muted);
+    line-height: 1.55;
+  }
+
+  [id="30_featured_resource"] .featured-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 700;
+  }
+
+  [id="30_featured_resource"] .featured-resource-links a {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .dark [id="30_featured_resource"] .featured-resource-card {
+    background: #28272a;
+    border-color: #65554d;
+  }
+
+  @media (max-width: 575.98px) {
+    [id="30_featured_resource"] .featured-resource-body {
+      padding: 0.9rem;
+    }
+
+    [id="30_featured_resource"] .featured-resource-body h2 {
+      font-size: 1.15rem;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .pub-list-custom,
     .pub-list-image,
@@ -919,6 +990,10 @@
     .btn.btn-outline-primary,
     .network-icon a,
     a.nav-link[href*="/media/Futa_Waseda_CV_"] {
+      transition: none !important;
+    }
+
+    [id="30_featured_resource"] .featured-resource-media img {
       transition: none !important;
     }
   }
