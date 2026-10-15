@@ -6,7 +6,7 @@
   {{ $number := 0 }}
   {{ $papers := .RegularPages.ByDate.Reverse }}
   {{ range $group := slice "Conference Proceedings" "Preprints" "Local Conference" }}
-  <h2>{{ if $ja }}{{ index (dict "Conference Proceedings" "国際会議論文" "Preprints" "プレプリント" "Local Conference" "国内会議論文") $group }}{{ else }}{{ $group }}{{ end }}</h2>
+  <h2>{{ if $ja }}{{ index (dict "Conference Proceedings" "国際会議論文" "Preprints" "Preprints" "Local Conference" "国内会議論文") $group }}{{ else }}{{ $group }}{{ end }}</h2>
   <ol class="bibliography-list" start="{{ add $number 1 }}">
     {{ range $paper := $papers }}
       {{ $b := $paper.Params.bibliography }}
